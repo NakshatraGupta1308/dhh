@@ -41,6 +41,14 @@ describe('scene profiles', () => {
     expect(delhi.connections.length).toBeGreaterThan(0)
   })
 
+  it('only lists releases led by the scene, not guest spots elsewhere', () => {
+    const gujarat = sceneProfile(data, 'gujarat')!
+    const ids = gujarat.releases.map((t) => t.id)
+    expect(ids).toContain('sultanate')
+    for (const other of ['mamafication', 'vvvv', 'filam']) expect(ids).not.toContain(other)
+    expect(sceneProfile(data, 'nagpur')!.releases.map((t) => t.id)).toContain('mamafication')
+  })
+
   it('returns null for an unknown scene', () => {
     expect(sceneProfile(data, 'atlantis')).toBeNull()
   })

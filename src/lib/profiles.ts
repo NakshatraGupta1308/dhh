@@ -31,10 +31,9 @@ export function sceneProfile(data: IndexedDataset, regionId: string): SceneProfi
   if (!region) return null
   const members = data.artists.filter((a) => a.region_id === regionId)
   const memberIds = new Set(members.map((a) => a.id))
-  // A scene release is any release with a credited member (lead, guest or producer).
-  const releases = data.tracks
-    .filter((t) => (data.creditsByTrack.get(t.id) ?? []).some((c) => memberIds.has(c.artist_id)))
-    .sort(newestFirst)
+  // A release belongs to the scene of its lead artists. Guest spots and
+  // productions for other scenes stay on those scenes' pages.
+  const releases = data.tracks.filter((t) => t.artist_ids.some((id) => memberIds.has(id))).sort(newestFirst)
   const byActivity = (a: Artist, b: Artist) =>
     (data.creditsByArtist.get(b.id)?.length ?? 0) - (data.creditsByArtist.get(a.id)?.length ?? 0) || a.name.localeCompare(b.name)
   const labels = data.labels.filter(
