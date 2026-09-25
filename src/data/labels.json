@@ -128,5 +128,14 @@
     "roster": [
       "seedhe-maut"
     ]
+  },
+  {
+    "id": "desi-trill",
+    "name": "DESI TRILL",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": [
+      "yung-sammy"
+    ]
   }
 ]

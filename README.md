@@ -79,7 +79,7 @@ A few notes:
 3. Label rosters and artist `label_ids` must mirror each other.
 4. Run `npm run validate-data`. It checks ids, references, credits, rosters, date formats and house style, and the build refuses to run if anything is off.
 
-The current seed is a hand-built first pass: 46 artists, 96 releases, 14 labels and crews, and 13 scenes. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
+The current seed is a hand-built first pass: 47 artists, 101 releases, 15 labels and crews, and 13 scenes. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
 
 ## Swapping the data source
 
