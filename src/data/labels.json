@@ -1,11 +1,103 @@
 [
-  { "id": "gully-gang", "name": "Gully Gang Entertainment", "kind": "independent", "founded_year": null, "roster": ["divine"] },
-  { "id": "mass-appeal-india", "name": "Mass Appeal India", "kind": "independent", "founded_year": 2019, "roster": ["divine"] },
-  { "id": "azadi-records", "name": "Azadi Records", "kind": "independent", "founded_year": 2017, "roster": ["seedhe-maut", "prabh-deep", "ahmer"] },
-  { "id": "kalamkaar", "name": "Kalamkaar", "kind": "independent", "founded_year": null, "roster": ["raftaar", "krsna"] },
-  { "id": "bantai-records", "name": "Bantai Records", "kind": "independent", "founded_year": null, "roster": ["emiway-bantai"] },
-  { "id": "maajja", "name": "maajja", "kind": "independent", "founded_year": 2021, "roster": ["arivu", "dhee"] },
-  { "id": "run-up-records", "name": "Run-Up Records", "kind": "independent", "founded_year": null, "roster": ["ap-dhillon"] },
-  { "id": "sony-music-india", "name": "Sony Music India", "kind": "major", "founded_year": null, "roster": ["divine"] },
-  { "id": "mafia-mundeer", "name": "Mafia Mundeer", "kind": "collective", "founded_year": null, "roster": ["honey-singh", "badshah", "raftaar"] }
+  {
+    "id": "gully-gang",
+    "name": "Gully Gang Entertainment",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": [
+      "divine"
+    ]
+  },
+  {
+    "id": "mass-appeal-india",
+    "name": "Mass Appeal India",
+    "kind": "independent",
+    "founded_year": 2019,
+    "roster": [
+      "divine"
+    ]
+  },
+  {
+    "id": "azadi-records",
+    "name": "Azadi Records",
+    "kind": "independent",
+    "founded_year": 2017,
+    "roster": [
+      "seedhe-maut",
+      "prabh-deep",
+      "ahmer"
+    ]
+  },
+  {
+    "id": "kalamkaar",
+    "name": "Kalamkaar",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": [
+      "raftaar",
+      "krsna"
+    ]
+  },
+  {
+    "id": "bantai-records",
+    "name": "Bantai Records",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": [
+      "emiway-bantai"
+    ]
+  },
+  {
+    "id": "maajja",
+    "name": "maajja",
+    "kind": "independent",
+    "founded_year": 2021,
+    "roster": [
+      "arivu",
+      "dhee"
+    ]
+  },
+  {
+    "id": "run-up-records",
+    "name": "Run-Up Records",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": [
+      "ap-dhillon"
+    ]
+  },
+  {
+    "id": "sony-music-india",
+    "name": "Sony Music India",
+    "kind": "major",
+    "founded_year": null,
+    "roster": [
+      "divine"
+    ]
+  },
+  {
+    "id": "mafia-mundeer",
+    "name": "Mafia Mundeer",
+    "kind": "collective",
+    "founded_year": null,
+    "roster": [
+      "honey-singh",
+      "badshah",
+      "raftaar"
+    ]
+  },
+  {
+    "id": "drive-in-road",
+    "name": "drive-in road",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": []
+  },
+  {
+    "id": "thaltej-publishing",
+    "name": "Thaltej Publishing Company",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": []
+  }
 ]

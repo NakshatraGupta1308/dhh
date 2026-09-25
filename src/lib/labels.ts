@@ -7,6 +7,7 @@ export const RELEASE_TYPE_LABEL: Record<ReleaseType, string> = {
   mixtape: 'Mixtape',
   track: 'Album cut',
   soundtrack: 'Soundtrack',
+  collection: 'Collection',
 }
 
 export const ROLE_LABEL: Record<CreditRole, string> = {
@@ -16,7 +17,7 @@ export const ROLE_LABEL: Record<CreditRole, string> = {
 }
 
 export function isLongForm(type: ReleaseType): boolean {
-  return type === 'album' || type === 'ep' || type === 'mixtape'
+  return type === 'album' || type === 'ep' || type === 'mixtape' || type === 'collection'
 }
 
 /** Search links used until real Spotify and YouTube ids are seeded. */

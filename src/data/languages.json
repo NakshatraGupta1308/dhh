@@ -34,5 +34,9 @@
   {
     "id": "bn",
     "name": "Bengali"
+  },
+  {
+    "id": "gu",
+    "name": "Gujarati"
   }
 ]

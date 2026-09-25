@@ -119,7 +119,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8, ease: EASE }}
           >
-            From Punjabi rap's first diaspora tapes to the gullies of Kurla and the studios of Delhi, Kerala and Chennai.{' '}
+            From Punjabi rap's first diaspora tapes to the gullies of Kurla and the studios of Delhi, Ahmedabad, Kerala and Chennai.{' '}
             <span className="text-ink">Scroll through two decades of releases, scene by scene.</span>
           </motion.p>
           <div className="grid grid-cols-4 gap-4 border-t border-line pt-5">

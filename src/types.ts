@@ -3,7 +3,7 @@
 
 export type Confidence = 'high' | 'medium' | 'low'
 export type DatePrecision = 'day' | 'month' | 'year'
-export type ReleaseType = 'single' | 'album' | 'ep' | 'mixtape' | 'track' | 'soundtrack'
+export type ReleaseType = 'single' | 'album' | 'ep' | 'mixtape' | 'track' | 'soundtrack' | 'collection'
 export type CreditRole = 'main' | 'feature' | 'producer'
 export type ArtistKind = 'rapper' | 'group' | 'producer' | 'singer'
 export type LabelKind = 'independent' | 'major' | 'collective'

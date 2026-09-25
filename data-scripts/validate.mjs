@@ -36,7 +36,7 @@ const languageById = indexById(languages, 'languages')
 const CONFIDENCE = new Set(['high', 'medium', 'low'])
 const ROLES = new Set(['main', 'feature', 'producer'])
 const PRECISION = new Set(['day', 'month', 'year'])
-const TRACK_TYPES = new Set(['single', 'album', 'ep', 'mixtape', 'track', 'soundtrack'])
+const TRACK_TYPES = new Set(['single', 'album', 'ep', 'mixtape', 'track', 'soundtrack', 'collection'])
 
 for (const r of regions) {
   if (!/^#[0-9A-Fa-f]{6}$/.test(r.color)) fail(`regions: "${r.id}" color must be #RRGGBB`)
