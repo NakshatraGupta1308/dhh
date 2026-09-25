@@ -16,6 +16,10 @@ npm run preview    # serve the production build
 
 The build output in `dist/` is fully static and uses relative paths, so it can be dropped onto any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages).
 
+### Deployment
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which tests, builds and deploys the site to GitHub Pages. In the repo settings, Pages needs its source set to **GitHub Actions**. The live site is at https://nakshatragupta1308.github.io/dhh/.
+
 ## What is in phase 1
 
 - **Hero**: staggered display type, a spinning record whose label is split into every scene colour, counters and looping marquees of artists and scenes.
