@@ -1,0 +1,12 @@
+[
+  { "id": "mumbai", "name": "Mumbai", "description": "The gully rap epicentre. Street storytelling in Hindi and Bambaiya slang out of Kurla, Andheri and Dharavi, pushed into the mainstream by Gully Boy.", "color": "#FF3B30" },
+  { "id": "pune", "name": "Pune", "description": "A second Maharashtra hub that proved raw, self-made rap could top charts without a big label behind it.", "color": "#C77DFF" },
+  { "id": "delhi", "name": "Delhi", "description": "Technical, lyric-heavy and fiercely independent. Home to boom bap purists, trap innovators and some of the scene's best known labels.", "color": "#D4FF3A" },
+  { "id": "punjab", "name": "Punjab", "description": "Where desi rap first met bhangra and pop. Punjabi flows, dhol-driven beats and a crossover pipeline into film and global charts.", "color": "#FF9F1C" },
+  { "id": "haryana", "name": "Haryana", "description": "Haryanvi dialect rap with a rural edge and an internet-first audience. Still early in this dataset and actively being seeded.", "color": "#2EC4B6" },
+  { "id": "kerala", "name": "Kerala", "description": "Malayalam rap that grew from protest verses and cinema crossovers into one of the most exciting regional scenes in the country.", "color": "#00E676" },
+  { "id": "chennai", "name": "Chennai", "description": "Tamil hip hop rooted in folk forms, oppari and gaana, with a strong voice for land, labour and caste.", "color": "#4CC9F0" },
+  { "id": "bengaluru", "name": "Bengaluru", "description": "A multilingual city scene moving between English, Kannada, Hindi and Malayalam, and the launchpad for DHH's biggest global viral moment.", "color": "#7B61FF" },
+  { "id": "kashmir", "name": "Kashmir", "description": "Introspective, political rap from the valley, documenting life under conflict.", "color": "#E0E7FF" },
+  { "id": "diaspora", "name": "Diaspora", "description": "Artists based in the UK, North America and Pakistan whose Punjabi and Hindi rap shaped the sound back home.", "color": "#FF5DA2" }
+]

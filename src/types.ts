@@ -1,0 +1,76 @@
+// Shared data model. Every later phase (lyrics, stats, recommendations,
+// collaboration graph) extends these types instead of replacing them.
+
+export type Confidence = 'high' | 'medium' | 'low'
+export type DatePrecision = 'day' | 'month' | 'year'
+export type ReleaseType = 'single' | 'album' | 'ep' | 'mixtape' | 'track' | 'soundtrack'
+export type CreditRole = 'main' | 'feature' | 'producer'
+export type ArtistKind = 'rapper' | 'group' | 'producer' | 'singer'
+export type LabelKind = 'independent' | 'major' | 'collective'
+
+export interface Region {
+  id: string
+  name: string
+  description: string
+  color: string
+}
+
+export interface Language {
+  id: string
+  name: string
+}
+
+export interface Artist {
+  id: string
+  name: string
+  aliases: string[]
+  kind: ArtistKind
+  region_id: string
+  languages: string[]
+  active_from: number
+  active_to: number | null
+  label_ids: string[]
+  image_url: string | null
+  bio: string
+  confidence: Confidence
+}
+
+export interface Track {
+  id: string
+  title: string
+  artist_ids: string[]
+  release_date: string
+  date_precision: DatePrecision
+  type: ReleaseType
+  label_id: string | null
+  album_or_ep: string | null
+  languages: string[]
+  cover_art_url: string | null
+  external_links: { spotify: string | null; youtube: string | null }
+  lyrics: string | null
+  confidence: Confidence
+  note: string | null
+}
+
+export interface Label {
+  id: string
+  name: string
+  kind: LabelKind
+  founded_year: number | null
+  roster: string[]
+}
+
+export interface Credit {
+  track_id: string
+  artist_id: string
+  role: CreditRole
+}
+
+export interface Dataset {
+  artists: Artist[]
+  tracks: Track[]
+  labels: Label[]
+  regions: Region[]
+  languages: Language[]
+  features: Credit[]
+}

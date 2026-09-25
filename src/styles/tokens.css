@@ -1,0 +1,34 @@
+/*
+ * Design tokens. Every colour, font and spacing decision lives here so later
+ * phases inherit the same look. Tailwind v4 turns @theme values into
+ * utilities (bg-ink, font-display, text-muted and so on).
+ */
+@theme {
+  --color-bg: #0a0a0b;
+  --color-surface: #131315;
+  --color-surface-2: #1b1b1e;
+  --color-line: #2a2a2f;
+  --color-ink: #f4f1ea;
+  --color-muted: #8b8a92;
+  --color-faint: #4a4a52;
+  --color-accent: #ff3b30;
+
+  --font-display: 'Anton', 'Impact', 'Arial Narrow', sans-serif;
+  --font-sans: 'Inter Variable', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+
+  --text-mega: clamp(5rem, 25vw, 17rem);
+  --text-mega--line-height: 0.82;
+
+  --ease-snap: cubic-bezier(0.22, 1, 0.36, 1);
+  --radius-card: 14px;
+}
+
+:root {
+  /* Timeline geometry shared between CSS and the layout engine. */
+  --timeline-lane-height: 148px;
+  --timeline-axis-gap: 36px;
+  /* Default scene colour when nothing more specific is set. */
+  --scene: var(--color-accent);
+  color-scheme: dark;
+}

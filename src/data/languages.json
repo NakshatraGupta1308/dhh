@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hi",
+    "name": "Hindi"
+  },
+  {
+    "id": "en",
+    "name": "English"
+  },
+  {
+    "id": "pa",
+    "name": "Punjabi"
+  },
+  {
+    "id": "bgc",
+    "name": "Haryanvi"
+  },
+  {
+    "id": "ml",
+    "name": "Malayalam"
+  },
+  {
+    "id": "ta",
+    "name": "Tamil"
+  },
+  {
+    "id": "kn",
+    "name": "Kannada"
+  },
+  {
+    "id": "ur",
+    "name": "Urdu"
+  },
+  {
+    "id": "bn",
+    "name": "Bengali"
+  }
+]
