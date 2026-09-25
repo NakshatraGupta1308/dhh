@@ -1,53 +1,88 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 
-export type View = 'home' | 'producers'
+export type View = 'home' | 'producers' | 'artist' | 'scene' | 'genre' | 'genres' | 'slang'
 
-interface ViewApi {
+export interface Route {
   view: View
-  /** Switch page, optionally scrolling to a section id once it renders. */
-  navigate: (view: View, anchor?: string) => void
+  /** Artist, scene, genre or slang id, depending on the view. */
+  id: string | null
+  /** Release to highlight on an artist page. */
+  release: string | null
 }
 
+interface NavigateOptions {
+  id?: string | null
+  release?: string | null
+  /** Section id to scroll to once the page renders. */
+  anchor?: string
+}
+
+interface ViewApi extends Route {
+  navigate: (view: View, opts?: NavigateOptions) => void
+}
+
+const VIEWS: View[] = ['home', 'producers', 'artist', 'scene', 'genre', 'genres', 'slang']
 const ViewContext = createContext<ViewApi | null>(null)
 
-function readView(): View {
-  return new URLSearchParams(window.location.search).get('view') === 'producers' ? 'producers' : 'home'
+function readRoute(): Route {
+  const params = new URLSearchParams(window.location.search)
+  // Older links used ?artist=divine&release=kohinoor for the artist overlay.
+  const legacyArtist = params.get('artist')
+  const raw = params.get('view') as View | null
+  const view: View = raw && VIEWS.includes(raw) ? raw : legacyArtist ? 'artist' : 'home'
+  return { view, id: params.get('id') ?? legacyArtist, release: params.get('release') }
 }
 
-function scrollToAnchor(anchor?: string) {
+function routeUrl(view: View, id: string | null, release: string | null): string {
+  const params = new URLSearchParams()
+  if (view !== 'home') params.set('view', view)
+  if (id) params.set('id', id)
+  if (release) params.set('release', release)
+  const qs = params.toString()
+  return `${window.location.pathname}${qs ? `?${qs}` : ''}`
+}
+
+function afterRender(fn: () => void) {
   // Two frames: one for React to commit the new page, one for layout.
-  requestAnimationFrame(() =>
-    requestAnimationFrame(() => {
-      const el = anchor ? document.getElementById(anchor) : null
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
-      else window.scrollTo({ top: 0 })
-    }),
-  )
+  requestAnimationFrame(() => requestAnimationFrame(fn))
 }
 
-/** Tiny page router kept in the query string (?view=producers) so it works on static hosting. */
+/**
+ * Query-string router (?view=artist&id=divine). It needs no server rewrites, so
+ * it works on any static host, and it restores scroll position on Back.
+ */
 export function ViewProvider({ children }: { children: ReactNode }) {
-  const [view, setView] = useState<View>(readView)
+  const [route, setRoute] = useState<Route>(readRoute)
 
   useEffect(() => {
-    const onPop = () => setView(readView())
+    window.history.scrollRestoration = 'manual'
+    const onPop = (e: PopStateEvent) => {
+      setRoute(readRoute())
+      const y = (e.state as { scrollY?: number } | null)?.scrollY ?? 0
+      afterRender(() => window.scrollTo({ top: y }))
+    }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
-  const navigate = useCallback((next: View, anchor?: string) => {
-    if (next !== readView()) {
-      const params = new URLSearchParams(window.location.search)
-      if (next === 'home') params.delete('view')
-      else params.set('view', next)
-      const qs = params.toString()
-      window.history.pushState(null, '', `${window.location.pathname}${qs ? `?${qs}` : ''}`)
-      setView(next)
+  const navigate = useCallback((view: View, opts: NavigateOptions = {}) => {
+    const id = opts.id ?? null
+    const release = opts.release ?? null
+    const url = routeUrl(view, id, release)
+    if (url !== `${window.location.pathname}${window.location.search}`) {
+      // Remember where we were so Back lands on the same spot.
+      window.history.replaceState({ scrollY: window.scrollY }, '', window.location.href)
+      window.history.pushState({ scrollY: 0 }, '', url)
+      setRoute({ view, id, release })
     }
-    scrollToAnchor(anchor)
+    afterRender(() => {
+      const el = opts.anchor ? document.getElementById(opts.anchor) : null
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+      else if (!release) window.scrollTo({ top: 0 })
+    })
   }, [])
 
-  const api = useMemo(() => ({ view, navigate }), [view, navigate])
+  const api = useMemo(() => ({ ...route, navigate }), [route, navigate])
   return <ViewContext.Provider value={api}>{children}</ViewContext.Provider>
 }
 

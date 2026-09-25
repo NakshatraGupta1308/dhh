@@ -1,6 +1,5 @@
 import { motion } from 'motion/react'
 import { useMemo, useState } from 'react'
-import { ArtistDetail } from '../components/artist-card/ArtistDetail'
 import { Footer } from '../components/layout/Footer'
 import { SiteHeader } from '../components/layout/SiteHeader'
 import { BeatBars } from '../components/producers/BeatBars'
@@ -100,7 +99,6 @@ export function ProducersPage() {
         </section>
       </main>
       <Footer />
-      <ArtistDetail />
     </div>
   )
 }

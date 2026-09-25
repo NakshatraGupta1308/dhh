@@ -1,4 +1,4 @@
-import type { Artist, Credit, Dataset, Label, Language, Region, Track } from '../types'
+import type { Artist, Credit, Dataset, Genre, Label, Language, Region, Track } from '../types'
 
 export interface IndexedDataset extends Dataset {
   artistById: Map<string, Artist>
@@ -6,6 +6,7 @@ export interface IndexedDataset extends Dataset {
   labelById: Map<string, Label>
   regionById: Map<string, Region>
   languageById: Map<string, Language>
+  genreById: Map<string, Genre>
   creditsByTrack: Map<string, Credit[]>
   creditsByArtist: Map<string, Credit[]>
   /** Tracks sorted oldest first. */
@@ -40,6 +41,7 @@ export function indexDataset(data: Dataset): IndexedDataset {
     labelById: new Map(data.labels.map((l) => [l.id, l])),
     regionById: new Map(data.regions.map((r) => [r.id, r])),
     languageById: new Map(data.languages.map((l) => [l.id, l])),
+    genreById: new Map(data.genres.map((g) => [g.id, g])),
     creditsByTrack: group(data.features, (f) => f.track_id),
     creditsByArtist: group(data.features, (f) => f.artist_id),
     timeline,

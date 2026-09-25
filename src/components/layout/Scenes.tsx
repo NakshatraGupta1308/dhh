@@ -1,22 +1,17 @@
 import { motion } from 'motion/react'
 import { useDhhData } from '../../hooks/useDhhData'
-import { useFilters } from '../../hooks/useFilters'
+import { useView } from '../../hooks/useView'
 import { SectionHeading } from './SectionHeading'
 
 export function Scenes() {
   const data = useDhhData()
-  const { set, clear } = useFilters()
-
-  const focus = (regionId: string) => {
-    clear()
-    set('regions', [regionId])
-    document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth' })
-  }
+  const { navigate } = useView()
+  const focus = (regionId: string) => navigate('scene', { id: regionId })
 
   return (
     <section id="scenes" className="mx-auto max-w-[1600px] px-4 py-24 sm:px-8">
       <SectionHeading kicker={`${data.regions.length} scenes, one colour each`} title="The Scenes">
-        Every city and state gets its own colour, used everywhere it appears. Pick a scene to replay the timeline through its lens.
+        Every city and state gets its own colour, used everywhere it appears. Open a scene to meet the artists and producers who run it.
       </SectionHeading>
       <div className="grid gap-px overflow-hidden rounded-[var(--radius-card)] border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
         {data.regions.map((r, i) => {
@@ -52,7 +47,7 @@ export function Scenes() {
                 <h3 className="font-display text-5xl uppercase leading-none transition-colors group-hover:text-bg">{r.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted transition-colors group-hover:text-bg/80">{r.description}</p>
                 <p className="mt-4 font-mono text-[0.65rem] uppercase tracking-[0.14em] opacity-0 transition-opacity group-hover:text-bg group-hover:opacity-100">
-                  Replay this scene on the timeline →
+                  Enter the {r.name} scene →
                 </p>
               </div>
             </motion.button>

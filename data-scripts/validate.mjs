@@ -13,6 +13,8 @@ const labels = load('labels')
 const regions = load('regions')
 const languages = load('languages')
 const features = load('features')
+const genres = load('genres')
+const slang = load('slang')
 
 const errors = []
 const fail = (msg) => errors.push(msg)
@@ -32,6 +34,8 @@ const trackById = indexById(tracks, 'tracks')
 const labelById = indexById(labels, 'labels')
 const regionById = indexById(regions, 'regions')
 const languageById = indexById(languages, 'languages')
+const genreById = indexById(genres, 'genres')
+indexById(slang, 'slang')
 
 const CONFIDENCE = new Set(['high', 'medium', 'low'])
 const ROLES = new Set(['main', 'feature', 'producer'])
@@ -76,6 +80,8 @@ for (const t of tracks) {
   }
   for (const l of t.languages) if (!languageById.has(l)) fail(`tracks: "${t.id}" unknown language "${l}"`)
   if (!CONFIDENCE.has(t.confidence)) fail(`tracks: "${t.id}" bad confidence`)
+  if (!Array.isArray(t.genres)) fail(`tracks: "${t.id}" genres must be an array`)
+  else for (const g of t.genres) if (!genreById.has(g)) fail(`tracks: "${t.id}" unknown genre "${g}"`)
 }
 
 const seenCredits = new Set()
@@ -91,8 +97,20 @@ for (const f of features) {
   }
 }
 
+for (const g of genres) {
+  if (!/^#[0-9A-Fa-f]{6}$/.test(g.color)) fail(`genres: "${g.id}" color must be #RRGGBB`)
+  if (!tracks.some((t) => t.genres?.includes(g.id))) fail(`genres: "${g.id}" has no tagged releases`)
+}
+
+const SLANG_CATEGORIES = new Set(['craft', 'culture', 'street', 'industry'])
+for (const s of slang) {
+  if (!SLANG_CATEGORIES.has(s.category)) fail(`slang: "${s.id}" bad category "${s.category}"`)
+  for (const a of s.related_artist_ids ?? []) if (!artistById.has(a)) fail(`slang: "${s.id}" unknown artist "${a}"`)
+  for (const t of s.related_track_ids ?? []) if (!trackById.has(t)) fail(`slang: "${s.id}" unknown track "${t}"`)
+}
+
 // House style: no em dashes anywhere in the dataset.
-for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features']) {
+for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang']) {
   const raw = fs.readFileSync(path.join(dataDir, `${name}.json`), 'utf8')
   if (raw.includes(String.fromCharCode(0x2014))) fail(`${name}: contains an em dash`)
 }
@@ -109,5 +127,5 @@ if (errors.length) {
 
 console.log(
   `Dataset OK: ${artists.length} artists, ${tracks.length} releases, ${labels.length} labels, ` +
-    `${regions.length} regions, ${features.length} credits.`,
+    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms.`,
 )

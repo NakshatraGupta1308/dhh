@@ -5,6 +5,8 @@ import labels from './labels.json'
 import regions from './regions.json'
 import languages from './languages.json'
 import features from './features.json'
+import genres from './genres.json'
+import slang from './slang.json'
 
 /**
  * The only place the UI learns where data comes from. Phase 1 reads bundled
@@ -17,6 +19,6 @@ export interface DhhRepository {
 
 export const staticRepository: DhhRepository = {
   async loadDataset() {
-    return { artists, tracks, labels, regions, languages, features } as Dataset
+    return { artists, tracks, labels, regions, languages, features, genres, slang } as Dataset
   },
 }

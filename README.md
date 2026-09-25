@@ -26,7 +26,11 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which tests, builds an
 - **Timeline (desktop)**: a horizontal track driven by vertical scroll. You can also drag it (with momentum), use a trackpad sideways, use the arrow keys, or scrub the minimap at the bottom. The minimap bars are stacked by scene colour. Busy years get more room and empty years shrink, so the layout never overlaps. A giant outline year in the background follows where you are.
 - **Timeline (mobile)**: a separate, touch-first design. It has a vertical spine that fills as you scroll, sticky year chips for jumping around, and a swipe-to-dismiss bottom sheet for filters.
 - **Filters**: scene, language, label or crew, and artist (with alias search). Values within a group are OR-ed and groups are AND-ed. Every option shows how many releases it would return.
-- **Artist view**: opens from the roster with a shared-layout expand, or slides in from anywhere else. It shows stats, a career arc chart (lead, feature and producer credits over the active span), the catalog grouped by year, collaborators and labels. It is linkable via `?artist=divine&release=kohinoor`, and Back or Escape closes it.
+- **Search**: the header search (or Ctrl K, or `/`) covers artists, producers, scenes, genres, slang terms, releases and pages. Arrow keys and Enter work, and every result opens its own page.
+- **Artist pages** (`?view=artist&id=divine`): stats, a career arc chart, the full discography grouped by year, collaborators, their sound (genres), scene and labels. Producers get a producer layout that leads with their productions and the artists they worked with. `&release=kohinoor` highlights one release, and old `?artist=` links still work.
+- **Scene pages** (`?view=scene&id=delhi`): the artists and producers who run the scene, every release with a scene member on it, the scene's sound, connected scenes and labels, plus a button to replay the scene on the timeline.
+- **Genre pages** (`?view=genre&id=boom-bap`, index at `?view=genres`): what the genre is, how it sounds, where it comes from, its pros ranked by releases, and every tagged song.
+- **Slang page** (`?view=slang`): a glossary of DHH slang and terms, filterable by street slang, rap craft, culture and industry, linked to the artists and songs behind them.
 - **Scenes and Roster**: region cards that replay the timeline filtered to that scene, and a grid of every artist.
 - **Producers page** (`?view=producers`): every beatmaker in the archive, ranked by production credits. Each one shows their hits and every artist they have worked with. All of it is derived from `features.json`, so a new producer credit shows up automatically.
 
@@ -40,13 +44,15 @@ src/
     filters/         Filter bar, shared filter panel, mobile sheet
     layout/          Header, hero, scenes, section headings, footer
     producers/       Producers page rows and the equaliser motif
+    search/          The search panel
     common/          Generated cover art, small shared bits
   data/              artists, tracks, labels, regions, languages, features (JSON)
                      repository.ts is the only place the UI learns where data comes from
   hooks/             Data, filter and selection providers, media and size hooks
   lib/               Pure logic: indexing, filtering, timeline layout, artist stats
   styles/            tokens.css (design tokens) and global.css
-  pages/             ExplorerPage and ProducersPage, switched by a tiny query-string router
+  pages/             Home, Producers, Artist, Scene, Genre, Genres and Slang pages, switched by a small
+                     query-string router (hooks/useView.tsx) that needs no server rewrites
 data-scripts/
   validate.mjs       Dataset integrity checks, run automatically before every build
 ```
@@ -58,11 +64,13 @@ The model follows the project spec, so each later phase adds to it instead of mi
 | File | Fields |
 | --- | --- |
 | `artists.json` | id, name, aliases, kind, region_id, languages, active_from, active_to, label_ids, image_url, bio, confidence |
-| `tracks.json` | id, title, artist_ids, release_date, date_precision, type, label_id, album_or_ep, languages, cover_art_url, external_links, lyrics, confidence, note |
+| `tracks.json` | id, title, artist_ids, release_date, date_precision, type, label_id, album_or_ep, languages, genres, cover_art_url, external_links, lyrics, confidence, note |
 | `labels.json` | id, name, kind (independent, major, collective), founded_year, roster |
 | `features.json` | track_id, artist_id, role (main, feature, producer) |
 | `regions.json` | id, name, description, color |
 | `languages.json` | id, name |
+| `genres.json` | id, name, aliases, color, tagline, description, sound, origins |
+| `slang.json` | id, term, aliases, category, meaning, example, related_artist_ids, related_track_ids |
 
 A few notes:
 
@@ -71,6 +79,7 @@ A few notes:
 - `confidence` (`high`, `medium`, `low`) flags entries that still need a second source. Low confidence releases are labelled in the artist view.
 - `lyrics`, `cover_art_url`, `image_url` and the Spotify and YouTube ids are nullable and ready for later phases. Until they are filled in, artwork is generated from the title and scene colour, and listening links open a platform search.
 - The region `color` is used everywhere that scene appears.
+- Genre tags on releases are editorial and many releases carry more than one. Genre pages rank their pros from these tags, so tagging a release updates the page automatically.
 
 ### Adding to the dataset
 

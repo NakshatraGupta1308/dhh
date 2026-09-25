@@ -45,6 +45,7 @@ export interface Track {
   label_id: string | null
   album_or_ep: string | null
   languages: string[]
+  genres: string[]
   cover_art_url: string | null
   external_links: { spotify: string | null; youtube: string | null }
   lyrics: string | null
@@ -66,6 +67,30 @@ export interface Credit {
   role: CreditRole
 }
 
+export interface Genre {
+  id: string
+  name: string
+  aliases: string[]
+  color: string
+  tagline: string
+  description: string
+  sound: string[]
+  origins: string
+}
+
+export type SlangCategory = 'craft' | 'culture' | 'street' | 'industry'
+
+export interface SlangTerm {
+  id: string
+  term: string
+  aliases: string[]
+  category: SlangCategory
+  meaning: string
+  example: string
+  related_artist_ids?: string[]
+  related_track_ids?: string[]
+}
+
 export interface Dataset {
   artists: Artist[]
   tracks: Track[]
@@ -73,4 +98,6 @@ export interface Dataset {
   regions: Region[]
   languages: Language[]
   features: Credit[]
+  genres: Genre[]
+  slang: SlangTerm[]
 }

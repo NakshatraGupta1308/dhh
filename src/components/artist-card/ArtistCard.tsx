@@ -6,11 +6,10 @@ import { GeneratedCover } from '../common/GeneratedCover'
 
 export function ArtistCard({ artist, index }: { artist: Artist; index: number }) {
   const data = useDhhData()
-  const { open, artistId } = useSelectedArtist()
+  const { open } = useSelectedArtist()
   const region = data.regionById.get(artist.region_id)
   const color = region?.color ?? '#ff3b30'
   const releases = (data.creditsByArtist.get(artist.id) ?? []).length
-  const isOpen = artistId === artist.id
 
   return (
     <motion.div
@@ -21,10 +20,9 @@ export function ArtistCard({ artist, index }: { artist: Artist; index: number })
     >
       <motion.button
         type="button"
-        layoutId={`artist-card-${artist.id}`}
-        onClick={() => open(artist.id, { origin: 'roster' })}
+        onClick={() => open(artist.id)}
         className="group relative flex aspect-[4/5] w-full flex-col justify-between overflow-hidden rounded-[var(--radius-card)] border border-line bg-surface p-4 text-left"
-        style={{ ['--scene' as string]: color, visibility: isOpen ? 'hidden' : 'visible' }}
+        style={{ ['--scene' as string]: color }}
         whileHover="hover"
         whileTap={{ scale: 0.98 }}
       >

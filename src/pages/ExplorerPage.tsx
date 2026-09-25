@@ -1,4 +1,3 @@
-import { ArtistDetail } from '../components/artist-card/ArtistDetail'
 import { Roster } from '../components/artist-card/Roster'
 import { Footer } from '../components/layout/Footer'
 import { Hero } from '../components/layout/Hero'
@@ -17,7 +16,6 @@ export function ExplorerPage() {
         <Roster />
       </main>
       <Footer />
-      <ArtistDetail />
     </div>
   )
 }
