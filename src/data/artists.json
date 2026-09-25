@@ -947,5 +947,42 @@
     "image_url": null,
     "bio": "Delhi rapper and one half of Rawal & Bharg. Switched from English to Hindi on the advice of Seedhe Maut's Calm, made the 2021 debut Sab Chahiye with producer Bharg, and has since become one of Delhi's most dependable features, from Ikka's Nishu to Tsumyoki's 'Ek Do Ek'. His 2025 mixtape Sherdil runs 17 tracks.",
     "confidence": "high"
+  },
+  {
+    "id": "tsumyoki",
+    "name": "Tsumyoki",
+    "aliases": [],
+    "kind": "rapper",
+    "region_id": "goa",
+    "languages": [
+      "en",
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Goa-born rapper, singer-songwriter and producer who broke through with 'White Tee' in 2019 and the hit 'Pink Blue' with Bharg. Produces most of his own records, moving between hip hop, R&B, pop, afrobeats and dancehall.",
+    "confidence": "high"
+  },
+  {
+    "id": "afkap",
+    "name": "AFKAP",
+    "aliases": [
+      "Afkap"
+    ],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2020,
+    "active_to": null,
+    "label_ids": [
+      "gully-gang"
+    ],
+    "image_url": null,
+    "bio": "Enigmatic Delhi artist on DIVINE's Gully Gang Records, with a mellow, introspective sound that stands apart on the roster. Returned in 2023 with the Karan Kanchan-produced 'Lagaav' and his debut EP Parat.",
+    "confidence": "medium"
   }
 ]

@@ -179,5 +179,20 @@
   {"track_id":"khudbakhud","artist_id":"rawal","role":"main"},
   {"track_id":"garam","artist_id":"rawal","role":"main"},
   {"track_id":"moohfatt","artist_id":"rawal","role":"main"},
-  {"track_id":"sherdil","artist_id":"rawal","role":"main"}
+  {"track_id":"sherdil","artist_id":"rawal","role":"main"},
+  {"track_id":"ek-do-ek","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"sherdil","artist_id":"afkap","role":"feature"},
+  {"track_id":"white-tee","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"daboij","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"way-too-messy","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"pink-blue","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"pink-blue","artist_id":"bharg","role":"main"},
+  {"track_id":"pink-blue","artist_id":"bharg","role":"producer"},
+  {"track_id":"a-message-from-the-moon","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"a-message-from-the-moon","artist_id":"tsumyoki","role":"producer"},
+  {"track_id":"a-message-from-the-moon","artist_id":"bharg","role":"producer"},
+  {"track_id":"afro-yoki","artist_id":"tsumyoki","role":"main"},
+  {"track_id":"lagaav","artist_id":"afkap","role":"main"},
+  {"track_id":"lagaav","artist_id":"karan-kanchan","role":"producer"},
+  {"track_id":"parat","artist_id":"afkap","role":"main"}
 ]

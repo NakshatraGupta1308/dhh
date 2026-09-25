@@ -66,6 +66,12 @@
     "color": "#84A98C"
   },
   {
+    "id": "goa",
+    "name": "Goa",
+    "description": "A small but distinct scene where rap meets R&B, afrobeats and Goa's own long musical history, a history that has nothing to do with anybody's vacation playlist.",
+    "color": "#B5179E"
+  },
+  {
     "id": "kashmir",
     "name": "Kashmir",
     "description": "Introspective, political rap from the valley, documenting life under conflict.",
