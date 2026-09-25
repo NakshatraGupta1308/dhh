@@ -579,5 +579,81 @@
     "image_url": null,
     "confidence": "low",
     "bio": "Long-running Dhanji collaborator, credited across Drive-In Cinema, Lost in AMD and the joint album Drive-in Cinema 2.1."
+  },
+  {
+    "id": "raga",
+    "name": "Raga",
+    "aliases": [],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi",
+      "bgc"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [
+      "def-jam-india"
+    ],
+    "image_url": null,
+    "bio": "Laxmi Nagar rapper who went from underground cult hero to one of North India's biggest rap names. Debuted with Rap Ka Mausam in 2019, signed exclusively to Def Jam India, and crossed over with the Haryanvi hit 'Kaleshi Chori'.",
+    "confidence": "high"
+  },
+  {
+    "id": "vichaar",
+    "name": "vichaar",
+    "aliases": [
+      "Vichaar",
+      "Abhin Pandita"
+    ],
+    "kind": "rapper",
+    "region_id": "dehradun",
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "active_from": 2022,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Dehradun MC and designer known for rapid-fire flows and art-directed visuals. Came to national attention on MTV Hustle 4, then broke out in 2025 when '3 DRAGS' from his VVVV EP went viral.",
+    "confidence": "high"
+  },
+  {
+    "id": "naam-sujal",
+    "name": "Naam Sujal",
+    "aliases": [
+      "Sujal Dupare"
+    ],
+    "kind": "rapper",
+    "region_id": "nagpur",
+    "languages": [
+      "hi",
+      "mr"
+    ],
+    "active_from": 2021,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Jaripatka rapper and producer who blends Hindi and Marathi, and was making his own beats as a teenager. MTV Hustle 4 made him a national name, and his 2026 mixtape Mamafication came out via Def Jam India.",
+    "confidence": "high"
+  },
+  {
+    "id": "prathamesh",
+    "name": "Prathamesh",
+    "aliases": [
+      "Prathamesh Raut"
+    ],
+    "kind": "rapper",
+    "region_id": "nagpur",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2022,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Nagpur rapper from the city's underground circuit, first noticed on Rohan Cariappa's One Minute Rap Challenge. Built a cult following with Naam Sujal on 'Dus Dus Peti' before Def Jam India introduced him with 'Mai Lagta Kaun?' in 2026.",
+    "confidence": "medium"
   }
 ]

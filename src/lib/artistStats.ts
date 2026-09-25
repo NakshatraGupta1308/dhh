@@ -28,8 +28,10 @@ export function artistCredits(data: IndexedDataset, artistId: string): ArtistCre
 /** Everyone who shares a credit with this artist, most frequent first. Seed of the phase 5 graph. */
 export function collaborators(data: IndexedDataset, artistId: string): Collaborator[] {
   const counts = new Map<string, number>()
-  for (const c of data.creditsByArtist.get(artistId) ?? []) {
-    const others = new Set((data.creditsByTrack.get(c.track_id) ?? []).map((o) => o.artist_id))
+  // One artist can hold several roles on a track, so count each shared track once.
+  const trackIds = new Set((data.creditsByArtist.get(artistId) ?? []).map((c) => c.track_id))
+  for (const trackId of trackIds) {
+    const others = new Set((data.creditsByTrack.get(trackId) ?? []).map((o) => o.artist_id))
     others.delete(artistId)
     for (const o of others) counts.set(o, (counts.get(o) ?? 0) + 1)
   }

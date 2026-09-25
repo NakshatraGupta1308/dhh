@@ -54,6 +54,18 @@
     "color": "#FFD166"
   },
   {
+    "id": "nagpur",
+    "name": "Nagpur",
+    "description": "Central India's rising hub. Hindi and Marathi bars out of Nagpur's moshpits, from a young crew who produce, shoot and perform for each other.",
+    "color": "#F28482"
+  },
+  {
+    "id": "dehradun",
+    "name": "Dehradun",
+    "description": "Rap from the hills of Uttarakhand's capital: rapid-fire Hindi and English flows with a design-first eye for visuals.",
+    "color": "#84A98C"
+  },
+  {
     "id": "kashmir",
     "name": "Kashmir",
     "description": "Introspective, political rap from the valley, documenting life under conflict.",

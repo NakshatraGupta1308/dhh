@@ -99,4 +99,9 @@ describe('artist stats', () => {
     const names = collaborators(data, 'sez-on-the-beat').map((c) => c.artist.id)
     expect(names).toEqual(expect.arrayContaining(['divine', 'naezy', 'prabh-deep', 'seedhe-maut']))
   })
+
+  it('counts a shared track once even when the artist holds two roles on it', () => {
+    const prathamesh = collaborators(data, 'naam-sujal').find((c) => c.artist.id === 'prathamesh')
+    expect(prathamesh?.shared).toBe(1)
+  })
 })

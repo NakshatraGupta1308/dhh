@@ -99,5 +99,14 @@
     "kind": "independent",
     "founded_year": null,
     "roster": []
+  },
+  {
+    "id": "def-jam-india",
+    "name": "Def Jam India",
+    "kind": "major",
+    "founded_year": null,
+    "roster": [
+      "raga"
+    ]
   }
 ]
