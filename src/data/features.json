@@ -167,5 +167,17 @@
   {"track_id":"paapi-drill-beat","artist_id":"sidhu-moose-wala","role":"main"},
   {"track_id":"aur-ek","artist_id":"kidshot","role":"main"},
   {"track_id":"that-girl","artist_id":"param","role":"main"},
-  {"track_id":"that-girl","artist_id":"manni-sandhu","role":"producer"}
+  {"track_id":"that-girl","artist_id":"manni-sandhu","role":"producer"},
+  {"track_id":"sab-chahiye","artist_id":"rawal","role":"main"},
+  {"track_id":"sab-chahiye","artist_id":"calm","role":"feature"},
+  {"track_id":"sab-chahiye","artist_id":"raga","role":"feature"},
+  {"track_id":"sab-chahiye","artist_id":"ikka","role":"feature"},
+  {"track_id":"nishu","artist_id":"rawal","role":"feature"},
+  {"track_id":"ek-do-ek","artist_id":"rawal","role":"main"},
+  {"track_id":"64-raw","artist_id":"rawal","role":"main"},
+  {"track_id":"sunehri-zindagi","artist_id":"rawal","role":"main"},
+  {"track_id":"khudbakhud","artist_id":"rawal","role":"main"},
+  {"track_id":"garam","artist_id":"rawal","role":"main"},
+  {"track_id":"moohfatt","artist_id":"rawal","role":"main"},
+  {"track_id":"sherdil","artist_id":"rawal","role":"main"}
 ]

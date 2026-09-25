@@ -743,7 +743,7 @@
     "active_to": null,
     "label_ids": [],
     "image_url": null,
-    "bio": "Self-taught Delhi producer and one half of Rawal & Bharg. Produced the duo's debut Sab Chahiye and appears on Ikka's Nishu.",
+    "bio": "Self-taught Delhi producer and one half of Rawal & Bharg. Produced the duo's debut Sab Chahiye and appears with Rawal on Ikka's Nishu.",
     "confidence": "high"
   },
   {
@@ -929,5 +929,23 @@
     "image_url": null,
     "bio": "Punjabi music producer behind Param's breakout 'That Girl', released under Collab Creations.",
     "confidence": "medium"
+  },
+  {
+    "id": "rawal",
+    "name": "Rawal",
+    "aliases": [
+      "Shivam Rawal"
+    ],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Delhi rapper and one half of Rawal & Bharg. Switched from English to Hindi on the advice of Seedhe Maut's Calm, made the 2021 debut Sab Chahiye with producer Bharg, and has since become one of Delhi's most dependable features, from Ikka's Nishu to Tsumyoki's 'Ek Do Ek'. His 2025 mixtape Sherdil runs 17 tracks.",
+    "confidence": "high"
   }
 ]
