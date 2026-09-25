@@ -875,5 +875,59 @@
     "image_url": null,
     "bio": "Nigerian-born, Delhi-based rapper who moved to India at 12 and raps in Hindi, Punjabi, Gujarati and Haryanvi. Broke out on DESI TRILL with 'The Intro' in 2024, and WAMP produces most of his records.",
     "confidence": "high"
+  },
+  {
+    "id": "kidshot",
+    "name": "Kidshot",
+    "aliases": [
+      "KIDSHOT"
+    ],
+    "kind": "rapper",
+    "region_id": "mumbai",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [
+      "mass-appeal-india"
+    ],
+    "image_url": null,
+    "bio": "Powai rapper known for his 'Chopper Flow', once clocked at 350 words a minute for a national record. Appeared briefly in Gully Boy, debuted with the EP Boht Kuch on Mass Appeal India in 2020, and went full UK drill on 'Aur Ek'.",
+    "confidence": "high"
+  },
+  {
+    "id": "param",
+    "name": "Param",
+    "aliases": [
+      "Paramjeet Kaur"
+    ],
+    "kind": "rapper",
+    "region_id": "punjab",
+    "languages": [
+      "pa"
+    ],
+    "active_from": 2025,
+    "active_to": null,
+    "label_ids": [
+      "collab-creations"
+    ],
+    "image_url": null,
+    "bio": "Moga teenager from Duneke village who discovered rap in Class 10. Her debut 'That Girl', rapped over a UK drill beat, made her the first Indian female artist to top Spotify's Global Viral 50 and earned her the nickname 'Lady Moosewala'.",
+    "confidence": "high"
+  },
+  {
+    "id": "manni-sandhu",
+    "name": "Manni Sandhu",
+    "aliases": [],
+    "kind": "producer",
+    "region_id": "diaspora",
+    "languages": [],
+    "active_from": 2025,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Punjabi music producer behind Param's breakout 'That Girl', released under Collab Creations.",
+    "confidence": "medium"
   }
 ]

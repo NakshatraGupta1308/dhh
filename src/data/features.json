@@ -160,5 +160,12 @@
   {"track_id":"silence","artist_id":"wamp","role":"producer"},
   {"track_id":"mudda","artist_id":"yung-sammy","role":"main"},
   {"track_id":"mudda","artist_id":"seedhe-maut","role":"feature"},
-  {"track_id":"mudda","artist_id":"wamp","role":"producer"}
+  {"track_id":"mudda","artist_id":"wamp","role":"producer"},
+  {"track_id":"boht-kuch","artist_id":"kidshot","role":"main"},
+  {"track_id":"moosedrilla","artist_id":"sidhu-moose-wala","role":"main"},
+  {"track_id":"moosedrilla","artist_id":"divine","role":"feature"},
+  {"track_id":"paapi-drill-beat","artist_id":"sidhu-moose-wala","role":"main"},
+  {"track_id":"aur-ek","artist_id":"kidshot","role":"main"},
+  {"track_id":"that-girl","artist_id":"param","role":"main"},
+  {"track_id":"that-girl","artist_id":"manni-sandhu","role":"producer"}
 ]

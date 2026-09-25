@@ -15,7 +15,8 @@
     "founded_year": 2019,
     "roster": [
       "divine",
-      "ikka"
+      "ikka",
+      "kidshot"
     ]
   },
   {
@@ -136,6 +137,15 @@
     "founded_year": null,
     "roster": [
       "yung-sammy"
+    ]
+  },
+  {
+    "id": "collab-creations",
+    "name": "Collab Creations",
+    "kind": "independent",
+    "founded_year": null,
+    "roster": [
+      "param"
     ]
   }
 ]

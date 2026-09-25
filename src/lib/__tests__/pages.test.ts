@@ -18,6 +18,7 @@ describe('search', () => {
   it('routes each kind to its own page', () => {
     expect(search(index, 'boom bap')[0]).toMatchObject({ kind: 'genre', view: 'genre', id: 'boom-bap' })
     expect(search(index, 'boombap')[0].id).toBe('boom-bap')
+    expect(search(index, 'uk drill')[0]).toMatchObject({ kind: 'genre', id: 'drill' })
     expect(search(index, 'nagpur')[0]).toMatchObject({ kind: 'scene', view: 'scene', id: 'nagpur' })
     expect(search(index, 'bantai').some((r) => r.kind === 'slang' && r.view === 'slang')).toBe(true)
     expect(search(index, 'sez on the beat')[0]).toMatchObject({ kind: 'producer', view: 'artist' })

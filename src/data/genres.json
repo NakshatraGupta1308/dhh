@@ -2,81 +2,165 @@
   {
     "id": "boom-bap",
     "name": "Boom Bap",
-    "aliases": ["boombap", "boom-bap", "90s rap"],
+    "aliases": [
+      "boombap",
+      "boom-bap",
+      "90s rap"
+    ],
     "color": "#D9A441",
     "tagline": "Hard drums, dusty samples, bars first.",
     "description": "Boom bap is the sample-based sound of 90s New York hip hop: a punchy kick (the boom) and a cracking snare (the bap), usually looped under chopped soul, jazz or funk samples. In DHH it became the language of the underground. Producers like Sez on the Beat built Delhi's Azadi-era sound on it, and Mumbai's first gully records rode it too, because a steady boom bap beat leaves all the room for the lyrics.",
-    "sound": ["Swung kick and snare patterns around 85 to 95 BPM", "Chopped samples from old records, including Bollywood and Indian classical", "Dense, rhyme-heavy verses with little auto-tune"],
+    "sound": [
+      "Swung kick and snare patterns around 85 to 95 BPM",
+      "Chopped samples from old records, including Bollywood and Indian classical",
+      "Dense, rhyme-heavy verses with little auto-tune"
+    ],
     "origins": "Grew out of 1990s New York and reached India through the internet-era underground in the early 2010s."
   },
   {
     "id": "trap",
     "name": "Trap",
-    "aliases": ["trap music", "808"],
+    "aliases": [
+      "trap music",
+      "808"
+    ],
     "color": "#9B5DE5",
     "tagline": "808s, hi-hat rolls, pure energy.",
     "description": "Trap came out of the American South and runs on booming 808 bass, rapid-fire hi-hat rolls and dark, sparse melodies. It is now the default sound of a lot of DHH, from MC STAN's emotional Pune records to Hanumankind's global hit 'Big Dawgs'. Indian producers often lace it with local samples, dhol hits or folk vocal chops.",
-    "sound": ["Long, sliding 808 bass lines", "Triplet hi-hats and snare rolls at around 130 to 150 BPM (half-time feel)", "Melodic hooks, ad-libs and flows that ride the pocket"],
+    "sound": [
+      "Long, sliding 808 bass lines",
+      "Triplet hi-hats and snare rolls at around 130 to 150 BPM (half-time feel)",
+      "Melodic hooks, ad-libs and flows that ride the pocket"
+    ],
     "origins": "Atlanta in the 2000s. In India it took over from the late 2010s as streaming and YouTube-first artists grew."
+  },
+  {
+    "id": "drill",
+    "name": "Drill",
+    "aliases": [
+      "uk drill",
+      "punjabi drill",
+      "hindi drill",
+      "chicago drill"
+    ],
+    "color": "#E63946",
+    "tagline": "Sliding 808s, skippy hats, cold menace.",
+    "description": "Drill started in Chicago in the early 2010s and was rebuilt in London as UK drill: sliding 808 bass, off-beat skippy hi-hats and dark, eerie melodies. Punjabi artists took to it first, most famously on Sidhu Moose Wala's Moosetape, which paired him with UK and Toronto drill names and gave DIVINE a verse on 'Moosedrilla'. Mumbai rappers like Kidshot followed with Hindi drill, and in 2025 Param's 'That Girl' took Punjabi drill to the top of Spotify's global viral chart.",
+    "sound": [
+      "Sliding, pitch-bending 808 bass lines",
+      "Skippy, off-beat hi-hats and sparse snares at around 140 BPM",
+      "Cold piano or string melodies under confrontational, rapid verses"
+    ],
+    "origins": "Chicago in the early 2010s, then London in the mid 2010s. It reached India through the Punjabi diaspora and UK collaborations."
   },
   {
     "id": "gully-rap",
     "name": "Gully Rap",
-    "aliases": ["gully", "street rap", "bombay rap", "mumbai rap"],
+    "aliases": [
+      "gully",
+      "street rap",
+      "bombay rap",
+      "mumbai rap"
+    ],
     "color": "#F4511E",
     "tagline": "Stories from the lanes of Bombay.",
     "description": "Gully rap is Mumbai's street storytelling tradition: raw Hindi and Bambaiya verses about life in the city's bastis and chawls, from Kurla to Andheri to Dharavi. It is less a single beat style than a movement, defined by honesty about where the artist comes from. DIVINE and Naezy's 'Mere Gully Mein' became its anthem, and the 2019 film Gully Boy took it to the whole country.",
-    "sound": ["Hindi and Bambaiya slang, often mixed with English", "Autobiographical verses about poverty, hustle and the city", "Beats that move from boom bap to trap to drill"],
+    "sound": [
+      "Hindi and Bambaiya slang, often mixed with English",
+      "Autobiographical verses about poverty, hustle and the city",
+      "Beats that move from boom bap to trap to drill"
+    ],
     "origins": "Mumbai in the early 2010s, spread through YouTube videos shot on the artists' own streets."
   },
   {
     "id": "punjabi-hip-hop",
     "name": "Punjabi Hip Hop",
-    "aliases": ["punjabi rap", "desi rap", "bhangra rap"],
+    "aliases": [
+      "punjabi rap",
+      "desi rap",
+      "bhangra rap"
+    ],
     "color": "#FFB703",
     "tagline": "Punjabi flows over dhol, drill and trap.",
     "description": "Punjabi hip hop mixes Punjabi-language rap and singing with hip hop production. It started with diaspora artists like Bohemia, exploded into the mainstream through Yo Yo Honey Singh, and now runs the global charts through Sidhu Moose Wala, Karan Aujla and AP Dhillon. The sound swings between bhangra-flavoured party records, folk storytelling and dark, drill-inspired bangers.",
-    "sound": ["Punjabi vocals, often half sung and half rapped", "Dhol, tumbi and folk melodies next to 808s", "Themes of pride, loyalty, village roots and the diaspora hustle"],
+    "sound": [
+      "Punjabi vocals, often half sung and half rapped",
+      "Dhol, tumbi and folk melodies next to 808s",
+      "Themes of pride, loyalty, village roots and the diaspora hustle"
+    ],
     "origins": "Punjabi diaspora communities in the UK, North America and Pakistan in the early 2000s."
   },
   {
     "id": "party-rap",
     "name": "Party Rap",
-    "aliases": ["bollywood rap", "pop rap", "party anthem", "club rap"],
+    "aliases": [
+      "bollywood rap",
+      "pop rap",
+      "party anthem",
+      "club rap"
+    ],
     "color": "#FF4FA3",
     "tagline": "Built for the dance floor and the film soundtrack.",
     "description": "Party rap is the most commercial corner of desi hip hop: catchy hooks, club-ready beats and verses written to be shouted along to. It is the sound that took rap into Bollywood, wedding playlists and chart tops, led by the Mafia Mundeer alumni Yo Yo Honey Singh and Badshah. Purists argue about it, but it opened the door for everyone else.",
-    "sound": ["Big, simple hooks and call-and-response chants", "EDM, bhangra and pop production", "Lyrics about nights out, style and celebration"],
+    "sound": [
+      "Big, simple hooks and call-and-response chants",
+      "EDM, bhangra and pop production",
+      "Lyrics about nights out, style and celebration"
+    ],
     "origins": "Punjabi and Hindi pop crossovers of the early 2010s, pushed by film soundtracks."
   },
   {
     "id": "conscious-rap",
     "name": "Conscious Rap",
-    "aliases": ["political rap", "protest rap", "socially conscious"],
+    "aliases": [
+      "political rap",
+      "protest rap",
+      "socially conscious"
+    ],
     "color": "#2EC4B6",
     "tagline": "Rap as testimony and protest.",
     "description": "Conscious rap uses the form to talk about caste, land, conflict, identity and injustice. In India it has produced some of the most powerful records in the scene, from Vedan's anti-caste anthem 'Voice of the Voiceless' to Arivu's 'Enjoy Enjaami' and the Kashmiri verses of Ahmer and Straight Outta Srinagar. It often draws on folk and oral traditions older than hip hop itself.",
-    "sound": ["Lyrics centred on social and political themes", "Regional languages and local idioms", "Production that ranges from sparse boom bap to folk instrumentation"],
+    "sound": [
+      "Lyrics centred on social and political themes",
+      "Regional languages and local idioms",
+      "Production that ranges from sparse boom bap to folk instrumentation"
+    ],
     "origins": "Rooted in American political hip hop, but in India shaped by local protest songs and poetry."
   },
   {
     "id": "folk-fusion",
     "name": "Folk Fusion",
-    "aliases": ["folk rap", "folk hip hop"],
+    "aliases": [
+      "folk rap",
+      "folk hip hop"
+    ],
     "color": "#8AC926",
     "tagline": "Old songs, new drums.",
     "description": "Folk fusion blends hip hop with India's folk forms: Tamil oppari, Bengali folk melodies, Punjabi storytelling and adivasi music. It is one of the most distinctly Indian sounds in the scene, because it brings sounds from before recorded music into rap. 'Enjoy Enjaami' became the genre's global calling card in 2021.",
-    "sound": ["Folk melodies, chants or instruments at the centre of the beat", "Rap verses around a traditional hook", "Stories tied to land, ancestry and community"],
+    "sound": [
+      "Folk melodies, chants or instruments at the centre of the beat",
+      "Rap verses around a traditional hook",
+      "Stories tied to land, ancestry and community"
+    ],
     "origins": "Grew independently in several regions as artists sampled or reworked the songs they grew up with."
   },
   {
     "id": "lyrical-rap",
     "name": "Lyrical Rap",
-    "aliases": ["lyricism", "technical rap", "wordplay", "bars"],
+    "aliases": [
+      "lyricism",
+      "technical rap",
+      "wordplay",
+      "bars"
+    ],
     "color": "#4CC9F0",
     "tagline": "Where the pen is the whole point.",
     "description": "Lyrical rap is what DHH fans mean when they talk about bars: dense multisyllabic rhymes, wordplay, double meanings and technical flows that reward repeat listens. Delhi is its stronghold, through KR$NA, Seedhe Maut, Ikka and Raga, but Ahmedabad, Dehradun and Nagpur have their own sharp pens in Siyaahi, vichaar and Naam Sujal. It is more an approach than a beat style, and it can sit on boom bap or trap.",
-    "sound": ["Multisyllabic rhyme schemes and internal rhymes", "Fast, switching flows and punchlines", "Hindi and English code-switching used as a writing tool"],
+    "sound": [
+      "Multisyllabic rhyme schemes and internal rhymes",
+      "Fast, switching flows and punchlines",
+      "Hindi and English code-switching used as a writing tool"
+    ],
     "origins": "The battle and cypher culture of the 2010s underground, then the diss-track era that followed."
   }
 ]
