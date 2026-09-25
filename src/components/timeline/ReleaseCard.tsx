@@ -23,7 +23,9 @@ export function ReleaseCard({ track, variant = 'compact' }: Props) {
   const { open } = useSelectedArtist()
   const { region, color } = useTrackScene(track)
   const credits = data.creditsByTrack.get(track.id) ?? []
-  const guests = credits.filter((c) => c.role !== 'main')
+  const guests = credits
+    .filter((c) => c.role !== 'main')
+    .sort((a, b) => (a.role === b.role ? 0 : a.role === 'feature' ? -1 : 1))
   const long = isLongForm(track.type)
   const coverSize = variant === 'compact' ? 84 : 76
 
@@ -84,7 +86,8 @@ export function ReleaseCard({ track, variant = 'compact' }: Props) {
             {guests.map((c, i) => (
               <span key={c.artist_id + c.role}>
                 {i > 0 && ', '}
-                {c.role === 'producer' ? 'prod. ' : 'feat. '}
+                {/* Only label the role when it changes, so it reads "feat. A, B, prod. C". */}
+                {(i === 0 || guests[i - 1].role !== c.role) && (c.role === 'producer' ? 'prod. ' : 'feat. ')}
                 <button
                   type="button"
                   onClick={() => open(c.artist_id, { trackId: track.id })}

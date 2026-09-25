@@ -13,10 +13,3 @@ export function distinctAliases(name: string, aliases: string[]): string[] {
   const norm = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '')
   return aliases.filter((a) => norm(a) !== norm(name))
 }
-
-export function initials(name: string): string {
-  const words = name.replace(/[^\p{L}\p{N}\s$]/gu, ' ').split(/\s+/).filter(Boolean)
-  if (words.length === 0) return '?'
-  if (words.length === 1) return words[0].slice(0, 2).toUpperCase()
-  return (words[0][0] + words[1][0]).toUpperCase()
-}

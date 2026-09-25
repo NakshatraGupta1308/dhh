@@ -1,4 +1,4 @@
-import { hash, initials } from '../../lib/hash'
+import { hash } from '../../lib/hash'
 
 interface Props {
   seed: string
@@ -8,18 +8,16 @@ interface Props {
   className?: string
   /** Albums, EPs and mixtapes get a record-sleeve treatment. */
   long?: boolean
-  showInitials?: boolean
 }
 
 /**
  * Deterministic typographic artwork. Used wherever real cover art or press
  * photos are not available, so the UI never shows an empty grey box.
  */
-export function GeneratedCover({ seed, label, color, size = 96, className, long, showInitials = true }: Props) {
+export function GeneratedCover({ seed, label, color, size = 96, className, long }: Props) {
   const h = hash(seed)
   const variant = h % 4
   const rot = (h >> 3) % 360
-  const text = initials(label)
   const id = `c${h.toString(36)}`
 
   return (
@@ -63,22 +61,6 @@ export function GeneratedCover({ seed, label, color, size = 96, className, long,
           </>
         )}
         {long && <circle cx="50" cy="50" r="30" fill="#0a0a0b" opacity="0.55" />}
-        {showInitials && (
-          <text
-            x={long ? 50 : 8}
-            y={long ? 61 : 92}
-            textAnchor={long ? 'middle' : 'start'}
-            fontFamily="Anton, Impact, sans-serif"
-            fontSize={long ? 28 : 32}
-            fill="#f4f1ea"
-            stroke="#0a0a0b"
-            strokeWidth="5"
-            strokeLinejoin="round"
-            paintOrder="stroke"
-          >
-            {text}
-          </text>
-        )}
       </g>
     </svg>
   )

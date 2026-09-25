@@ -49,7 +49,7 @@ export function ArtistCard({ artist, index }: { artist: Artist; index: number })
           {artist.image_url ? (
             <img src={artist.image_url} alt="" className="size-28 rounded-full object-cover" />
           ) : (
-            <GeneratedCover seed={artist.id} label={artist.name} color={color} size={112} className="rounded-full" showInitials={false} />
+            <GeneratedCover seed={artist.id} label={artist.name} color={color} size={112} className="rounded-full" />
           )}
         </div>
         <div className="relative">
