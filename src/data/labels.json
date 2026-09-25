@@ -14,7 +14,8 @@
     "kind": "independent",
     "founded_year": 2019,
     "roster": [
-      "divine"
+      "divine",
+      "ikka"
     ]
   },
   {
@@ -35,7 +36,8 @@
     "founded_year": null,
     "roster": [
       "raftaar",
-      "krsna"
+      "krsna",
+      "ikka"
     ]
   },
   {
@@ -83,7 +85,8 @@
     "roster": [
       "honey-singh",
       "badshah",
-      "raftaar"
+      "raftaar",
+      "ikka"
     ]
   },
   {
@@ -108,5 +111,12 @@
     "roster": [
       "raga"
     ]
+  },
+  {
+    "id": "t-series",
+    "name": "T-Series",
+    "kind": "major",
+    "founded_year": 1983,
+    "roster": []
   }
 ]

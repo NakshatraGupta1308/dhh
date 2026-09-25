@@ -113,5 +113,17 @@
   {"track_id":"vvvv-vol-2","artist_id":"vichaar","role":"main"},
   {"track_id":"mai-lagta-kaun","artist_id":"prathamesh","role":"main"},
   {"track_id":"filam","artist_id":"raga","role":"main"},
-  {"track_id":"filam","artist_id":"siyaahi","role":"feature"}
+  {"track_id":"filam","artist_id":"siyaahi","role":"feature"},
+  {"track_id":"midtown-madness","artist_id":"ikka","role":"feature"},
+  {"track_id":"in-da-club","artist_id":"ikka","role":"main"},
+  {"track_id":"i-ikka","artist_id":"ikka","role":"main"},
+  {"track_id":"i-ikka","artist_id":"divine","role":"feature"},
+  {"track_id":"nishu","artist_id":"ikka","role":"main"},
+  {"track_id":"nishu","artist_id":"seedhe-maut","role":"feature"},
+  {"track_id":"nishu","artist_id":"raga","role":"feature"},
+  {"track_id":"nishu","artist_id":"raftaar","role":"feature"},
+  {"track_id":"nishu","artist_id":"badshah","role":"feature"},
+  {"track_id":"nostradamus","artist_id":"ikka","role":"main"},
+  {"track_id":"only-love-gets-reply","artist_id":"ikka","role":"main"},
+  {"track_id":"only-love-gets-reply","artist_id":"badshah","role":"feature"}
 ]
