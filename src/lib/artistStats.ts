@@ -51,3 +51,32 @@ export function releasesPerYear(credits: ArtistCredit[]): Map<number, ArtistCred
   }
   return map
 }
+
+export interface ProducerProfile {
+  artist: Artist
+  /** Releases they produced, newest first. */
+  productions: Track[]
+  /** Releases they led themselves, newest first. */
+  ownReleases: Track[]
+  collaborators: Collaborator[]
+}
+
+/**
+ * Everyone who makes beats: artists whose kind is producer, plus anyone
+ * holding at least one producer credit. Busiest producers come first.
+ */
+export function producerProfiles(data: IndexedDataset): ProducerProfile[] {
+  const newestFirst = (a: Track, b: Track) => b.release_date.localeCompare(a.release_date)
+  return data.artists
+    .filter((a) => a.kind === 'producer' || (data.creditsByArtist.get(a.id) ?? []).some((c) => c.role === 'producer'))
+    .map((artist) => {
+      const credits = artistCredits(data, artist.id)
+      return {
+        artist,
+        productions: credits.filter((c) => c.roles.includes('producer')).map((c) => c.track).sort(newestFirst),
+        ownReleases: credits.filter((c) => c.roles.includes('main') && !c.roles.includes('producer')).map((c) => c.track).sort(newestFirst),
+        collaborators: collaborators(data, artist.id),
+      }
+    })
+    .sort((a, b) => b.productions.length - a.productions.length || b.collaborators.length - a.collaborators.length || a.artist.name.localeCompare(b.artist.name))
+}

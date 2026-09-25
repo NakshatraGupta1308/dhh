@@ -8,6 +8,12 @@ export function hash(input: string): number {
   return h >>> 0
 }
 
+/** Aliases worth showing: drops ones that only differ from the name by case or punctuation. */
+export function distinctAliases(name: string, aliases: string[]): string[] {
+  const norm = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '')
+  return aliases.filter((a) => norm(a) !== norm(name))
+}
+
 export function initials(name: string): string {
   const words = name.replace(/[^\p{L}\p{N}\s$]/gu, ' ').split(/\s+/).filter(Boolean)
   if (words.length === 0) return '?'

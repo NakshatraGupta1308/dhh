@@ -122,7 +122,8 @@
     "active_from": 2015,
     "active_to": null,
     "label_ids": [
-      "azadi-records"
+      "azadi-records",
+      "dl91"
     ],
     "image_url": null,
     "confidence": "high",
@@ -680,5 +681,175 @@
     "image_url": null,
     "bio": "Delhi rapper and lyricist, a childhood friend of Raftaar and Lil Golu and an original Mafia Mundeer member. A storyteller first, his albums I, Nishu and Only Love Gets Reply made him one of the most respected pens in Delhi hip hop.",
     "confidence": "high"
+  },
+  {
+    "id": "karan-kanchan",
+    "name": "Karan Kanchan",
+    "aliases": [],
+    "kind": "producer",
+    "region_id": "mumbai",
+    "languages": [],
+    "active_from": 2020,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Mumbai trap and bass producer behind some of DIVINE's biggest records, including 'Satya' and 'Baazigar', with credits for Pusha T, Vince Staples, Russ and Armani White.",
+    "confidence": "high"
+  },
+  {
+    "id": "phenom",
+    "name": "Phenom",
+    "aliases": [
+      "Pinaki Rattan"
+    ],
+    "kind": "producer",
+    "region_id": "delhi",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2018,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "New Delhi-born producer and rapper, one of the early names in Indian hip hop. Made 'Kaam 25' and 'Gandhi Money' for DIVINE, and brought baile funk into Indian rap on 'Mirchi'.",
+    "confidence": "high"
+  },
+  {
+    "id": "wamp",
+    "name": "WAMP",
+    "aliases": [
+      "Wamp"
+    ],
+    "kind": "producer",
+    "region_id": "delhi",
+    "languages": [],
+    "active_from": 2023,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Producer behind Raga's 'GTA NCR' and a run of records for YUNG SAMMY, including 'MUDDA' with Seedhe Maut.",
+    "confidence": "low"
+  },
+  {
+    "id": "bharg",
+    "name": "Bharg",
+    "aliases": [
+      "Bharg Kale"
+    ],
+    "kind": "producer",
+    "region_id": "delhi",
+    "languages": [],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Self-taught Delhi producer and one half of Rawal & Bharg. Produced the duo's debut Sab Chahiye and appears on Ikka's Nishu.",
+    "confidence": "high"
+  },
+  {
+    "id": "umair",
+    "name": "Umair",
+    "aliases": [
+      "Muhammad Umair Tahir"
+    ],
+    "kind": "producer",
+    "region_id": "diaspora",
+    "languages": [],
+    "active_from": 2016,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Karachi producer, born in 2003, working across the border with Young Stunners, Raftaar, Faris Shafi, KR$NA and Seedhe Maut. Produced 'Hola Amigo'.",
+    "confidence": "high"
+  },
+  {
+    "id": "30key",
+    "name": "30KEY!",
+    "aliases": [
+      "30Key"
+    ],
+    "kind": "producer",
+    "region_id": "kashmir",
+    "languages": [],
+    "active_from": 2021,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Producer from the Kashmir valley and the sound behind Straight Outta Srinagar, reshaping Koshur hip hop. Signed a publishing deal with PopIndia in 2026.",
+    "confidence": "high"
+  },
+  {
+    "id": "straight-outta-srinagar",
+    "name": "Straight Outta Srinagar",
+    "aliases": [
+      "SOS",
+      "Tufail Nazir",
+      "Aatanki"
+    ],
+    "kind": "group",
+    "region_id": "kashmir",
+    "languages": [
+      "ks",
+      "hi",
+      "ur"
+    ],
+    "active_from": 2020,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Srinagar duo of Tufail Nazir and Syed Arsalan (Aatanki), formed in 2020. Rap in Kashmiri and Hindi about life in the valley, most often over 30KEY! beats.",
+    "confidence": "high"
+  },
+  {
+    "id": "memax",
+    "name": "MEMAX",
+    "aliases": [
+      "Memax"
+    ],
+    "kind": "producer",
+    "region_id": "mumbai",
+    "languages": [],
+    "active_from": 2021,
+    "active_to": null,
+    "label_ids": [
+      "bantai-records"
+    ],
+    "image_url": null,
+    "bio": "Bantai Records producer and Emiway Bantai's go-to beatmaker on recent records like 'Those Dayz' and 'Bus Tu'.",
+    "confidence": "medium"
+  },
+  {
+    "id": "calm",
+    "name": "Calm",
+    "aliases": [
+      "Siddhant Sharma"
+    ],
+    "kind": "producer",
+    "region_id": "delhi",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2015,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "One half of Seedhe Maut and the duo's in-house producer. Helmed most of the beats on Lunch Break.",
+    "confidence": "high"
+  },
+  {
+    "id": "hurricane",
+    "name": "Hurricane",
+    "aliases": [
+      "hrcnszn"
+    ],
+    "kind": "producer",
+    "region_id": "delhi",
+    "languages": [],
+    "active_from": 2025,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "DL91 Era producer whose genre-bending beats, full of sped-up vocal chops and Indian classical samples, drive the 30-track DL91 FM tape.",
+    "confidence": "medium"
   }
 ]

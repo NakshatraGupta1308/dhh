@@ -46,7 +46,8 @@
     "kind": "independent",
     "founded_year": null,
     "roster": [
-      "emiway-bantai"
+      "emiway-bantai",
+      "memax"
     ]
   },
   {
@@ -118,5 +119,14 @@
     "kind": "major",
     "founded_year": 1983,
     "roster": []
+  },
+  {
+    "id": "dl91",
+    "name": "DL91 Era",
+    "kind": "independent",
+    "founded_year": 2024,
+    "roster": [
+      "seedhe-maut"
+    ]
   }
 ]

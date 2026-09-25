@@ -28,6 +28,7 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which tests, builds an
 - **Filters**: scene, language, label or crew, and artist (with alias search). Values within a group are OR-ed and groups are AND-ed. Every option shows how many releases it would return.
 - **Artist view**: opens from the roster with a shared-layout expand, or slides in from anywhere else. It shows stats, a career arc chart (lead, feature and producer credits over the active span), the catalog grouped by year, collaborators and labels. It is linkable via `?artist=divine&release=kohinoor`, and Back or Escape closes it.
 - **Scenes and Roster**: region cards that replay the timeline filtered to that scene, and a grid of every artist.
+- **Producers page** (`?view=producers`): every beatmaker in the archive, ranked by production credits. Each one shows their hits and every artist they have worked with. All of it is derived from `features.json`, so a new producer credit shows up automatically.
 
 ## Project structure
 
@@ -38,13 +39,14 @@ src/
     artist-card/     Roster cards, artist detail view, career arc chart
     filters/         Filter bar, shared filter panel, mobile sheet
     layout/          Header, hero, scenes, section headings, footer
+    producers/       Producers page rows and the equaliser motif
     common/          Generated cover art, small shared bits
   data/              artists, tracks, labels, regions, languages, features (JSON)
                      repository.ts is the only place the UI learns where data comes from
   hooks/             Data, filter and selection providers, media and size hooks
   lib/               Pure logic: indexing, filtering, timeline layout, artist stats
   styles/            tokens.css (design tokens) and global.css
-  pages/             ExplorerPage composes the sections
+  pages/             ExplorerPage and ProducersPage, switched by a tiny query-string router
 data-scripts/
   validate.mjs       Dataset integrity checks, run automatically before every build
 ```
@@ -77,7 +79,7 @@ A few notes:
 3. Label rosters and artist `label_ids` must mirror each other.
 4. Run `npm run validate-data`. It checks ids, references, credits, rosters, date formats and house style, and the build refuses to run if anything is off.
 
-The current seed is a hand-built first pass: 36 artists, 87 releases, 13 labels and crews, and 13 scenes. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
+The current seed is a hand-built first pass: 46 artists, 96 releases, 14 labels and crews, and 13 scenes. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
 
 ## Swapping the data source
 

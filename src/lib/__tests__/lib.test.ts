@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { staticRepository } from '../../data/repository'
-import { artistCredits, collaborators } from '../artistStats'
+import { artistCredits, collaborators, producerProfiles } from '../artistStats'
 import { EMPTY_FILTERS, filterTracks } from '../filters'
 import { formatReleaseDate, indexDataset } from '../indexDataset'
 import { DEFAULT_LAYOUT, layoutTimeline } from '../timelineLayout'
@@ -85,6 +85,24 @@ describe('layoutTimeline', () => {
     const empty = layout.years.filter((y) => y.count === 0)
     expect(empty.length).toBeGreaterThan(0)
     for (const y of empty) expect(y.width).toBe(DEFAULT_LAYOUT.emptyYearWidth)
+  })
+})
+
+describe('producer profiles', () => {
+  const profiles = producerProfiles(data)
+
+  it('includes producers and anyone with a producer credit, busiest first', () => {
+    const ids = profiles.map((p) => p.artist.id)
+    expect(ids).toEqual(expect.arrayContaining(['sez-on-the-beat', 'karan-kanchan', 'naam-sujal']))
+    for (let i = 1; i < profiles.length; i++) {
+      expect(profiles[i - 1].productions.length).toBeGreaterThanOrEqual(profiles[i].productions.length)
+    }
+  })
+
+  it('lists hits and the artists they worked with', () => {
+    const umair = profiles.find((p) => p.artist.id === 'umair')!
+    expect(umair.productions.map((t) => t.id)).toEqual(['hola-amigo'])
+    expect(umair.collaborators.map((c) => c.artist.id).sort()).toEqual(['krsna', 'seedhe-maut'])
   })
 })
 

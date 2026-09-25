@@ -42,5 +42,9 @@
   {
     "id": "mr",
     "name": "Marathi"
+  },
+  {
+    "id": "ks",
+    "name": "Kashmiri"
   }
 ]

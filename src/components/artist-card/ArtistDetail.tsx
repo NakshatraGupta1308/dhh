@@ -6,6 +6,7 @@ import { artistCredits, collaborators } from '../../lib/artistStats'
 import { formatReleaseDate, trackYear } from '../../lib/indexDataset'
 import { isLongForm, listenLinks, RELEASE_TYPE_LABEL, ROLE_LABEL } from '../../lib/labels'
 import type { Artist } from '../../types'
+import { distinctAliases } from '../../lib/hash'
 import { GeneratedCover } from '../common/GeneratedCover'
 import { CareerArc } from './CareerArc'
 
@@ -55,7 +56,9 @@ function ArtistBody({ artist }: { artist: Artist }) {
             {artist.name}
           </motion.span>
         </h2>
-        {artist.aliases.length > 0 && <p className="mt-3 text-sm text-muted">Also known as {artist.aliases.join(', ')}</p>}
+        {distinctAliases(artist.name, artist.aliases).length > 0 && (
+          <p className="mt-3 text-sm text-muted">Also known as {distinctAliases(artist.name, artist.aliases).join(', ')}</p>
+        )}
         <motion.div
           className="mt-8 grid grid-cols-4 gap-4 border-t border-line pt-5"
           initial={{ opacity: 0, y: 12 }}
