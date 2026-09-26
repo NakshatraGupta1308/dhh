@@ -696,5 +696,69 @@
         "note": null
       }
     ]
+  },
+  {
+    "id": "talha-anjum-vs-naezy",
+    "title": "Talha Anjum vs Naezy",
+    "tagline": "Two words in an interview, three diss tracks in a week.",
+    "years": "2024",
+    "status": "cold",
+    "heat": 3,
+    "sides": [
+      {
+        "name": "Talha Anjum",
+        "artist_id": "talha-anjum"
+      },
+      {
+        "name": "Naezy",
+        "artist_id": "naezy"
+      }
+    ],
+    "summary": "A throwaway interview answer turned into a cross-border exchange. Talha Anjum answered with 'Kaun Talha', and Naezy fired back twice within a week.",
+    "origin": "In 2024 Naezy was asked in an interview about possible collaborations with Pakistani artists, including Talha Anjum. He replied that he did not know who Talha was, and 'Talha kaun?' spread quickly online.",
+    "rounds": [
+      {
+        "date": "2024-06",
+        "precision": "month",
+        "by": null,
+        "at": [],
+        "title": "'Talha kaun?'",
+        "track_id": null,
+        "note": "Naezy says in an interview that he does not know Talha Anjum."
+      },
+      {
+        "date": "2024-06-09",
+        "precision": "day",
+        "by": 0,
+        "at": [
+          1
+        ],
+        "title": "Kaun Talha",
+        "track_id": "kaun-talha",
+        "note": "A four and a half minute diss over an Umair beat that opens on a nursery rhyme sample."
+      },
+      {
+        "date": "2024-06-10",
+        "precision": "day",
+        "by": 1,
+        "at": [
+          0
+        ],
+        "title": "Kya Bey Shaane?",
+        "track_id": "kya-bey-shaane",
+        "note": "Naezy's reply, out the very next day."
+      },
+      {
+        "date": "2024-06-16",
+        "precision": "day",
+        "by": 1,
+        "at": [
+          0
+        ],
+        "title": "Napaak",
+        "track_id": "napaak",
+        "note": "A second reply six days later."
+      }
+    ]
   }
 ]

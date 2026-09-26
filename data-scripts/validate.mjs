@@ -179,8 +179,23 @@ for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'feat
   if (raw.includes(String.fromCharCode(0x2014))) fail(`${name}: contains an em dash`)
 }
 
+// Duos list their members, who are artists in their own right.
+const duoMembers = new Set()
 for (const a of artists) {
-  if (!features.some((f) => f.artist_id === a.id)) fail(`artists: "${a.id}" has no credits`)
+  if (a.kind === 'duo') {
+    if (!Array.isArray(a.members) || a.members.length < 2) fail(`artists: duo "${a.id}" needs at least two members`)
+    for (const m of a.members ?? []) {
+      const member = artistById.get(m)
+      if (!member) fail(`artists: duo "${a.id}" unknown member "${m}"`)
+      else if (member.kind === 'duo') fail(`artists: duo "${a.id}" member "${m}" is itself a duo`)
+      duoMembers.add(m)
+    }
+  } else if (a.members !== undefined) fail(`artists: only duos list members ("${a.id}")`)
+}
+
+// Everyone needs a credit, except duo members whose work so far is all with their duo.
+for (const a of artists) {
+  if (!features.some((f) => f.artist_id === a.id) && !duoMembers.has(a.id)) fail(`artists: "${a.id}" has no credits`)
 }
 
 if (errors.length) {

@@ -8,6 +8,7 @@ import { SearchProvider } from './hooks/useSearch'
 import { useView, ViewProvider } from './hooks/useView'
 import { ArtistPage } from './pages/ArtistPage'
 import { BeefPage } from './pages/BeefPage'
+import { DuosPage } from './pages/DuosPage'
 import { HustlePage } from './pages/HustlePage'
 import { ExplorerPage } from './pages/ExplorerPage'
 import { GenrePage } from './pages/GenrePage'
@@ -42,6 +43,8 @@ function CurrentPage() {
       return <ListenPage />
     case 'beef':
       return <BeefPage />
+    case 'duos':
+      return <DuosPage />
     case 'hustle':
       return <HustlePage />
     case 'producers':

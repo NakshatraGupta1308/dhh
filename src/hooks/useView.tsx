@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 
-export type View = 'home' | 'producers' | 'artist' | 'scene' | 'genre' | 'genres' | 'slang' | 'listen' | 'beef' | 'hustle'
+export type View = 'home' | 'producers' | 'artist' | 'scene' | 'genre' | 'genres' | 'slang' | 'listen' | 'beef' | 'hustle' | 'duos'
 
 export interface Route {
   view: View
@@ -21,7 +21,7 @@ interface ViewApi extends Route {
   navigate: (view: View, opts?: NavigateOptions) => void
 }
 
-const VIEWS: View[] = ['home', 'producers', 'artist', 'scene', 'genre', 'genres', 'slang', 'listen', 'beef', 'hustle']
+const VIEWS: View[] = ['home', 'producers', 'artist', 'scene', 'genre', 'genres', 'slang', 'listen', 'beef', 'hustle', 'duos']
 const ViewContext = createContext<ViewApi | null>(null)
 
 function readRoute(): Route {

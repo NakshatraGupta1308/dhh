@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { staticRepository } from '../../data/repository'
 import { indexDataset } from '../indexDataset'
 import { artistGenres, genreProfile, sceneProfile } from '../profiles'
+import { artistCredits } from '../artistStats'
+import { duosOf, isDuo } from '../duos'
 import { hustleRoles } from '../hustle'
 import { buildSearchIndex, search } from '../search'
 
@@ -35,7 +37,8 @@ describe('search', () => {
 describe('scene profiles', () => {
   it('splits artists and producers and lists scene releases', () => {
     const delhi = sceneProfile(data, 'delhi')!
-    expect(delhi.artists.map((a) => a.id)).toContain('seedhe-maut')
+    expect(delhi.artists.map((a) => a.id)).toContain('encore-abj')
+    expect(delhi.duos.map((a) => a.id)).toEqual(['seedhe-maut'])
     expect(delhi.producers.map((a) => a.id)).toContain('sez-on-the-beat')
     expect(delhi.artists.every((a) => a.kind !== 'producer')).toBe(true)
     expect(delhi.releases.some((t) => t.id === 'bayaan')).toBe(true)
@@ -131,3 +134,28 @@ describe('mtv hustle', () => {
     expect(search(index, 'lashcurry').some((r) => r.kind === 'hustle' && r.id === '4')).toBe(true)
   })
 })
+
+describe('duos', () => {
+  it('lists members who keep their own solo pages', () => {
+    const duos = data.artists.filter(isDuo)
+    expect(duos.map((d) => d.id).sort()).toEqual(['hiphop-tamizha', 'parv-x-sicklot', 'seedhe-maut', 'straight-outta-srinagar', 'young-stunners'])
+    expect(duosOf(data, 'talha-anjum').map((d) => d.id)).toEqual(['young-stunners'])
+    // Duo songs stay on the duo, solo songs on the member.
+    const talha = artistCredits(data, 'talha-anjum').map((c) => c.track.id)
+    expect(talha).toContain('kaun-talha')
+    expect(talha).not.toContain('rebirth')
+    expect(artistCredits(data, 'young-stunners').map((c) => c.track.id)).toContain('rebirth')
+  })
+
+  it('searches duos as their own kind', () => {
+    expect(search(index, 'young stunners')[0]).toMatchObject({ kind: 'duo', view: 'duos', id: 'young-stunners' })
+    expect(search(index, 'encore abj')[0].id).toBe('encore-abj')
+    expect(search(index, 'agyakaari')[0].id).toBe('parv-x-sicklot')
+  })
+
+  it('tracks Talha Anjum vs Naezy', () => {
+    const beef = data.beefs.find((b) => b.id === 'talha-anjum-vs-naezy')!
+    expect(beef.rounds.filter((r) => r.by !== null).map((r) => r.track_id)).toEqual(['kaun-talha', 'kya-bey-shaane', 'napaak'])
+  })
+})
+

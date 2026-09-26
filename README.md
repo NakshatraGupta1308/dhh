@@ -32,6 +32,7 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which tests, builds an
 - **Genre pages** (`?view=genre&id=boom-bap`, index at `?view=genres`): what the genre is, how it sounds, where it comes from, its pros ranked by releases, and every tagged song.
 - **Listening room** (`?view=listen`): hand-picked songs from featured artists, played through the official YouTube embed in a dock that stays at the bottom while you browse, with a queue, shuffle, seeking, a bigger video toggle and auto-skip for videos that cannot be embedded. Artist pages with playable songs get a Play button. Songs live in `src/data/listening.json`.
 - **Beef** (`?view=beef`, one page per beef at `?view=beef&id=seedhe-maut-vs-sos`): famous feuds told round by round on a split timeline, with who fired at whom, dates, status (ongoing, simmering, gone cold), a heat rating, a tally of shots fired and links to the diss tracks in the archive. Multi-front beefs can have up to four sides. Artists involved get a Beefs box on their page. Beefs live in `src/data/beefs.json`.
+- **Duos** (`?view=duos`, one page per duo at `?view=duos&id=young-stunners`): rap pairs such as Seedhe Maut, Young Stunners, Straight Outta Srinagar, Parv x SickLot and Hiphop Tamizha, each with its members and the songs they made together. Duos are kept out of the roster; each member has their own artist page for solo releases and features, with a link back to the duo. Duos are artists with `kind: "duo"` and a `members` list.
 - **MTV Hustle** (`?view=hustle`, one page per season at `?view=hustle&id=3`): the rap reality show from 2019 onward. The index covers how the show works (auditions, squads, weekly challenges, the danger zone, the finale and the OG Hustler award), a season by season table and the Tamil spin-off. Each season page covers the full Wikipedia record: judges, squad bosses and hosts, a results podium, every contestant with real name, squad, placing and the episode they went out in, the squads, squad and performer of the week, the week by week results grid, a collapsible breakdown of every week (themes, scores, danger zone, battles and eliminations) and every guest judge and guest appearance. Artists who took part get an MTV Hustle box on their page. The show lives in `src/data/hustle.json`.
 - **Slang page** (`?view=slang`): a glossary of DHH slang and terms, filterable by street slang, rap craft, culture and industry, linked to the artists and songs behind them.
 - **Scenes and Roster**: region cards that replay the timeline filtered to that scene, and a grid of every artist.
@@ -66,7 +67,7 @@ The model follows the project spec, so each later phase adds to it instead of mi
 
 | File | Fields |
 | --- | --- |
-| `artists.json` | id, name, aliases, kind, region_id, languages, active_from, active_to, label_ids, image_url, bio, confidence |
+| `artists.json` | id, name, aliases, kind (rapper, group, duo, producer, singer), members (duos only), region_id, languages, active_from, active_to, label_ids, image_url, bio, confidence |
 | `tracks.json` | id, title, artist_ids, release_date, date_precision, type, label_id, album_or_ep, languages, genres, cover_art_url, external_links, lyrics, confidence, note |
 | `labels.json` | id, name, kind (independent, major, collective), founded_year, roster |
 | `features.json` | track_id, artist_id, role (main, feature, producer) |
@@ -94,7 +95,7 @@ A few notes:
 3. Label rosters and artist `label_ids` must mirror each other.
 4. Run `npm run validate-data`. It checks ids, references, credits, rosters, date formats and house style, and the build refuses to run if anything is off.
 
-The current seed is a hand-built first pass: 68 artists, 184 releases, 17 labels and crews, and 18 scenes, plus 44 playable songs, 8 beefs and 5 seasons of MTV Hustle. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
+The current seed is a hand-built first pass: 83 artists (including 5 duos), 212 releases, 17 labels and crews, and 18 scenes, plus 44 playable songs, 9 beefs and 5 seasons of MTV Hustle. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
 
 ## Swapping the data source
 

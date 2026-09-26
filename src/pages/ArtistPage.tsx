@@ -11,10 +11,12 @@ import { artistCredits, collaborators } from '../lib/artistStats'
 import { distinctAliases } from '../lib/hash'
 import { trackYear } from '../lib/indexDataset'
 import { artistGenres } from '../lib/profiles'
+import { duosOf } from '../lib/duos'
 import { hustleRoles } from '../lib/hustle'
+import { DuoDetail } from './DuosPage'
 import type { Artist } from '../types'
 
-const KIND_LABEL: Record<Artist['kind'], string> = { rapper: 'Rapper', group: 'Group', producer: 'Producer', singer: 'Singer' }
+const KIND_LABEL: Record<Artist['kind'], string> = { rapper: 'Rapper', group: 'Group', duo: 'Duo', producer: 'Producer', singer: 'Singer' }
 
 function ArtistView({ artist }: { artist: Artist }) {
   const data = useDhhData()
@@ -25,6 +27,7 @@ function ArtistView({ artist }: { artist: Artist }) {
   const collabs = useMemo(() => collaborators(data, artist.id), [data, artist.id])
   const genres = useMemo(() => artistGenres(data, artist.id), [data, artist.id])
   const hustle = useMemo(() => hustleRoles(data.hustle, artist.id), [data.hustle, artist.id])
+  const duos = useMemo(() => duosOf(data, artist.id), [data, artist.id])
   const productions = credits.filter((c) => c.roles.includes('producer'))
   const isProducer = artist.kind === 'producer' || productions.length > 0
   const lead = credits.filter((c) => c.roles.includes('main')).length
@@ -62,6 +65,11 @@ function ArtistView({ artist }: { artist: Artist }) {
                 ● {region?.name} scene
               </button>
               <span>{KIND_LABEL[artist.kind]}</span>
+              {duos.map((d) => (
+                <button key={d.id} type="button" onClick={() => navigate('duos', { id: d.id })} className="text-ink hover:text-accent">
+                  Half of {d.name} →
+                </button>
+              ))}
               <span>
                 {artist.active_from} to {artist.active_to ?? 'now'}
               </span>
@@ -111,7 +119,12 @@ function ArtistView({ artist }: { artist: Artist }) {
               </div>
             </section>
 
-            {sections.map((s) => {
+            {credits.length === 0 && duos.length > 0 && (
+              <p className="text-muted">
+                No solo releases in the archive yet. Everything so far is with {duos.map((d) => d.name).join(' and ')}.
+              </p>
+            )}
+            {credits.length > 0 && sections.map((s) => {
               const years = [...new Set(s.items.map((c) => trackYear(c.track)))]
               return (
                 <section key={s.title}>
@@ -137,6 +150,29 @@ function ArtistView({ artist }: { artist: Artist }) {
           </div>
 
           <aside className="min-w-0 space-y-10 lg:sticky lg:top-20 lg:self-start">
+            {duos.length > 0 && (
+              <section>
+                <SectionLabel>Duo</SectionLabel>
+                <ul className="space-y-1">
+                  {duos.map((d) => {
+                    const partner = d.members?.filter((m) => m !== artist.id).map((m) => data.artistById.get(m)?.name)
+                    return (
+                      <li key={d.id}>
+                        <button
+                          type="button"
+                          onClick={() => navigate('duos', { id: d.id })}
+                          className="flex w-full items-center justify-between gap-3 rounded-[var(--radius-card)] border border-line px-4 py-3 text-left transition-colors hover:border-accent"
+                        >
+                          <span className="font-display text-lg uppercase leading-tight">{d.name}</span>
+                          <span className="kicker shrink-0">with {partner?.join(', ')}</span>
+                        </button>
+                      </li>
+                    )
+                  })}
+                </ul>
+                <p className="mt-2 text-sm text-muted">Songs made as the duo are on the duo's page. This page lists solo work and features.</p>
+              </section>
+            )}
             {collabs.length > 0 && (
               <section>
                 <SectionLabel>{isProducer ? 'Artists worked with' : 'Connected to'}</SectionLabel>
@@ -238,5 +274,6 @@ export function ArtistPage() {
   const data = useDhhData()
   const { id } = useView()
   const artist = id ? data.artistById.get(id) : undefined
+  if (artist?.kind === 'duo') return <DuoDetail key={artist.id} duo={artist} />
   return artist ? <ArtistView key={artist.id} artist={artist} /> : <PageShell><NotFound what="artist" /></PageShell>
 }

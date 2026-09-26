@@ -10,7 +10,7 @@ export function ArtistChip({ id, suffix }: { id: string; suffix?: ReactNode }) {
   const artist = data.artistById.get(id)
   if (!artist) return null
   return (
-    <button type="button" onClick={() => navigate('artist', { id })} className={CHIP}>
+    <button type="button" onClick={() => navigate(artist.kind === 'duo' ? 'duos' : 'artist', { id })} className={CHIP}>
       <span className="size-2 rounded-full" style={{ background: data.regionById.get(artist.region_id)?.color }} />
       <span className="font-display text-base uppercase leading-none">{artist.name}</span>
       {suffix && <span className="font-mono text-[0.6rem] text-muted">{suffix}</span>}

@@ -6,6 +6,7 @@ import { useView, type View } from '../../hooks/useView'
 const LINKS: { view: View; anchor?: string; label: string }[] = [
   { view: 'home', anchor: 'timeline', label: 'Timeline' },
   { view: 'home', anchor: 'scenes', label: 'Scenes' },
+  { view: 'duos', label: 'Duos' },
   { view: 'producers', label: 'Producers' },
   { view: 'genres', label: 'Genres' },
   { view: 'slang', label: 'Slang' },

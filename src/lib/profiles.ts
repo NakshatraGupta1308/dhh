@@ -18,6 +18,7 @@ export function artistGenres(data: IndexedDataset, artistId: string): [string, n
 export interface SceneProfile {
   region: Region
   artists: Artist[]
+  duos: Artist[]
   producers: Artist[]
   releases: Track[]
   genres: [string, number][]
@@ -45,7 +46,8 @@ export function sceneProfile(data: IndexedDataset, regionId: string): SceneProfi
   )
   return {
     region,
-    artists: members.filter((a) => a.kind !== 'producer').sort(byActivity),
+    artists: members.filter((a) => a.kind !== 'producer' && a.kind !== 'duo').sort(byActivity),
+    duos: members.filter((a) => a.kind === 'duo').sort(byActivity),
     producers: members.filter((a) => a.kind === 'producer').sort(byActivity),
     releases,
     genres: countBy(releases, (t) => t.genres),

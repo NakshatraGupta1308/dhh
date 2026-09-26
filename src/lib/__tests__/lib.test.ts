@@ -101,15 +101,15 @@ describe('producer profiles', () => {
 
   it('lists hits and the artists they worked with', () => {
     const umair = profiles.find((p) => p.artist.id === 'umair')!
-    expect(umair.productions.map((t) => t.id)).toEqual(['joota-japani', 'hola-amigo'])
-    expect(umair.collaborators.map((c) => c.artist.id).sort()).toEqual(['krsna', 'seedhe-maut'])
+    expect(umair.productions.map((t) => t.id)).toEqual(['for-tha-dogs', 'kaun-talha', 'joota-japani', 'open-letter', 'hola-amigo', 'gauntlet-2-0'])
+    expect(umair.collaborators.map((c) => c.artist.id).sort()).toEqual(['krsna', 'rap-demon', 'seedhe-maut', 'talha-anjum'])
   })
 })
 
 describe('artist stats', () => {
   it('collects every role an artist holds', () => {
     const credits = artistCredits(data, 'naezy')
-    expect(credits.map((c) => c.track.id)).toEqual(['aafat', 'mere-gully-mein'])
+    expect(credits.map((c) => c.track.id)).toEqual(['aafat', 'mere-gully-mein', 'kya-bey-shaane', 'napaak'])
     expect(credits[1].roles).toEqual(['feature'])
   })
 

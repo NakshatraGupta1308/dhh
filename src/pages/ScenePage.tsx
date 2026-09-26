@@ -18,7 +18,7 @@ function PersonCard({ artist, index }: { artist: Artist; index: number }) {
   return (
     <motion.button
       type="button"
-      onClick={() => navigate('artist', { id: artist.id })}
+      onClick={() => navigate(artist.kind === 'duo' ? 'duos' : 'artist', { id: artist.id })}
       className="group flex items-center gap-4 rounded-[var(--radius-card)] border border-line bg-surface p-3 text-left transition-colors hover:border-[var(--scene)]"
       style={{ ['--scene' as string]: color }}
       initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export function ScenePage() {
   const { set, clear } = useFilters()
   const profile = id ? sceneProfile(data, id) : null
   if (!profile) return <PageShell><NotFound what="scene" /></PageShell>
-  const { region, artists, producers, releases, genres, labels, connections } = profile
+  const { region, artists, duos, producers, releases, genres, labels, connections } = profile
 
   const replay = () => {
     clear()
@@ -97,6 +97,16 @@ export function ScenePage() {
                 <p className="text-sm text-muted">No artists from this scene yet.</p>
               )}
             </section>
+            {duos.length > 0 && (
+              <section>
+                <SectionLabel>Duos</SectionLabel>
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {duos.map((a, i) => (
+                    <PersonCard key={a.id} artist={a} index={i} />
+                  ))}
+                </div>
+              </section>
+            )}
             <section>
               <SectionLabel>Behind the boards</SectionLabel>
               {producers.length ? (

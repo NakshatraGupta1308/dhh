@@ -1,7 +1,7 @@
 import type { View } from '../hooks/useView'
 import type { IndexedDataset } from './indexDataset'
 
-export type ResultKind = 'artist' | 'producer' | 'scene' | 'genre' | 'beef' | 'hustle' | 'slang' | 'release' | 'page'
+export type ResultKind = 'artist' | 'duo' | 'producer' | 'scene' | 'genre' | 'beef' | 'hustle' | 'slang' | 'release' | 'page'
 
 export interface SearchEntry {
   kind: ResultKind
@@ -22,6 +22,7 @@ export interface SearchResult extends SearchEntry {
 
 export const KIND_LABEL: Record<ResultKind, string> = {
   artist: 'Artists',
+  duo: 'Duos',
   producer: 'Producers',
   scene: 'Scenes',
   genre: 'Genres',
@@ -46,6 +47,20 @@ export function buildSearchIndex(data: IndexedDataset): SearchEntry[] {
   const regionColor = (id: string) => data.regionById.get(id)?.color ?? '#ff3b30'
 
   for (const a of data.artists) {
+    if (a.kind === 'duo') {
+      const members = (a.members ?? []).map((m) => data.artistById.get(m)?.name ?? m)
+      entries.push({
+        kind: 'duo',
+        key: `a:${a.id}`,
+        title: a.name,
+        subtitle: `Duo / ${members.join(' and ')}`,
+        color: regionColor(a.region_id),
+        keywords: a.aliases,
+        view: 'duos',
+        id: a.id,
+      })
+      continue
+    }
     const producer = a.kind === 'producer'
     entries.push({
       kind: producer ? 'producer' : 'artist',
@@ -110,6 +125,7 @@ export function buildSearchIndex(data: IndexedDataset): SearchEntry[] {
   const pages: [string, string, View, string[]][] = [
     ['Timeline', 'Every release, year by year', 'home', ['home', 'releases', 'discography']],
     ['Producers', 'Everyone behind the beats', 'producers', ['beatmakers', 'beats']],
+    ['Duos', 'Rap pairs and the songs they made together', 'duos', ['duo', 'pairs', 'groups', 'two']],
     ['Genres', 'Every sound in the archive', 'genres', ['styles', 'sounds']],
     ['Slang and terms', 'The DHH glossary', 'slang', ['glossary', 'dictionary', 'words', 'terminology', 'lingo']],
     ['Beef', 'Every famous feud, round by round', 'beef', ['beefs', 'diss tracks', 'feuds', 'disses']],
@@ -139,7 +155,7 @@ function scoreText(q: string, text: string): number {
   return 0
 }
 
-const KIND_BOOST: Record<ResultKind, number> = { artist: 6, producer: 6, scene: 5, genre: 5, beef: 4, hustle: 3, page: 4, slang: 3, release: 0 }
+const KIND_BOOST: Record<ResultKind, number> = { artist: 6, duo: 6, producer: 6, scene: 5, genre: 5, beef: 4, hustle: 3, page: 4, slang: 3, release: 0 }
 
 export function search(index: SearchEntry[], query: string, limit = 24): SearchResult[] {
   const q = normalize(query)

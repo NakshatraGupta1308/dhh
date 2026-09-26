@@ -5,7 +5,7 @@ export type Confidence = 'high' | 'medium' | 'low'
 export type DatePrecision = 'day' | 'month' | 'year'
 export type ReleaseType = 'single' | 'album' | 'ep' | 'mixtape' | 'track' | 'soundtrack' | 'collection'
 export type CreditRole = 'main' | 'feature' | 'producer'
-export type ArtistKind = 'rapper' | 'group' | 'producer' | 'singer'
+export type ArtistKind = 'rapper' | 'group' | 'duo' | 'producer' | 'singer'
 export type LabelKind = 'independent' | 'major' | 'collective'
 
 export interface Region {
@@ -25,6 +25,8 @@ export interface Artist {
   name: string
   aliases: string[]
   kind: ArtistKind
+  /** Member artist ids, for duos only. */
+  members?: string[]
   region_id: string
   languages: string[]
   active_from: number

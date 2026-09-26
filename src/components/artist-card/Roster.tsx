@@ -1,23 +1,29 @@
 import { useMemo, useState } from 'react'
 import { useDhhData } from '../../hooks/useDhhData'
+import { useView } from '../../hooks/useView'
 import { SectionHeading } from '../layout/SectionHeading'
 import { ArtistCard } from './ArtistCard'
 
 export function Roster() {
   const data = useDhhData()
+  const { navigate } = useView()
   const [region, setRegion] = useState<string | null>(null)
   const artists = useMemo(
     () =>
       data.artists
-        .filter((a) => !region || a.region_id === region)
+        .filter((a) => a.kind !== 'duo' && (!region || a.region_id === region))
         .sort((a, b) => a.active_from - b.active_from || a.name.localeCompare(b.name)),
     [data.artists, region],
   )
 
   return (
     <section id="roster" className="mx-auto max-w-[1600px] px-4 py-24 sm:px-8">
-      <SectionHeading kicker={`${data.artists.length} artists, producers and crews`} title="The Roster">
-        Ordered by when they first hit the scene. Tap anyone to open their full catalog and career arc.
+      <SectionHeading kicker={`${data.artists.filter((a) => a.kind !== 'duo').length} artists, producers and crews`} title="The Roster">
+        Ordered by when they first hit the scene. Tap anyone to open their full catalog and career arc. Duos have{' '}
+        <button type="button" onClick={() => navigate('duos')} className="text-ink underline underline-offset-4 hover:text-accent">
+          their own section
+        </button>
+        , and each member is listed here on their own.
       </SectionHeading>
       <div className="no-scrollbar -mx-4 mb-8 flex gap-1.5 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:px-0">
         <button

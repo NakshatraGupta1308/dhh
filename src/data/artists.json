@@ -110,11 +110,8 @@
   {
     "id": "seedhe-maut",
     "name": "Seedhe Maut",
-    "aliases": [
-      "Encore ABJ",
-      "Calm"
-    ],
-    "kind": "group",
+    "aliases": [],
+    "kind": "duo",
     "region_id": "delhi",
     "languages": [
       "hi"
@@ -127,7 +124,11 @@
     ],
     "image_url": null,
     "confidence": "high",
-    "bio": "Delhi duo of Encore ABJ and Calm. Their Azadi Records debut Bayaan set a new bar for Hindi rap technique, and Nayaab became a landmark album of the 2020s."
+    "bio": "Delhi duo of Encore ABJ and Calm, formed in 2015. Their Azadi Records debut Bayaan set a new bar for Hindi rap technique, Nayaab became a landmark album of the 2020s, and they now run their own imprint, DL91 Era.",
+    "members": [
+      "encore-abj",
+      "calm"
+    ]
   },
   {
     "id": "prabh-deep",
@@ -782,11 +783,9 @@
     "id": "straight-outta-srinagar",
     "name": "Straight Outta Srinagar",
     "aliases": [
-      "SOS",
-      "Tufail Nazir",
-      "Aatanki"
+      "SOS"
     ],
-    "kind": "group",
+    "kind": "duo",
     "region_id": "kashmir",
     "languages": [
       "ks",
@@ -797,8 +796,12 @@
     "active_to": null,
     "label_ids": [],
     "image_url": null,
-    "bio": "Srinagar duo of Tufail Nazir and Syed Arsalan (Aatanki), formed in 2020. Rap in Kashmiri and Hindi about life in the valley, most often over 30KEY! beats.",
-    "confidence": "high"
+    "bio": "Srinagar duo of Tufail Nazir and Syed Arsalan (Aatanki), formed in 2020. Signed to Azadi Records in 2021 and rap in Kashmiri and Hindi about life in the valley, most often over 30KEY! beats.",
+    "confidence": "high",
+    "members": [
+      "tufail-nazir",
+      "aatanki"
+    ]
   },
   {
     "id": "memax",
@@ -833,7 +836,7 @@
     "active_to": null,
     "label_ids": [],
     "image_url": null,
-    "bio": "One half of Seedhe Maut and the duo's in-house producer. Helmed most of the beats on Lunch Break.",
+    "bio": "Siddhant Sharma, from Nainital, is one half of Seedhe Maut and the duo's in-house producer. Helmed most of the beats on Lunch Break and raps alongside Encore ABJ on everything the duo releases.",
     "confidence": "high"
   },
   {
@@ -1282,5 +1285,296 @@
     "image_url": null,
     "bio": "Rapper known for emotional, story-driven records, starting with 'Loser' in 2016. An MTV Hustle squad boss for seasons 2 to 4, leading the Dino Warriors.",
     "confidence": "medium"
+  },
+  {
+    "id": "encore-abj",
+    "name": "Encore ABJ",
+    "aliases": [
+      "Abhijay Negi",
+      "Encore"
+    ],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2015,
+    "active_to": null,
+    "label_ids": [
+      "dl91"
+    ],
+    "image_url": null,
+    "bio": "Abhijay Negi, from Pauri Garhwal, is the other half of Seedhe Maut. Stepped out on his own in March 2026 with EE, a seven-track solo tape on DL91 Era.",
+    "confidence": "high"
+  },
+  {
+    "id": "talha-anjum",
+    "name": "Talha Anjum",
+    "aliases": [],
+    "kind": "rapper",
+    "region_id": "pakistan",
+    "languages": [
+      "ur",
+      "en"
+    ],
+    "active_from": 2012,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Karachi rapper, born in 1995, who co-founded Young Stunners with Talhah Yunus in 2012. Went solo with Open Letter in 2023, starred in the 2024 film Kattar Karachi, and hit back at Naezy with 'Kaun Talha'.",
+    "confidence": "high"
+  },
+  {
+    "id": "talhah-yunus",
+    "name": "Talhah Yunus",
+    "aliases": [],
+    "kind": "rapper",
+    "region_id": "pakistan",
+    "languages": [
+      "ur",
+      "en"
+    ],
+    "active_from": 2012,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Karachi rapper and the other half of Young Stunners. His solo run, made largely with producer Jokhay, includes the two-part album Shikwa.",
+    "confidence": "high"
+  },
+  {
+    "id": "young-stunners",
+    "name": "Young Stunners",
+    "aliases": [
+      "YS"
+    ],
+    "kind": "duo",
+    "region_id": "pakistan",
+    "languages": [
+      "ur",
+      "en"
+    ],
+    "active_from": 2012,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Karachi duo of Talha Anjum and Talhah Yunus, formed in 2012 and widely credited with bringing Urdu rap into Pakistan's mainstream. Broke out with 'Burger-e-Karachi' and 'Maila Majnu', reunited for the 2017 album Rebirth, and made most of their later hits with producer Jokhay.",
+    "confidence": "high",
+    "members": [
+      "talha-anjum",
+      "talhah-yunus"
+    ]
+  },
+  {
+    "id": "jokhay",
+    "name": "Jokhay",
+    "aliases": [],
+    "kind": "producer",
+    "region_id": "pakistan",
+    "languages": [
+      "ur"
+    ],
+    "active_from": 2021,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Karachi producer, multi-instrumentalist and occasional vocalist behind the signature sound of Young Stunners, from 'Gumaan' and 'Afsanay' to Talhah Yunus's Shikwa. Mostly works behind the boards rather than as a rapper.",
+    "confidence": "high"
+  },
+  {
+    "id": "rap-demon",
+    "name": "Rap Demon",
+    "aliases": [
+      "Abdullah Malik"
+    ],
+    "kind": "rapper",
+    "region_id": "pakistan",
+    "languages": [
+      "ur"
+    ],
+    "active_from": 2018,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Islamabad rapper and producer (Abdullah Malik) who broke out of the Pakistani underground with 'Gauntlet 2.0' in 2019, a hardcore diss co-produced by Umair.",
+    "confidence": "medium"
+  },
+  {
+    "id": "faris-shafi",
+    "name": "Faris Shafi",
+    "aliases": [],
+    "kind": "rapper",
+    "region_id": "pakistan",
+    "languages": [
+      "ur",
+      "en",
+      "pa"
+    ],
+    "active_from": 2012,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Lahore rapper and actor, born in 1987, seen as one of the pioneers of Urdu rap. Known for personal and political lyrics, he crossed the border with Raftaar on 'Jashan-e-Hip-Hop'.",
+    "confidence": "high"
+  },
+  {
+    "id": "tufail-nazir",
+    "name": "Tufail Nazir",
+    "aliases": [
+      "Tufail"
+    ],
+    "kind": "rapper",
+    "region_id": "kashmir",
+    "languages": [
+      "ks",
+      "hi"
+    ],
+    "active_from": 2020,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Srinagar rapper and one half of Straight Outta Srinagar. Released the solo track 'Different' around the time the duo formed.",
+    "confidence": "medium"
+  },
+  {
+    "id": "aatanki",
+    "name": "Aatanki",
+    "aliases": [
+      "Syed Arsalan",
+      "Aatankki"
+    ],
+    "kind": "rapper",
+    "region_id": "kashmir",
+    "languages": [
+      "ks",
+      "hi"
+    ],
+    "active_from": 2020,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Syed Arsalan took his school nickname as his stage name. One half of Straight Outta Srinagar, with the solo track 'Aazadi' to his name.",
+    "confidence": "medium"
+  },
+  {
+    "id": "parv",
+    "name": "Parv",
+    "aliases": [
+      "Parv Music",
+      "Parv Man"
+    ],
+    "kind": "rapper",
+    "region_id": "uttar-pradesh",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2020,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Rapper known for satire and social commentary, as on 'Parv Man'. Makes the Agyakaari tapes with SickLot and competed on MTV Hustle 5 in EPR Rebels.",
+    "confidence": "low"
+  },
+  {
+    "id": "sicklot",
+    "name": "SickLot",
+    "aliases": [
+      "Sicklot"
+    ],
+    "kind": "rapper",
+    "region_id": "uttar-pradesh",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Rapper who works as a pair with Parv on the Agyakaari tapes. Joined MTV Hustle 5 as a wild-card challenger and went straight into EPR Rebels.",
+    "confidence": "low"
+  },
+  {
+    "id": "parv-x-sicklot",
+    "name": "Parv x SickLot",
+    "aliases": [
+      "Agyakaari",
+      "SickLot x Parv"
+    ],
+    "kind": "duo",
+    "region_id": "uttar-pradesh",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2024,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Parv and SickLot have no official duo name, but release together as 'Parv x SickLot' and put out the Agyakaari mixtapes in 2024 and 2026. Tracks like 'UP REP' and SickLot's Noida name-drops point to Uttar Pradesh, though their hometowns are not confirmed.",
+    "confidence": "low",
+    "members": [
+      "parv",
+      "sicklot"
+    ]
+  },
+  {
+    "id": "adhi",
+    "name": "Adhi",
+    "aliases": [
+      "Hiphop Tamizha Adhi",
+      "Aadhi"
+    ],
+    "kind": "rapper",
+    "region_id": "chennai",
+    "languages": [
+      "ta",
+      "en"
+    ],
+    "active_from": 2011,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Rangadhithya Ramachandran Venkatapathy, from Coimbatore, wrote and co-produced Hiphop Tamizha's music and later became a film composer and actor.",
+    "confidence": "high"
+  },
+  {
+    "id": "jeeva",
+    "name": "Jeeva",
+    "aliases": [
+      "R. Jeeva"
+    ],
+    "kind": "producer",
+    "region_id": "chennai",
+    "languages": [
+      "ta"
+    ],
+    "active_from": 2011,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "R. Jeeva, from Coimbatore, is the other half of Hiphop Tamizha and co-composed the duo's music with Adhi.",
+    "confidence": "high"
+  },
+  {
+    "id": "hiphop-tamizha",
+    "name": "Hiphop Tamizha",
+    "aliases": [
+      "Hip Hop Tamizha",
+      "HHT"
+    ],
+    "kind": "duo",
+    "region_id": "chennai",
+    "languages": [
+      "ta",
+      "en"
+    ],
+    "active_from": 2011,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Coimbatore duo of Adhi and Jeeva. 'Club le Mabbu le' made their name in 2011, and Hip Hop Tamizhan (2012) was billed as India's first Tamil hip hop album.",
+    "confidence": "high",
+    "members": [
+      "adhi",
+      "jeeva"
+    ]
   }
 ]
