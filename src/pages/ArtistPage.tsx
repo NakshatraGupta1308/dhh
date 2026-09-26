@@ -155,6 +155,27 @@ function ArtistView({ artist }: { artist: Artist }) {
                 </div>
               </section>
             )}
+            {data.beefs.some((b) => b.sides.some((s) => s.artist_id === artist.id)) && (
+              <section>
+                <SectionLabel>Beefs</SectionLabel>
+                <ul className="space-y-1">
+                  {data.beefs
+                    .filter((b) => b.sides.some((s) => s.artist_id === artist.id))
+                    .map((b) => (
+                      <li key={b.id}>
+                        <button
+                          type="button"
+                          onClick={() => navigate('beef', { id: b.id })}
+                          className="flex w-full items-center justify-between gap-3 rounded-[var(--radius-card)] border border-line px-4 py-3 text-left transition-colors hover:border-accent"
+                        >
+                          <span className="font-display text-lg uppercase leading-tight">{b.title}</span>
+                          <span className="kicker shrink-0">{b.years}</span>
+                        </button>
+                      </li>
+                    ))}
+                </ul>
+              </section>
+            )}
             <section>
               <SectionLabel>Scene</SectionLabel>
               <SceneChip id={artist.region_id} />

@@ -10,6 +10,7 @@ const LINKS: { view: View; anchor?: string; label: string }[] = [
   { view: 'genres', label: 'Genres' },
   { view: 'slang', label: 'Slang' },
   { view: 'listen', label: 'Listen' },
+  { view: 'beef', label: 'Beef' },
 ]
 
 function hrefFor(l: (typeof LINKS)[number]) {
@@ -64,7 +65,7 @@ export function SiteHeader() {
                 go(l)
               }}
               aria-current={isActive(l) ? 'page' : undefined}
-              className={`rounded-full px-3 py-1.5 font-mono text-[0.7rem] uppercase tracking-[0.16em] transition-colors ${
+              className={`rounded-full px-2.5 py-1.5 font-mono text-[0.68rem] uppercase tracking-[0.14em] transition-colors xl:px-3 xl:tracking-[0.16em] ${
                 isActive(l) ? 'bg-ink text-bg' : 'text-muted hover:bg-surface-2 hover:text-ink'
               }`}
             >

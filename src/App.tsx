@@ -7,6 +7,7 @@ import { PlayerProvider } from './hooks/usePlayer'
 import { SearchProvider } from './hooks/useSearch'
 import { useView, ViewProvider } from './hooks/useView'
 import { ArtistPage } from './pages/ArtistPage'
+import { BeefPage } from './pages/BeefPage'
 import { ExplorerPage } from './pages/ExplorerPage'
 import { GenrePage } from './pages/GenrePage'
 import { GenresPage } from './pages/GenresPage'
@@ -38,6 +39,8 @@ function CurrentPage() {
       return <SlangPage />
     case 'listen':
       return <ListenPage />
+    case 'beef':
+      return <BeefPage />
     case 'producers':
       return <ProducersPage />
     default:

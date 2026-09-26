@@ -31,6 +31,7 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which tests, builds an
 - **Scene pages** (`?view=scene&id=delhi`): the artists and producers who run the scene, every release led by an artist from the scene (guest spots stay with the lead artist's scene), the scene's sound, connected scenes and labels, plus a button to replay the scene on the timeline.
 - **Genre pages** (`?view=genre&id=boom-bap`, index at `?view=genres`): what the genre is, how it sounds, where it comes from, its pros ranked by releases, and every tagged song.
 - **Listening room** (`?view=listen`): hand-picked songs from featured artists, played through the official YouTube embed in a dock that stays at the bottom while you browse, with a queue, shuffle, seeking, a bigger video toggle and auto-skip for videos that cannot be embedded. Artist pages with playable songs get a Play button. Songs live in `src/data/listening.json`.
+- **Beef** (`?view=beef`, one page per beef at `?view=beef&id=seedhe-maut-vs-sos`): famous feuds told round by round on a split timeline, with who fired at whom, dates, status (ongoing, simmering, gone cold), a heat rating, a tally of shots fired and links to the diss tracks in the archive. Multi-front beefs can have up to four sides. Artists involved get a Beefs box on their page. Beefs live in `src/data/beefs.json`.
 - **Slang page** (`?view=slang`): a glossary of DHH slang and terms, filterable by street slang, rap craft, culture and industry, linked to the artists and songs behind them.
 - **Scenes and Roster**: region cards that replay the timeline filtered to that scene, and a grid of every artist.
 - **Producers page** (`?view=producers`): every beatmaker in the archive, ranked by production credits. Each one shows their hits and every artist they have worked with. All of it is derived from `features.json`, so a new producer credit shows up automatically.
@@ -71,6 +72,7 @@ The model follows the project spec, so each later phase adds to it instead of mi
 | `regions.json` | id, name, description, color |
 | `languages.json` | id, name |
 | `genres.json` | id, name, aliases, color, tagline, description, sound, origins |
+| `beefs.json` | id, title, tagline, years, status, heat, sides (name, artist_id), summary, origin, rounds (date, precision, by, at, title, track_id, note) |
 | `listening.json` | artists (featured, in order), songs: id, title, artist_ids, feat_ids, youtube_id, year, track_id, note |
 | `slang.json` | id, term, aliases, category, meaning, example, related_artist_ids, related_track_ids |
 
@@ -90,7 +92,7 @@ A few notes:
 3. Label rosters and artist `label_ids` must mirror each other.
 4. Run `npm run validate-data`. It checks ids, references, credits, rosters, date formats and house style, and the build refuses to run if anything is off.
 
-The current seed is a hand-built first pass: 55 artists, 133 releases, 16 labels and crews, and 15 scenes, plus 44 playable songs. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
+The current seed is a hand-built first pass: 55 artists, 149 releases, 16 labels and crews, and 15 scenes, plus 44 playable songs and 8 beefs. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
 
 ## Swapping the data source
 

@@ -78,3 +78,20 @@ describe('listening room', () => {
     for (const s of data.listening.songs) if (s.track_id) expect(data.trackById.has(s.track_id)).toBe(true)
   })
 })
+
+describe('beefs', () => {
+  it('only credits rounds to real sides and archive tracks', () => {
+    for (const b of data.beefs) {
+      for (const r of b.rounds) {
+        if (r.by !== null) expect(b.sides[r.by]).toBeDefined()
+        for (const t of r.at) expect(b.sides[t]).toBeDefined()
+        if (r.track_id) expect(data.trackById.has(r.track_id)).toBe(true)
+      }
+    }
+  })
+
+  it('is searchable by either side and by diss track title', () => {
+    expect(search(index, 'makasam').some((r) => r.kind === 'beef' && r.id === 'kalamkaar-emiway-muhfaad')).toBe(true)
+    expect(search(index, 'jani')[0]).toMatchObject({ kind: 'beef', id: 'panther-vs-jani' })
+  })
+})

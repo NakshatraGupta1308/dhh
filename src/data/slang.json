@@ -1,36 +1,344 @@
 [
-  { "id": "dhh", "term": "DHH", "aliases": ["desi hip hop"], "category": "culture", "meaning": "Short for Desi Hip Hop: rap and hip hop made by South Asian artists, especially in India. Fans use it for the whole scene, from underground cyphers to chart hits.", "example": "Been deep in DHH since Bayaan dropped." },
-  { "id": "desi", "term": "Desi", "aliases": [], "category": "culture", "meaning": "From 'desh' (country). Means South Asian, or something from back home. A badge of pride in the scene rather than a label.", "example": "Desi flows, global sound." },
-  { "id": "scene", "term": "Scene", "aliases": ["the scene"], "category": "culture", "meaning": "The community of artists, producers and fans in a city or across the country. Every city now has its own scene with its own sound.", "example": "The Nagpur scene is on fire right now." },
-  { "id": "gully", "term": "Gully", "aliases": ["gali"], "category": "street", "meaning": "Hindi for a narrow lane or street. Stands for the working-class neighbourhoods where Mumbai rap began, and for staying true to where you come from.", "example": "From the gully to the main stage.", "related_track_ids": ["mere-gully-mein"] },
-  { "id": "bantai", "term": "Bantai", "aliases": [], "category": "street", "meaning": "Bambaiya (Mumbai street slang) for a buddy or homie. Emiway Bantai made it part of his name and his label.", "example": "Kya bolta bantai?", "related_artist_ids": ["emiway-bantai"] },
-  { "id": "bambaiya", "term": "Bambaiya", "aliases": ["bombay hindi"], "category": "street", "meaning": "The street dialect of Mumbai, a quick mix of Hindi, Marathi, Gujarati and English. It is the native tongue of gully rap." , "example": "Half the punchlines only hit if you speak Bambaiya." },
-  { "id": "apna-time-aayega", "term": "Apna Time Aayega", "aliases": ["apna time ayega"], "category": "culture", "meaning": "'Our time will come.' The hook from Gully Boy, co-written by DIVINE, that became the slogan for every underdog in the scene.", "example": "Still grinding. Apna time aayega.", "related_artist_ids": ["divine"] },
-  { "id": "machayenge", "term": "Machayenge", "aliases": ["machate", "macha diya"], "category": "street", "meaning": "'We'll cause a storm.' From 'machana', to create chaos. Means you are about to take over, and Emiway turned it into a whole series.", "example": "New tape Friday, machayenge.", "related_track_ids": ["machayenge", "firse-machayenge"] },
-  { "id": "kalesh", "term": "Kalesh", "aliases": ["kaleshi"], "category": "street", "meaning": "Hindi slang for drama, a fight or a mess. A 'kaleshi' person always starts trouble, which Raga turned into a viral hit.", "example": "Comment section mein full kalesh.", "related_track_ids": ["kaleshi-chori"] },
-  { "id": "bawaal", "term": "Bawaal", "aliases": ["bawal"], "category": "street", "meaning": "Chaos or uproar. Used as praise too: a bawaal verse is an amazing one.", "example": "That second verse was straight bawaal." },
-  { "id": "kadak", "term": "Kadak", "aliases": [], "category": "street", "meaning": "Literally 'strong', like kadak chai. Means hard, sharp or excellent.", "example": "Beat ekdum kadak hai." },
-  { "id": "tapori", "term": "Tapori", "aliases": [], "category": "street", "meaning": "A Mumbai street hustler with swagger and a loose tongue. The tapori character and his slang run all through Mumbai rap.", "example": "Tapori energy, tailored fit." },
-  { "id": "bars", "term": "Bars", "aliases": ["bar"], "category": "craft", "meaning": "A bar is one line of a verse, usually one measure of the beat. Saying someone 'has bars' means their writing is sharp and quotable.", "example": "Only bars on this one, no hook." },
-  { "id": "flow", "term": "Flow", "aliases": [], "category": "craft", "meaning": "The rhythm and cadence of how a rapper delivers words over the beat. Flow switches in the middle of a verse are a big part of DHH bragging rights.", "example": "Three different flows in one verse." },
-  { "id": "multis", "term": "Multis", "aliases": ["multisyllabic", "multi-syllable rhymes"], "category": "craft", "meaning": "Multisyllabic rhymes, where several syllables rhyme in a row instead of just the last one. Hindi and Punjabi make these especially tricky, and fans count them.", "example": "KR$NA stacking multis like it's nothing." },
-  { "id": "punchline", "term": "Punchline", "aliases": [], "category": "craft", "meaning": "A line built to land hard at the end of a thought, usually with a twist, a double meaning or a joke.", "example": "Rewound it three times for that punchline." },
-  { "id": "wordplay", "term": "Wordplay", "aliases": [], "category": "craft", "meaning": "Puns, double meanings and switching between languages to make one line mean two things. Code-switching between Hindi and English makes DHH wordplay unique.", "example": "The wordplay on that hook is disgusting." },
-  { "id": "hook", "term": "Hook", "aliases": ["chorus"], "category": "craft", "meaning": "The repeated, catchy part of a song, sung or rapped. A strong hook turns a good verse into a hit.", "example": "Hook's stuck in my head for a week." },
-  { "id": "verse", "term": "Verse", "aliases": [], "category": "craft", "meaning": "A rapper's section of a song, usually 12 to 16 bars. On a feature, everyone gets a verse and fans rank them.", "example": "Who had the best verse on Hola Amigo?" },
-  { "id": "freestyle", "term": "Freestyle", "aliases": [], "category": "craft", "meaning": "Rapping made up on the spot, or a verse over a beat with no song structure. Freestyles on YouTube and at cyphers launched many careers.", "example": "Dropped a freestyle before the album to warm up." },
-  { "id": "cypher", "term": "Cypher", "aliases": ["cipher"], "category": "culture", "meaning": "A circle of rappers taking turns on the same beat, live or on record. The backbone of the early Indian underground.", "example": "Met the whole crew at a Sunday cypher." },
-  { "id": "diss", "term": "Diss", "aliases": ["diss track"], "category": "culture", "meaning": "A song made to attack another artist. The 2020 Raftaar and Emiway exchange is one of the most famous diss chapters in DHH.", "example": "He replied with a diss in 48 hours.", "related_track_ids": ["sheikh-chilli", "giraftaar"] },
-  { "id": "beef", "term": "Beef", "aliases": [], "category": "culture", "meaning": "A public feud between artists, usually played out through diss tracks and social media.", "example": "Everyone picked a side in that beef." },
-  { "id": "feat", "term": "Feat.", "aliases": ["feature", "ft"], "category": "industry", "meaning": "Short for featuring: a guest artist on someone else's track. Features are how scenes connect, and this archive maps them.", "example": "Siyaahi on the feat. was the best part." },
-  { "id": "prod", "term": "Prod.", "aliases": ["produced by", "producer tag"], "category": "industry", "meaning": "Short for 'produced by', the credit for whoever made the beat. Fans follow producers as closely as rappers now.", "example": "Prod. Sez on the Beat? Instant play." },
-  { "id": "type-beat", "term": "Type Beat", "aliases": [], "category": "industry", "meaning": "A beat made in the style of a known artist and sold or shared online, for example a 'Seedhe Maut type beat'. Where a lot of producers start.", "example": "Bought a type beat, wrote a whole EP on it." },
-  { "id": "tape", "term": "Tape", "aliases": ["mixtape"], "category": "industry", "meaning": "A mixtape: a looser, often free or independent project. Many DHH classics are tapes rather than official albums.", "example": "Lunch Break is a tape, not an album." },
-  { "id": "drop", "term": "Drop", "aliases": [], "category": "industry", "meaning": "A new release, or the moment it comes out.", "example": "Midnight drop, stay up." },
-  { "id": "og", "term": "OG", "aliases": ["original gangster"], "category": "culture", "meaning": "Someone who was there early and earned respect. MTV Hustle 4 even gave Siyaahi the title OG Hustler.", "example": "Show some love to the OGs.", "related_artist_ids": ["siyaahi"] },
-  { "id": "underground", "term": "Underground", "aliases": [], "category": "industry", "meaning": "Independent artists outside the label and film machine. In DHH, coming from the underground is a point of pride.", "example": "Still underground, still selling out shows." },
-  { "id": "sellout", "term": "Sellout", "aliases": [], "category": "culture", "meaning": "A diss aimed at artists accused of trading their sound for money, film songs or brand deals. The most common argument in any DHH comment section.", "example": "One Bollywood song and they're calling him a sellout." },
-  { "id": "moshpit", "term": "Moshpit", "aliases": ["mosh"], "category": "culture", "meaning": "The crowd space where fans jump and crash into each other at shows. Naam Sujal named a whole song after it.", "example": "Front row, straight into the moshpit.", "related_track_ids": ["moshpital"] },
-  { "id": "hustle", "term": "Hustle", "aliases": [], "category": "culture", "meaning": "The grind of making it with no shortcuts. Also MTV Hustle, the rap reality show that introduced many artists in this archive.", "example": "Day job by day, hustle by night." },
-  { "id": "vernacular", "term": "Vernacular Rap", "aliases": ["regional rap"], "category": "culture", "meaning": "Rap in regional languages like Malayalam, Tamil, Gujarati, Marathi, Haryanvi or Kashmiri. The fastest growing part of DHH.", "example": "Best verse of the year was in Gujarati." }
+  {
+    "id": "dhh",
+    "term": "DHH",
+    "aliases": [
+      "desi hip hop"
+    ],
+    "category": "culture",
+    "meaning": "Short for Desi Hip Hop: rap and hip hop made by South Asian artists, especially in India. Fans use it for the whole scene, from underground cyphers to chart hits.",
+    "example": "Been deep in DHH since Bayaan dropped."
+  },
+  {
+    "id": "desi",
+    "term": "Desi",
+    "aliases": [],
+    "category": "culture",
+    "meaning": "From 'desh' (country). Means South Asian, or something from back home. A badge of pride in the scene rather than a label.",
+    "example": "Desi flows, global sound."
+  },
+  {
+    "id": "scene",
+    "term": "Scene",
+    "aliases": [
+      "the scene"
+    ],
+    "category": "culture",
+    "meaning": "The community of artists, producers and fans in a city or across the country. Every city now has its own scene with its own sound.",
+    "example": "The Nagpur scene is on fire right now."
+  },
+  {
+    "id": "gully",
+    "term": "Gully",
+    "aliases": [
+      "gali"
+    ],
+    "category": "street",
+    "meaning": "Hindi for a narrow lane or street. Stands for the working-class neighbourhoods where Mumbai rap began, and for staying true to where you come from.",
+    "example": "From the gully to the main stage.",
+    "related_track_ids": [
+      "mere-gully-mein"
+    ]
+  },
+  {
+    "id": "bantai",
+    "term": "Bantai",
+    "aliases": [],
+    "category": "street",
+    "meaning": "Bambaiya (Mumbai street slang) for a buddy or homie. Emiway Bantai made it part of his name and his label.",
+    "example": "Kya bolta bantai?",
+    "related_artist_ids": [
+      "emiway-bantai"
+    ]
+  },
+  {
+    "id": "bambaiya",
+    "term": "Bambaiya",
+    "aliases": [
+      "bombay hindi"
+    ],
+    "category": "street",
+    "meaning": "The street dialect of Mumbai, a quick mix of Hindi, Marathi, Gujarati and English. It is the native tongue of gully rap.",
+    "example": "Half the punchlines only hit if you speak Bambaiya."
+  },
+  {
+    "id": "apna-time-aayega",
+    "term": "Apna Time Aayega",
+    "aliases": [
+      "apna time ayega"
+    ],
+    "category": "culture",
+    "meaning": "'Our time will come.' The hook from Gully Boy, co-written by DIVINE, that became the slogan for every underdog in the scene.",
+    "example": "Still grinding. Apna time aayega.",
+    "related_artist_ids": [
+      "divine"
+    ]
+  },
+  {
+    "id": "machayenge",
+    "term": "Machayenge",
+    "aliases": [
+      "machate",
+      "macha diya"
+    ],
+    "category": "street",
+    "meaning": "'We'll cause a storm.' From 'machana', to create chaos. Means you are about to take over, and Emiway turned it into a whole series.",
+    "example": "New tape Friday, machayenge.",
+    "related_track_ids": [
+      "machayenge",
+      "firse-machayenge"
+    ]
+  },
+  {
+    "id": "kalesh",
+    "term": "Kalesh",
+    "aliases": [
+      "kaleshi"
+    ],
+    "category": "street",
+    "meaning": "Hindi slang for drama, a fight or a mess. A 'kaleshi' person always starts trouble, which Raga turned into a viral hit.",
+    "example": "Comment section mein full kalesh.",
+    "related_track_ids": [
+      "kaleshi-chori"
+    ]
+  },
+  {
+    "id": "bawaal",
+    "term": "Bawaal",
+    "aliases": [
+      "bawal"
+    ],
+    "category": "street",
+    "meaning": "Chaos or uproar. Used as praise too: a bawaal verse is an amazing one.",
+    "example": "That second verse was straight bawaal."
+  },
+  {
+    "id": "kadak",
+    "term": "Kadak",
+    "aliases": [],
+    "category": "street",
+    "meaning": "Literally 'strong', like kadak chai. Means hard, sharp or excellent.",
+    "example": "Beat ekdum kadak hai."
+  },
+  {
+    "id": "tapori",
+    "term": "Tapori",
+    "aliases": [],
+    "category": "street",
+    "meaning": "A Mumbai street hustler with swagger and a loose tongue. The tapori character and his slang run all through Mumbai rap.",
+    "example": "Tapori energy, tailored fit."
+  },
+  {
+    "id": "bars",
+    "term": "Bars",
+    "aliases": [
+      "bar"
+    ],
+    "category": "craft",
+    "meaning": "A bar is one line of a verse, usually one measure of the beat. Saying someone 'has bars' means their writing is sharp and quotable.",
+    "example": "Only bars on this one, no hook."
+  },
+  {
+    "id": "flow",
+    "term": "Flow",
+    "aliases": [],
+    "category": "craft",
+    "meaning": "The rhythm and cadence of how a rapper delivers words over the beat. Flow switches in the middle of a verse are a big part of DHH bragging rights.",
+    "example": "Three different flows in one verse."
+  },
+  {
+    "id": "multis",
+    "term": "Multis",
+    "aliases": [
+      "multisyllabic",
+      "multi-syllable rhymes"
+    ],
+    "category": "craft",
+    "meaning": "Multisyllabic rhymes, where several syllables rhyme in a row instead of just the last one. Hindi and Punjabi make these especially tricky, and fans count them.",
+    "example": "KR$NA stacking multis like it's nothing."
+  },
+  {
+    "id": "punchline",
+    "term": "Punchline",
+    "aliases": [],
+    "category": "craft",
+    "meaning": "A line built to land hard at the end of a thought, usually with a twist, a double meaning or a joke.",
+    "example": "Rewound it three times for that punchline."
+  },
+  {
+    "id": "wordplay",
+    "term": "Wordplay",
+    "aliases": [],
+    "category": "craft",
+    "meaning": "Puns, double meanings and switching between languages to make one line mean two things. Code-switching between Hindi and English makes DHH wordplay unique.",
+    "example": "The wordplay on that hook is disgusting."
+  },
+  {
+    "id": "hook",
+    "term": "Hook",
+    "aliases": [
+      "chorus"
+    ],
+    "category": "craft",
+    "meaning": "The repeated, catchy part of a song, sung or rapped. A strong hook turns a good verse into a hit.",
+    "example": "Hook's stuck in my head for a week."
+  },
+  {
+    "id": "verse",
+    "term": "Verse",
+    "aliases": [],
+    "category": "craft",
+    "meaning": "A rapper's section of a song, usually 12 to 16 bars. On a feature, everyone gets a verse and fans rank them.",
+    "example": "Who had the best verse on Hola Amigo?"
+  },
+  {
+    "id": "freestyle",
+    "term": "Freestyle",
+    "aliases": [],
+    "category": "craft",
+    "meaning": "Rapping made up on the spot, or a verse over a beat with no song structure. Freestyles on YouTube and at cyphers launched many careers.",
+    "example": "Dropped a freestyle before the album to warm up."
+  },
+  {
+    "id": "cypher",
+    "term": "Cypher",
+    "aliases": [
+      "cipher"
+    ],
+    "category": "culture",
+    "meaning": "A circle of rappers taking turns on the same beat, live or on record. The backbone of the early Indian underground.",
+    "example": "Met the whole crew at a Sunday cypher."
+  },
+  {
+    "id": "diss",
+    "term": "Diss",
+    "aliases": [
+      "diss track"
+    ],
+    "category": "culture",
+    "meaning": "A song made to attack another artist. See the Beef section for the most famous exchanges in DHH.",
+    "example": "He replied with a diss in 48 hours.",
+    "related_track_ids": [
+      "sheikh-chilli",
+      "giraftaar",
+      "makasam",
+      "tt-shutdown"
+    ]
+  },
+  {
+    "id": "beef",
+    "term": "Beef",
+    "aliases": [],
+    "category": "culture",
+    "meaning": "A public feud between artists, usually played out through diss tracks and social media. The Beef section maps the biggest ones round by round.",
+    "example": "Everyone picked a side in that beef."
+  },
+  {
+    "id": "feat",
+    "term": "Feat.",
+    "aliases": [
+      "feature",
+      "ft"
+    ],
+    "category": "industry",
+    "meaning": "Short for featuring: a guest artist on someone else's track. Features are how scenes connect, and this archive maps them.",
+    "example": "Siyaahi on the feat. was the best part."
+  },
+  {
+    "id": "prod",
+    "term": "Prod.",
+    "aliases": [
+      "produced by",
+      "producer tag"
+    ],
+    "category": "industry",
+    "meaning": "Short for 'produced by', the credit for whoever made the beat. Fans follow producers as closely as rappers now.",
+    "example": "Prod. Sez on the Beat? Instant play."
+  },
+  {
+    "id": "type-beat",
+    "term": "Type Beat",
+    "aliases": [],
+    "category": "industry",
+    "meaning": "A beat made in the style of a known artist and sold or shared online, for example a 'Seedhe Maut type beat'. Where a lot of producers start.",
+    "example": "Bought a type beat, wrote a whole EP on it."
+  },
+  {
+    "id": "tape",
+    "term": "Tape",
+    "aliases": [
+      "mixtape"
+    ],
+    "category": "industry",
+    "meaning": "A mixtape: a looser, often free or independent project. Many DHH classics are tapes rather than official albums.",
+    "example": "Lunch Break is a tape, not an album."
+  },
+  {
+    "id": "drop",
+    "term": "Drop",
+    "aliases": [],
+    "category": "industry",
+    "meaning": "A new release, or the moment it comes out.",
+    "example": "Midnight drop, stay up."
+  },
+  {
+    "id": "og",
+    "term": "OG",
+    "aliases": [
+      "original gangster"
+    ],
+    "category": "culture",
+    "meaning": "Someone who was there early and earned respect. MTV Hustle 4 even gave Siyaahi the title OG Hustler.",
+    "example": "Show some love to the OGs.",
+    "related_artist_ids": [
+      "siyaahi"
+    ]
+  },
+  {
+    "id": "underground",
+    "term": "Underground",
+    "aliases": [],
+    "category": "industry",
+    "meaning": "Independent artists outside the label and film machine. In DHH, coming from the underground is a point of pride.",
+    "example": "Still underground, still selling out shows."
+  },
+  {
+    "id": "sellout",
+    "term": "Sellout",
+    "aliases": [],
+    "category": "culture",
+    "meaning": "A diss aimed at artists accused of trading their sound for money, film songs or brand deals. The most common argument in any DHH comment section.",
+    "example": "One Bollywood song and they're calling him a sellout."
+  },
+  {
+    "id": "moshpit",
+    "term": "Moshpit",
+    "aliases": [
+      "mosh"
+    ],
+    "category": "culture",
+    "meaning": "The crowd space where fans jump and crash into each other at shows. Naam Sujal named a whole song after it.",
+    "example": "Front row, straight into the moshpit.",
+    "related_track_ids": [
+      "moshpital"
+    ]
+  },
+  {
+    "id": "hustle",
+    "term": "Hustle",
+    "aliases": [],
+    "category": "culture",
+    "meaning": "The grind of making it with no shortcuts. Also MTV Hustle, the rap reality show that introduced many artists in this archive.",
+    "example": "Day job by day, hustle by night."
+  },
+  {
+    "id": "vernacular",
+    "term": "Vernacular Rap",
+    "aliases": [
+      "regional rap"
+    ],
+    "category": "culture",
+    "meaning": "Rap in regional languages like Malayalam, Tamil, Gujarati, Marathi, Haryanvi or Kashmiri. The fastest growing part of DHH.",
+    "example": "Best verse of the year was in Gujarati."
+  }
 ]

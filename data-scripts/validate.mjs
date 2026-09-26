@@ -16,6 +16,7 @@ const features = load('features')
 const genres = load('genres')
 const slang = load('slang')
 const listening = load('listening')
+const beefs = load('beefs')
 
 const errors = []
 const fail = (msg) => errors.push(msg)
@@ -123,8 +124,23 @@ for (const a of listening.artists) {
   if (!listening.songs.some((s) => s.artist_ids.includes(a) || s.feat_ids.includes(a))) fail(`listening: "${a}" has no songs`)
 }
 
+const BEEF_STATUS = new Set(['ongoing', 'simmering', 'cold'])
+indexById(beefs, 'beefs')
+for (const b of beefs) {
+  if (!BEEF_STATUS.has(b.status)) fail(`beefs: "${b.id}" bad status`)
+  if (!(b.heat >= 1 && b.heat <= 5)) fail(`beefs: "${b.id}" heat must be 1 to 5`)
+  if (b.sides.length < 2) fail(`beefs: "${b.id}" needs at least two sides`)
+  for (const s of b.sides) if (s.artist_id !== null && !artistById.has(s.artist_id)) fail(`beefs: "${b.id}" unknown artist "${s.artist_id}"`)
+  for (const r of b.rounds) {
+    if (r.by !== null && !b.sides[r.by]) fail(`beefs: "${b.id}" round "${r.title}" has a bad side`)
+    for (const t of r.at) if (!b.sides[t]) fail(`beefs: "${b.id}" round "${r.title}" targets a bad side`)
+    if (r.track_id !== null && !trackById.has(r.track_id)) fail(`beefs: "${b.id}" round "${r.title}" unknown track "${r.track_id}"`)
+    if (r.date !== null && !/^\d{4}(-\d{2}(-\d{2})?)?$/.test(r.date)) fail(`beefs: "${b.id}" round "${r.title}" bad date`)
+  }
+}
+
 // House style: no em dashes anywhere in the dataset.
-for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang', 'listening']) {
+for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang', 'listening', 'beefs']) {
   const raw = fs.readFileSync(path.join(dataDir, `${name}.json`), 'utf8')
   if (raw.includes(String.fromCharCode(0x2014))) fail(`${name}: contains an em dash`)
 }
@@ -141,5 +157,5 @@ if (errors.length) {
 
 console.log(
   `Dataset OK: ${artists.length} artists, ${tracks.length} releases, ${labels.length} labels, ` +
-    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms, ${listening.songs.length} playable songs.`,
+    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms, ${listening.songs.length} playable songs, ${beefs.length} beefs.`,
 )

@@ -110,6 +110,40 @@ export interface ListeningRoom {
   songs: ListeningSong[]
 }
 
+export type BeefStatus = 'ongoing' | 'simmering' | 'cold'
+
+export interface BeefSide {
+  name: string
+  /** Set when the artist is in the archive. */
+  artist_id: string | null
+}
+
+export interface BeefRound {
+  date: string | null
+  precision: DatePrecision | null
+  /** Index into sides of whoever released it; null for events that are not a track. */
+  by: number | null
+  /** Indexes of the sides it targets. */
+  at: number[]
+  title: string
+  track_id: string | null
+  note: string | null
+}
+
+export interface Beef {
+  id: string
+  title: string
+  tagline: string
+  years: string
+  status: BeefStatus
+  /** 1 to 5: how hard it went. */
+  heat: number
+  sides: BeefSide[]
+  summary: string
+  origin: string
+  rounds: BeefRound[]
+}
+
 export interface Dataset {
   artists: Artist[]
   tracks: Track[]
@@ -120,4 +154,5 @@ export interface Dataset {
   genres: Genre[]
   slang: SlangTerm[]
   listening: ListeningRoom
+  beefs: Beef[]
 }

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "kalamkaar-emiway-muhfaad",
+    "title": "KR$NA vs Emiway vs Raftaar vs Muhfaad",
+    "tagline": "The multi-front war that defined Hindi rap's diss era.",
+    "years": "2018 to 2022",
+    "status": "cold",
+    "heat": 5,
+    "sides": [
+      { "name": "KR$NA", "artist_id": "krsna" },
+      { "name": "Emiway Bantai", "artist_id": "emiway-bantai" },
+      { "name": "Raftaar", "artist_id": "raftaar" },
+      { "name": "Muhfaad", "artist_id": null }
+    ],
+    "summary": "Less one beef than a web of them. Raftaar and Emiway clashed first in 2018, KR$NA and Emiway traded fire from 2019 to 2022, and Muhfaad went after the whole Kalamkaar camp. Along the way it produced some of the most celebrated diss tracks in Indian hip hop, with KR$NA's 'Makasam' still held up as a benchmark.",
+    "origin": "In September 2018 Raftaar questioned on a podcast with Raaj Jones whether Emiway was really making money from hip hop. Emiway answered on record, and from there each rapper's feuds fed into the others.",
+    "rounds": [
+      { "date": "2018", "precision": "year", "by": 1, "at": [2], "title": "Samajh Mein Aaya Kya?", "track_id": "samajh-mein-aaya-kya", "note": "Emiway's reply to the podcast comments. It also took shots at MC STAN, and became the most played diss track of 2019." },
+      { "date": "2018-10", "precision": "month", "by": 2, "at": [1], "title": "Sheikh Chilli", "track_id": "sheikh-chilli", "note": "Raftaar says his words were taken out of context and picks apart Emiway's claims." },
+      { "date": "2018", "precision": "year", "by": 1, "at": [2], "title": "Giraftaar", "track_id": "giraftaar", "note": "Emiway fires back at Raftaar." },
+      { "date": "2019", "precision": "year", "by": 1, "at": [], "title": "Freeverse Feast (Daawat)", "track_id": "freeverse-feast-daawat", "note": "Emiway claims he is the one rapper representing India worldwide." },
+      { "date": "2019-08-30", "precision": "day", "by": 0, "at": [1], "title": "Freeverse Feast (Langar)", "track_id": "freeverse-feast-langar", "note": "KR$NA answers with his own feast over a Raftaar beat. The first real shot in KR$NA vs Emiway." },
+      { "date": null, "precision": null, "by": 3, "at": [0, 2], "title": "Happy Diwala Raavan", "track_id": null, "note": "Muhfaad, upset about not being invited onto MTV Hustle, calls out KR$NA, Raftaar and others, and dares KR$NA to reply within 24 hours." },
+      { "date": "2020-01-29", "precision": "day", "by": 0, "at": [3], "title": "Maharani", "track_id": "maharani", "note": "Written, recorded and shot inside the 24-hour deadline." },
+      { "date": "2020-02", "precision": "month", "by": 3, "at": [0], "title": "Moksh", "track_id": null, "note": "Muhfaad replies to Maharani." },
+      { "date": null, "precision": null, "by": 0, "at": [3, 1], "title": "Untitled", "track_id": null, "note": "A subliminal from KR$NA aimed at both Muhfaad and Emiway." },
+      { "date": null, "precision": null, "by": 3, "at": [0], "title": "Bitch I'm a God", "track_id": null, "note": "Muhfaad's direct answer to Untitled." },
+      { "date": "2021-01-08", "precision": "day", "by": 0, "at": [3], "title": "Makasam", "track_id": "makasam", "note": "KR$NA's closing statement to Muhfaad, widely ranked among the best diss tracks in Indian hip hop." },
+      { "date": null, "precision": null, "by": 3, "at": [2, 0], "title": "Instagram Live", "track_id": null, "note": "Muhfaad keeps going after Raftaar and the Kalamkaar camp." },
+      { "date": "2022", "precision": "year", "by": 1, "at": [0], "title": "Chusamba", "track_id": "chusamba", "note": "Emiway reopens the KR$NA front." },
+      { "date": "2022", "precision": "year", "by": 0, "at": [1], "title": "Lil Bunty", "track_id": "lil-bunty", "note": null },
+      { "date": "2022", "precision": "year", "by": 1, "at": [0], "title": "KR L$DA SIGN", "track_id": "kr-lsda-sign", "note": null },
+      { "date": "2022-07-08", "precision": "day", "by": 0, "at": [1], "title": "Machayenge 4", "track_id": "machayenge-4", "note": "KR$NA takes the name of Emiway's own signature series. Emiway released his own 'Machayenge 4', then deleted it after a wave of backlash." }
+    ]
+  },
+  {
+    "id": "mc-stan-vs-emiway",
+    "title": "MC STAN vs Emiway Bantai",
+    "tagline": "The Pune newcomer who made his name by taking on Mumbai.",
+    "years": "2018 to 2019",
+    "status": "cold",
+    "heat": 3,
+    "sides": [
+      { "name": "MC STAN", "artist_id": "mc-stan" },
+      { "name": "Emiway Bantai", "artist_id": "emiway-bantai" }
+    ],
+    "summary": "MC STAN went viral in 2018 with a diss aimed at DIVINE and Emiway, and the exchange that followed helped turn an unknown Pune rapper into a household name.",
+    "origin": "MC STAN's 2018 diss of DIVINE and Emiway picked up views on YouTube and snowballed into a feud.",
+    "rounds": [
+      { "date": "2018", "precision": "year", "by": 1, "at": [0], "title": "Samajh Mein Aaya Kya?", "track_id": "samajh-mein-aaya-kya", "note": "The same record that answered Raftaar also mocked MC STAN." },
+      { "date": "2019", "precision": "year", "by": 0, "at": [1], "title": "Khuja Mat", "track_id": null, "note": "MC STAN's music video reply, which brought him much wider recognition." }
+    ]
+  },
+  {
+    "id": "seedhe-maut-vs-sos",
+    "title": "Seedhe Maut vs Straight Outta Srinagar",
+    "tagline": "Former labelmates, years of subliminals, one explosive summer.",
+    "years": "2024",
+    "status": "cold",
+    "heat": 5,
+    "sides": [
+      { "name": "Seedhe Maut", "artist_id": "seedhe-maut" },
+      { "name": "Straight Outta Srinagar", "artist_id": "straight-outta-srinagar" }
+    ],
+    "summary": "Delhi's Seedhe Maut and Kashmir's SOS were both on Azadi Records and had traded subliminal shots for years. In June 2024 it turned into open war, with 30KEY! producing for SOS and both sides levelling serious personal accusations.",
+    "origin": "Years of indirect shots between the two former Azadi Records acts, which boiled over when SOS released 'Blackball'.",
+    "rounds": [
+      { "date": "2024-06", "precision": "month", "by": 1, "at": [0], "title": "Blackball", "track_id": "blackball", "note": "SOS go after Seedhe Maut directly, with personal jabs at Encore ABJ and accusations of plagiarism." },
+      { "date": "2024-06", "precision": "month", "by": 0, "at": [1], "title": "TT / Shutdown", "track_id": "tt-shutdown", "note": "Out within 24 hours: a six-minute, bar-by-bar reply to every claim in Blackball." },
+      { "date": "2024-06", "precision": "month", "by": 0, "at": [1], "title": "Kaanch Ke Ghar", "track_id": "kaanch-ke-ghar", "note": "Seedhe Maut's final word, with serious personal allegations against the duo." },
+      { "date": "2024", "precision": "year", "by": 1, "at": [0], "title": "Rasm-E-Chaharum", "track_id": "rasm-e-chaharum", "note": "SOS respond, calling Azadi Records a scam and accusing Seedhe Maut of relying on paid collaborations and promotion. SOS released one more diss after this." }
+    ]
+  },
+  {
+    "id": "panther-vs-jani",
+    "title": "Panther vs Jani",
+    "tagline": "An India and Pakistan rap feud played out across the border.",
+    "years": "2025 to 2026",
+    "status": "ongoing",
+    "heat": 4,
+    "sides": [
+      { "name": "Panther", "artist_id": "panther" },
+      { "name": "Jani", "artist_id": null }
+    ],
+    "summary": "Panther from Uttar Pradesh and Karachi's Jani have turned a war of words into a string of diss tracks, drawing in fans from both scenes.",
+    "origin": "In April 2025, remarks Panther made on an Instagram Live after the Pahalgam attack upset many Pakistani fans and artists. Neither side released anything for months.",
+    "rounds": [
+      { "date": "2025-11-25", "precision": "day", "by": 0, "at": [], "title": "Hajamat (Red Bull 64 Bars)", "track_id": "hajamat", "note": "Some listeners heard lines aimed at Pakistan's rap scene." },
+      { "date": "2026-06", "precision": "month", "by": 1, "at": [0], "title": "Nonchalant", "track_id": null, "note": "Read widely as Jani's direct shot at Panther." },
+      { "date": "2026-06-16", "precision": "day", "by": 0, "at": [1], "title": "Non Talha", "track_id": "non-talha-papa-ji", "note": "An eight-minute diss packed with references to Jani and the wider Pakistani rap scene." },
+      { "date": "2026", "precision": "year", "by": 1, "at": [0], "title": "Honeymoon", "track_id": null, "note": "Aggressive bars, flow switches and personal jabs." },
+      { "date": "2026", "precision": "year", "by": 0, "at": [1], "title": "Maidan-e-Hashar", "track_id": null, "note": "Produced by Zero Chill." },
+      { "date": "2026", "precision": "year", "by": 0, "at": [1], "title": "3-0", "track_id": null, "note": null },
+      { "date": "2026", "precision": "year", "by": 1, "at": [0], "title": "Ultrasound", "track_id": null, "note": null }
+    ]
+  },
+  {
+    "id": "uday-vs-gaush",
+    "title": "Uday vs Gaush",
+    "tagline": "An MTV Hustle battle that never really ended.",
+    "years": "2024 to 2025",
+    "status": "cold",
+    "heat": 4,
+    "sides": [
+      { "name": "Uday", "artist_id": null },
+      { "name": "Gaush", "artist_id": null }
+    ],
+    "summary": "What started as a rap battle on MTV Hustle became a seven-track exchange about loyalty, lyrics and who the industry is really backing. Fans are still split, and some suspect it doubled as promotion for both.",
+    "origin": "Uday beat Gaush in a battle on MTV Hustle. Gaush later claimed Uday had seen his lyrics beforehand, which Uday denied.",
+    "rounds": [
+      { "date": "2025", "precision": "year", "by": 1, "at": [0], "title": "Tap Out", "track_id": null, "note": null },
+      { "date": "2025", "precision": "year", "by": 0, "at": [1], "title": "Recycled", "track_id": null, "note": null },
+      { "date": "2025", "precision": "year", "by": 0, "at": [1], "title": "Contract", "track_id": null, "note": null },
+      { "date": "2025", "precision": "year", "by": 1, "at": [0], "title": "Shanti", "track_id": null, "note": "With Muhfaad." },
+      { "date": "2025", "precision": "year", "by": 0, "at": [1], "title": "Unblock", "track_id": null, "note": "Calls Gaush a crybaby for blaming the loss on others." },
+      { "date": "2025", "precision": "year", "by": 1, "at": [0], "title": "Industry Plant", "track_id": null, "note": "Paints Uday as a manufactured artist with industry backing." },
+      { "date": "2025", "precision": "year", "by": 0, "at": [1], "title": "Victim Card", "track_id": null, "note": "Accuses Gaush of playing for sympathy." }
+    ]
+  },
+  {
+    "id": "karma-vs-agsy",
+    "title": "Karma vs Agsy",
+    "tagline": "A Kalamkaar veteran against one of the scene's sharpest female voices.",
+    "years": "2024",
+    "status": "simmering",
+    "heat": 3,
+    "sides": [
+      { "name": "Karma", "artist_id": "karma" },
+      { "name": "Agsy", "artist_id": null }
+    ],
+    "summary": "Karma's 'Men At Work' took aim at Agsy and Loka. Agsy answered on record and explained her side publicly, and the two have kept trading words since.",
+    "origin": "Friction that went public with Karma's 'Men At Work' in February 2024.",
+    "rounds": [
+      { "date": "2024-02", "precision": "month", "by": 0, "at": [1], "title": "Men At Work", "track_id": "men-at-work", "note": "Karma's shots at Agsy and Loka." },
+      { "date": "2024", "precision": "year", "by": 1, "at": [0], "title": "Agsy's reply", "track_id": null, "note": "Agsy dissed Karma back and laid out her side of the story on Instagram." }
+    ]
+  },
+  {
+    "id": "badshah-vs-honey-singh",
+    "title": "Badshah vs Yo Yo Honey Singh",
+    "tagline": "The Mafia Mundeer split that never healed.",
+    "years": "2012 to now",
+    "status": "simmering",
+    "heat": 3,
+    "sides": [
+      { "name": "Badshah", "artist_id": "badshah" },
+      { "name": "Yo Yo Honey Singh", "artist_id": "honey-singh" }
+    ],
+    "summary": "Two of Indian rap's biggest commercial stars came out of the same crew. Since Mafia Mundeer broke up in 2012 the rivalry has surfaced in interviews, on stage and in songs, more cold war than open battle.",
+    "origin": "The 2012 Mafia Mundeer split. Badshah later described Honey Singh's focus on his own solo growth as self-centred.",
+    "rounds": [
+      { "date": "2012", "precision": "year", "by": null, "at": [], "title": "Mafia Mundeer splits", "track_id": null, "note": "The crew that also included Raftaar and Ikka breaks up." },
+      { "date": "2023", "precision": "year", "by": 0, "at": [1], "title": "Gone Girl", "track_id": "gone-girl", "note": "Badshah's bars about being the undisputed king, read as digs at Honey Singh's comeback." },
+      { "date": "2024-03", "precision": "month", "by": 0, "at": [1], "title": "Jaipur show", "track_id": null, "note": "Badshah hits back on stage when fans chant Honey Singh's name." }
+    ]
+  },
+  {
+    "id": "king-vs-emiway",
+    "title": "King vs Emiway Bantai",
+    "tagline": "Independent versus signed, fought mostly on Instagram.",
+    "years": "2024",
+    "status": "cold",
+    "heat": 3,
+    "sides": [
+      { "name": "King", "artist_id": null },
+      { "name": "Emiway Bantai", "artist_id": "emiway-bantai" }
+    ],
+    "summary": "Pop-rap star King and Emiway argued over what being independent really means, releasing several of their disses straight to Instagram.",
+    "origin": "Subtle jabs on 'Fck What They Say' (with MC STAN) from King's album Monopoly Moves, followed by King suggesting on a podcast that some self-proclaimed independent artists are not independent.",
+    "rounds": [
+      { "date": "2024", "precision": "year", "by": 0, "at": [1], "title": "Fck What They Say", "track_id": null, "note": "With MC STAN, from Monopoly Moves." },
+      { "date": "2024", "precision": "year", "by": 1, "at": [0], "title": "ROKO 2MG", "track_id": null, "note": null },
+      { "date": "2024-08-26", "precision": "day", "by": 0, "at": [1], "title": "Mere Pyaare Emiway", "track_id": null, "note": "Released on Instagram." },
+      { "date": "2024", "precision": "year", "by": 0, "at": [1], "title": "Hum Teri Lele", "track_id": null, "note": "Also released on Instagram." },
+      { "date": "2024", "precision": "year", "by": 1, "at": [0], "title": "Meet the Instagram Yapper", "track_id": null, "note": null },
+      { "date": "2024", "precision": "year", "by": 1, "at": [0], "title": "Dependent Kauve", "track_id": null, "note": null }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 import type { View } from '../hooks/useView'
 import type { IndexedDataset } from './indexDataset'
 
-export type ResultKind = 'artist' | 'producer' | 'scene' | 'genre' | 'slang' | 'release' | 'page'
+export type ResultKind = 'artist' | 'producer' | 'scene' | 'genre' | 'beef' | 'slang' | 'release' | 'page'
 
 export interface SearchEntry {
   kind: ResultKind
@@ -25,6 +25,7 @@ export const KIND_LABEL: Record<ResultKind, string> = {
   producer: 'Producers',
   scene: 'Scenes',
   genre: 'Genres',
+  beef: 'Beef',
   slang: 'Slang and terms',
   release: 'Releases',
   page: 'Pages',
@@ -62,6 +63,18 @@ export function buildSearchIndex(data: IndexedDataset): SearchEntry[] {
   for (const g of data.genres) {
     entries.push({ kind: 'genre', key: `g:${g.id}`, title: g.name, subtitle: g.tagline, color: g.color, keywords: g.aliases, view: 'genre', id: g.id })
   }
+  for (const b of data.beefs) {
+    entries.push({
+      kind: 'beef',
+      key: `b:${b.id}`,
+      title: b.title,
+      subtitle: `${b.years} / ${b.rounds.filter((r) => r.by !== null).length} rounds`,
+      color: '#ff3b30',
+      keywords: [...b.sides.map((s) => s.name), ...b.rounds.map((r) => r.title), 'diss', 'beef'],
+      view: 'beef',
+      id: b.id,
+    })
+  }
   for (const s of data.slang) {
     entries.push({ kind: 'slang', key: `s:${s.id}`, title: s.term, subtitle: s.meaning, color: '#ff3b30', keywords: s.aliases, view: 'slang', id: s.id })
   }
@@ -85,6 +98,7 @@ export function buildSearchIndex(data: IndexedDataset): SearchEntry[] {
     ['Producers', 'Everyone behind the beats', 'producers', ['beatmakers', 'beats']],
     ['Genres', 'Every sound in the archive', 'genres', ['styles', 'sounds']],
     ['Slang and terms', 'The DHH glossary', 'slang', ['glossary', 'dictionary', 'words', 'terminology', 'lingo']],
+    ['Beef', 'Every famous feud, round by round', 'beef', ['beefs', 'diss tracks', 'feuds', 'disses']],
     ['Listen', 'Play DHH songs right here', 'listen', ['listening room', 'play', 'music', 'player', 'songs', 'radio']],
   ]
   for (const [title, subtitle, view, keywords] of pages) {
@@ -110,7 +124,7 @@ function scoreText(q: string, text: string): number {
   return 0
 }
 
-const KIND_BOOST: Record<ResultKind, number> = { artist: 6, producer: 6, scene: 5, genre: 5, page: 4, slang: 3, release: 0 }
+const KIND_BOOST: Record<ResultKind, number> = { artist: 6, producer: 6, scene: 5, genre: 5, beef: 4, page: 4, slang: 3, release: 0 }
 
 export function search(index: SearchEntry[], query: string, limit = 24): SearchResult[] {
   const q = normalize(query)
