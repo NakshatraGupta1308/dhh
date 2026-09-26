@@ -150,5 +150,14 @@
     "roster": [
       "param"
     ]
+  },
+  {
+    "id": "saregama",
+    "name": "Saregama",
+    "kind": "major",
+    "founded_year": null,
+    "roster": [
+      "lashcurry"
+    ]
   }
 ]

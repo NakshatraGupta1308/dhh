@@ -5,7 +5,7 @@ import { useSearch } from '../../hooks/useSearch'
 import { useView } from '../../hooks/useView'
 import { buildSearchIndex, KIND_LABEL, search, type ResultKind, type SearchResult } from '../../lib/search'
 
-const ORDER: ResultKind[] = ['artist', 'producer', 'scene', 'genre', 'beef', 'page', 'slang', 'release']
+const ORDER: ResultKind[] = ['artist', 'producer', 'scene', 'genre', 'beef', 'hustle', 'page', 'slang', 'release']
 const SUGGESTIONS = ['Seedhe Maut', 'Boom Bap', 'Gujarat', 'Sez on the Beat', 'Bantai', 'Trap']
 
 export function SearchPalette() {

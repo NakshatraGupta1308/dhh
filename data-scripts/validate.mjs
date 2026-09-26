@@ -17,6 +17,7 @@ const genres = load('genres')
 const slang = load('slang')
 const listening = load('listening')
 const beefs = load('beefs')
+const hustle = load('hustle')
 
 const errors = []
 const fail = (msg) => errors.push(msg)
@@ -139,8 +140,25 @@ for (const b of beefs) {
   }
 }
 
+const DAY = /^\d{4}-\d{2}-\d{2}$/
+const seasonNumbers = new Set()
+for (const s of hustle.seasons) {
+  const tag = `hustle: season ${s.number}`
+  if (seasonNumbers.has(s.number)) fail(`${tag} is listed twice`)
+  seasonNumbers.add(s.number)
+  if (!['finished', 'airing'].includes(s.status)) fail(`${tag} bad status`)
+  if (!DAY.test(s.premiere)) fail(`${tag} bad premiere date`)
+  if (s.finale !== null && (!DAY.test(s.finale) || s.finale < s.premiere)) fail(`${tag} bad finale date`)
+  if (s.status === 'finished' && s.finale === null) fail(`${tag} is finished but has no finale date`)
+  const people = [...s.hosts, ...s.judges, ...s.squad_bosses, ...s.guests, ...s.contestants]
+  for (const p of people) if (p.artist_id !== null && !artistById.has(p.artist_id)) fail(`${tag} unknown artist "${p.artist_id}"`)
+  const squads = new Set(s.squad_bosses.map((b) => b.squad).filter(Boolean))
+  for (const c of s.contestants) if (c.squad !== null && !squads.has(c.squad)) fail(`${tag} "${c.name}" is in unknown squad "${c.squad}"`)
+  if (s.contestants.filter((c) => c.result === 'Winner').length > 1) fail(`${tag} has more than one winner`)
+}
+
 // House style: no em dashes anywhere in the dataset.
-for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang', 'listening', 'beefs']) {
+for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang', 'listening', 'beefs', 'hustle']) {
   const raw = fs.readFileSync(path.join(dataDir, `${name}.json`), 'utf8')
   if (raw.includes(String.fromCharCode(0x2014))) fail(`${name}: contains an em dash`)
 }
@@ -157,5 +175,5 @@ if (errors.length) {
 
 console.log(
   `Dataset OK: ${artists.length} artists, ${tracks.length} releases, ${labels.length} labels, ` +
-    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms, ${listening.songs.length} playable songs, ${beefs.length} beefs.`,
+    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms, ${listening.songs.length} playable songs, ${beefs.length} beefs, ${hustle.seasons.length} Hustle seasons.`,
 )

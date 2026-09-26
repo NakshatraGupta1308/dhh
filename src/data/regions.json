@@ -78,6 +78,18 @@
     "color": "#A0C4FF"
   },
   {
+    "id": "indore",
+    "name": "Indore",
+    "description": "Madhya Pradesh's rap capital, which crowned its first MTV Hustle champion in 2024.",
+    "color": "#FF6B35"
+  },
+  {
+    "id": "kolkata",
+    "name": "Kolkata",
+    "description": "A city of poets and protest songs, where rap picks up the tradition of speaking truth to power.",
+    "color": "#8D99AE"
+  },
+  {
     "id": "kashmir",
     "name": "Kashmir",
     "description": "Introspective, political rap from the valley, documenting life under conflict.",

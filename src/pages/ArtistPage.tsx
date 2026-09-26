@@ -11,6 +11,7 @@ import { artistCredits, collaborators } from '../lib/artistStats'
 import { distinctAliases } from '../lib/hash'
 import { trackYear } from '../lib/indexDataset'
 import { artistGenres } from '../lib/profiles'
+import { hustleRoles } from '../lib/hustle'
 import type { Artist } from '../types'
 
 const KIND_LABEL: Record<Artist['kind'], string> = { rapper: 'Rapper', group: 'Group', producer: 'Producer', singer: 'Singer' }
@@ -23,6 +24,7 @@ function ArtistView({ artist }: { artist: Artist }) {
   const credits = useMemo(() => artistCredits(data, artist.id), [data, artist.id])
   const collabs = useMemo(() => collaborators(data, artist.id), [data, artist.id])
   const genres = useMemo(() => artistGenres(data, artist.id), [data, artist.id])
+  const hustle = useMemo(() => hustleRoles(data.hustle, artist.id), [data.hustle, artist.id])
   const productions = credits.filter((c) => c.roles.includes('producer'))
   const isProducer = artist.kind === 'producer' || productions.length > 0
   const lead = credits.filter((c) => c.roles.includes('main')).length
@@ -153,6 +155,27 @@ function ArtistView({ artist }: { artist: Artist }) {
                     <GenreChip key={g} id={g} suffix={n} />
                   ))}
                 </div>
+              </section>
+            )}
+            {hustle.length > 0 && (
+              <section>
+                <SectionLabel>MTV Hustle</SectionLabel>
+                <ul className="space-y-1">
+                  {hustle.map((h) => (
+                    <li key={`${h.season}-${h.role}`}>
+                      <button
+                        type="button"
+                        onClick={() => navigate('hustle', { id: String(h.season) })}
+                        className="flex w-full items-center justify-between gap-3 rounded-[var(--radius-card)] border border-line px-4 py-3 text-left transition-colors hover:border-accent"
+                      >
+                        <span className="font-display text-lg uppercase leading-tight">{h.role}</span>
+                        <span className="kicker shrink-0">
+                          Season {h.season} / {h.year}
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               </section>
             )}
             {data.beefs.some((b) => b.sides.some((s) => s.artist_id === artist.id)) && (

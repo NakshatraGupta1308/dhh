@@ -11,6 +11,7 @@ const LINKS: { view: View; anchor?: string; label: string }[] = [
   { view: 'slang', label: 'Slang' },
   { view: 'listen', label: 'Listen' },
   { view: 'beef', label: 'Beef' },
+  { view: 'hustle', label: 'Hustle' },
 ]
 
 function hrefFor(l: (typeof LINKS)[number]) {

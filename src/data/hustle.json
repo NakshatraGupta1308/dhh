@@ -1,0 +1,225 @@
+{
+  "show": {
+    "name": "MTV Hustle",
+    "tagline": "India's biggest hip hop reality competition.",
+    "network": "MTV India",
+    "streaming": ["JioCinema", "JioHotstar", "Netflix"],
+    "language": "Hindi",
+    "about": "MTV Hustle is a rap reality show where independent artists from across India compete with original music, battles and collaborations. Since 2019 it has run for five seasons, turned contestants into headliners, and brought desi hip hop to prime time television.",
+    "format": [
+      { "step": "Auditions", "text": "Rappers from across the country perform original material. The strongest make it into the top 15 or 16 who compete on the show." },
+      { "step": "Squads", "text": "From season 2 onward, contestants are split into squads led by squad bosses. In season 3 Badshah made the first assignments, and squad bosses could use a 'mic drop' to pull a contestant into their own squad." },
+      { "step": "Weekly challenges", "text": "Each week brings a theme, from original songs to collaborations and head-to-head battles such as the Battleground round." },
+      { "step": "Danger zone and voting", "text": "The weakest performers land in the danger zone. Squad bosses can save a contestant, and public votes also shape who is eliminated." },
+      { "step": "Grand finale", "text": "The last contestants standing perform in a two-night finale for the title, prize money and prizes from the season's sponsors." },
+      { "step": "OG Hustler", "text": "From season 3 the show also names an OG Hustler, a separate award with its own cash prize for the contestant who best represents the spirit of the hustle." }
+    ],
+    "spinoffs": [
+      { "name": "MTV Hustle Namma Pettai", "text": "A Tamil edition, announced by actor Samantha Ruth Prabhu on 10 December 2023 during episode 16 of season 3, and produced by her." }
+    ]
+  },
+  "seasons": [
+    {
+      "number": 1,
+      "title": "MTV Hustle",
+      "full_title": "MTV Hustle",
+      "year": 2019,
+      "premiere": "2019-08-10",
+      "finale": "2019-10-13",
+      "status": "finished",
+      "hosts": [{ "name": "Gaelyn Mendonca", "artist_id": null }],
+      "judges": [
+        { "name": "Raftaar", "artist_id": "raftaar" },
+        { "name": "Nucleya", "artist_id": null },
+        { "name": "Raja Kumari", "artist_id": null }
+      ],
+      "squad_bosses": [],
+      "guests": [{ "name": "Brodha V", "artist_id": "brodha-v", "note": "Performed with Raftaar in episode 18." }],
+      "prize": "The winner received his own studio space.",
+      "highlights": [
+        "King became the first artist to enter the top 15, with his track 'Maahaul'.",
+        "Agsy was the only woman to get direct entry into the top 15."
+      ],
+      "roster_complete": false,
+      "contestants": [
+        { "name": "M-Zee Bella", "real_name": "Deepak Singh", "from": "Dehradun", "squad": null, "result": "Winner", "artist_id": "m-zee-bella" },
+        { "name": "EPR", "real_name": "Santhanam Srinivasan Iyer", "from": "Kolkata", "squad": null, "result": "Runner-up", "artist_id": "epr" },
+        { "name": "RCR", "real_name": "Rohit Kumar Chaudhary", "from": "Amritsar", "squad": null, "result": "3rd place", "artist_id": null },
+        { "name": "King", "real_name": "Arpan Kumar Chandel", "from": "Delhi", "squad": null, "result": "4th place", "artist_id": "king" },
+        { "name": "Shloka", "real_name": null, "from": null, "squad": null, "result": "5th place", "artist_id": null },
+        { "name": "Agsy", "real_name": "Agrita Dhawan", "from": "Faridabad", "squad": null, "result": "Finalist", "artist_id": "agsy" },
+        { "name": "Dee MC", "real_name": "Deepa Unnikrishnan", "from": "Mumbai", "squad": null, "result": "Contestant", "artist_id": "dee-mc" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "MTV Hustle 2.0",
+      "full_title": "MTV Hustle 2.0",
+      "year": 2022,
+      "premiere": "2022-09-03",
+      "finale": "2022-11-06",
+      "status": "finished",
+      "hosts": [{ "name": "Krissann Barretto", "artist_id": null }],
+      "judges": [{ "name": "Badshah", "artist_id": "badshah" }],
+      "squad_bosses": [
+        { "name": "EPR", "artist_id": "epr", "squad": "EPR Rebels" },
+        { "name": "Dino James", "artist_id": "dino-james", "squad": "Dino Warriors" },
+        { "name": "Dee MC", "artist_id": "dee-mc", "squad": "Team Dee MC" },
+        { "name": "King", "artist_id": "king", "squad": "King Slayers" }
+      ],
+      "guests": [],
+      "prize": null,
+      "highlights": [
+        "Squads arrived this season, each led by a squad boss.",
+        "Two of the top 5 came from EPR's squad, including the winner.",
+        "The grand finale aired on 5 and 6 November 2022, and MC Square beat Paradox by a slim margin."
+      ],
+      "roster_complete": false,
+      "contestants": [
+        { "name": "MC Square", "real_name": "Abhishek Bainsla", "from": "Palwal, Haryana", "squad": "EPR Rebels", "result": "Winner", "artist_id": "mc-square" },
+        { "name": "Paradox", "real_name": null, "from": "Delhi", "squad": "King Slayers", "result": "Runner-up", "artist_id": null },
+        { "name": "Nazz", "real_name": null, "from": null, "squad": "EPR Rebels", "result": "Finalist", "artist_id": null },
+        { "name": "Spectra", "real_name": null, "from": null, "squad": "Team Dee MC", "result": "Finalist", "artist_id": null },
+        { "name": "Gravity", "real_name": null, "from": "Mumbai", "squad": "Dino Warriors", "result": "Finalist", "artist_id": null },
+        { "name": "Panther", "real_name": "Anubhav Shukla", "from": "Lakhimpur Kheri, Uttar Pradesh", "squad": null, "result": "Contestant", "artist_id": "panther" },
+        { "name": "QK", "real_name": "Aarya Jadhao", "from": "Mumbai", "squad": null, "result": "Contestant", "artist_id": null },
+        { "name": "Khanzaadi", "real_name": "Firoza Khan", "from": null, "squad": null, "result": "Contestant", "artist_id": null }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "MTV Hustle 03 REPRESENT",
+      "full_title": "POCO MTV Hustle 03 REPRESENT",
+      "year": 2023,
+      "premiere": "2023-10-21",
+      "finale": "2023-12-24",
+      "status": "finished",
+      "hosts": [
+        { "name": "Super Manikk", "artist_id": null },
+        { "name": "Wicked Sunny", "artist_id": null }
+      ],
+      "judges": [{ "name": "Badshah", "artist_id": "badshah" }],
+      "squad_bosses": [
+        { "name": "EPR", "artist_id": "epr", "squad": null },
+        { "name": "Dino James", "artist_id": "dino-james", "squad": null },
+        { "name": "Dee MC", "artist_id": "dee-mc", "squad": "Dee MC Dynamites" },
+        { "name": "Ikka", "artist_id": "ikka", "squad": null }
+      ],
+      "guests": [
+        { "name": "Samantha Ruth Prabhu", "artist_id": null, "note": "Announced the Tamil edition, MTV Hustle Namma Pettai, in episode 16 on 10 December 2023." },
+        { "name": "Guru Randhawa", "artist_id": null, "note": "Grand finale guest." },
+        { "name": "King", "artist_id": "king", "note": "Grand finale guest." }
+      ],
+      "prize": "The winner received Rs 10 lakh, POCO gifts worth Rs 2.5 lakh and a GOVO soundbar. The OG Hustler received Rs 5 lakh.",
+      "highlights": [
+        "Ikka joined as a new squad boss.",
+        "Dee MC saved 100RBH from the danger zone. He went on to win OG Hustler.",
+        "The grand finale aired on 23 and 24 December 2023. Uday won after a 10-week run, the youngest prodigy of the season."
+      ],
+      "roster_complete": true,
+      "contestants": [
+        { "name": "Uday", "real_name": "Uday Pandhi", "from": "Delhi", "squad": "Dee MC Dynamites", "result": "Winner", "artist_id": "uday" },
+        { "name": "Bassick", "real_name": "Shlok Verma", "from": null, "squad": null, "result": "Runner-up", "artist_id": null },
+        { "name": "100RBH", "real_name": "Saurabh Abhyankar", "from": "Amravati", "squad": null, "result": "OG Hustler", "artist_id": null },
+        { "name": "Mrunal Shankar", "real_name": null, "from": null, "squad": null, "result": "Finalist", "artist_id": null },
+        { "name": "Kayden Sharma", "real_name": null, "from": null, "squad": null, "result": "Finalist", "artist_id": null },
+        { "name": "Vijay Dada", "real_name": null, "from": null, "squad": null, "result": "Finalist", "artist_id": null },
+        { "name": "Gaush", "real_name": null, "from": "Navi Mumbai", "squad": null, "result": "Top 16", "artist_id": "gaush" },
+        { "name": "Badal", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Bob.B Randhawa", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Burrah", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Poet Shaf", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Prince", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Rap ID", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Shady Mellow", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Shen B", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Vish", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "MTV Hustle 4: Hip Hop Don't Stop",
+      "full_title": "Royal Enfield Hunter MTV Hustle 4: Hip Hop Don't Stop",
+      "year": 2024,
+      "premiere": "2024-10-19",
+      "finale": "2024-12-22",
+      "status": "finished",
+      "hosts": [
+        { "name": "Talha Siddiqui", "artist_id": null },
+        { "name": "Jizzy", "artist_id": null }
+      ],
+      "judges": [
+        { "name": "Raftaar", "artist_id": "raftaar" },
+        { "name": "Ikka", "artist_id": "ikka" }
+      ],
+      "squad_bosses": [
+        { "name": "EPR", "artist_id": "epr", "squad": null },
+        { "name": "Dino James", "artist_id": "dino-james", "squad": null },
+        { "name": "Dee MC", "artist_id": "dee-mc", "squad": null },
+        { "name": "Raga", "artist_id": "raga", "squad": "Raga Ragers" }
+      ],
+      "guests": [
+        { "name": "M-Zee Bella", "artist_id": "m-zee-bella", "note": "Season 1 winner, backed Lashcurry at the finale." },
+        { "name": "MC Square", "artist_id": "mc-square", "note": "Season 2 winner, backed Naam Sujal at the finale." },
+        { "name": "Uday", "artist_id": "uday", "note": "Season 3 winner, backed Dharmik at the finale." }
+      ],
+      "prize": "The winner received Rs 10 lakh.",
+      "highlights": [
+        "Raftaar returned as judge alongside Ikka. The pair opened the season with the MTV Hustle 4 anthem.",
+        "Raga joined as a new squad boss, and his squad Raga Ragers produced the winner.",
+        "Streamed on JioCinema. Contestants' performances were released episode by episode."
+      ],
+      "roster_complete": false,
+      "contestants": [
+        { "name": "Lashcurry", "real_name": "Vinayak Lashkari", "from": "Indore", "squad": "Raga Ragers", "result": "Winner", "artist_id": "lashcurry" },
+        { "name": "Naam Sujal", "real_name": "Sujal Dupare", "from": "Nagpur", "squad": null, "result": "Runner-up", "artist_id": "naam-sujal" },
+        { "name": "Siyaahi", "real_name": "Aniket Bhat", "from": "Ahmedabad", "squad": null, "result": "OG Hustler", "artist_id": "siyaahi" },
+        { "name": "Dharmik", "real_name": null, "from": "Hyderabad", "squad": null, "result": "Finalist", "artist_id": null },
+        { "name": "99side", "real_name": null, "from": "Vile Parle, Mumbai", "squad": null, "result": "Finalist", "artist_id": null },
+        { "name": "vichaar", "real_name": "Abhin Pandita", "from": "Dehradun", "squad": null, "result": "Finalist", "artist_id": "vichaar" },
+        { "name": "Rajjo", "real_name": null, "from": null, "squad": null, "result": "Contestant", "artist_id": null },
+        { "name": "pho", "real_name": null, "from": null, "squad": null, "result": "Contestant", "artist_id": null }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "MTV Hustle 5: Apna Homeground",
+      "full_title": "MTV Hustle 5: Apna Homeground",
+      "year": 2026,
+      "premiere": "2026-08-08",
+      "finale": null,
+      "status": "airing",
+      "hosts": [],
+      "judges": [{ "name": "Badshah", "artist_id": "badshah" }],
+      "squad_bosses": [
+        { "name": "EPR", "artist_id": "epr", "squad": null },
+        { "name": "MC Square", "artist_id": "mc-square", "squad": null },
+        { "name": "Paradox", "artist_id": null, "squad": null },
+        { "name": "Agsy", "artist_id": "agsy", "squad": null }
+      ],
+      "guests": [],
+      "prize": null,
+      "highlights": [
+        "The theme asks contestants to draw their stories from their roots, hometowns and lived experience.",
+        "Badshah returned as the show's Rap Supremo. Three former contestants, MC Square, Paradox and Agsy, became squad bosses alongside EPR.",
+        "Airs every Saturday and Sunday at 7 PM on MTV India, and streams on JioHotstar and, for the first time, Netflix."
+      ],
+      "roster_complete": false,
+      "contestants": [
+        { "name": "Akshat Jakhar", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Ansh 4Sure", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Anushka Baduwal", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Bhaktaaa", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "dflacko", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Dhadkan", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Farak", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Harmeet", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
+        { "name": "Eddy", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
+        { "name": "Gargi", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
+        { "name": "Hruday", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
+        { "name": "Split", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
+        { "name": "Vasu", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null }
+      ]
+    }
+  ]
+}

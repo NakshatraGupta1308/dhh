@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { staticRepository } from '../../data/repository'
 import { indexDataset } from '../indexDataset'
 import { artistGenres, genreProfile, sceneProfile } from '../profiles'
+import { hustleRoles } from '../hustle'
 import { buildSearchIndex, search } from '../search'
 
 const data = indexDataset(await staticRepository.loadDataset())
@@ -95,5 +96,29 @@ describe('beefs', () => {
     const jani = search(index, 'jani')
     expect(jani[0]).toMatchObject({ kind: 'artist', id: 'jani' })
     expect(jani.some((r) => r.kind === 'beef' && r.id === 'panther-vs-jani')).toBe(true)
+  })
+})
+
+describe('mtv hustle', () => {
+  it('has five seasons in order with one winner per finished season', () => {
+    expect(data.hustle.seasons.map((s) => s.number)).toEqual([1, 2, 3, 4, 5])
+    for (const s of data.hustle.seasons) {
+      const winners = s.contestants.filter((c) => c.result === 'Winner')
+      expect(winners.length).toBe(s.status === 'finished' ? 1 : 0)
+    }
+  })
+
+  it('lists every role an artist played across seasons', () => {
+    expect(hustleRoles(data.hustle, 'lashcurry')).toEqual([{ season: 4, year: 2024, role: 'Winner' }])
+    const epr = hustleRoles(data.hustle, 'epr').map((r) => `${r.season}:${r.role}`)
+    expect(epr).toContain('1:Runner-up')
+    expect(epr).toContain('2:Squad boss (EPR Rebels)')
+    expect(hustleRoles(data.hustle, 'raftaar').map((r) => r.season)).toEqual([1, 4])
+  })
+
+  it('finds seasons through search', () => {
+    expect(search(index, 'hustle 3').some((r) => r.kind === 'hustle' && r.id === '3')).toBe(true)
+    expect(search(index, 'lashcurry')[0].id).toBe('lashcurry')
+    expect(search(index, 'lashcurry').some((r) => r.kind === 'hustle' && r.id === '4')).toBe(true)
   })
 })

@@ -5,7 +5,7 @@ export function Footer() {
   const data = useDhhData()
   const { navigate } = useView()
   const unverified = data.tracks.filter((t) => t.confidence !== 'high').length
-  const links: [string, View][] = [['Timeline', 'home'], ['Producers', 'producers'], ['Genres', 'genres'], ['Slang and terms', 'slang'], ['Listen', 'listen'], ['Beef', 'beef']]
+  const links: [string, View][] = [['Timeline', 'home'], ['Producers', 'producers'], ['Genres', 'genres'], ['Slang and terms', 'slang'], ['Listen', 'listen'], ['Beef', 'beef'], ['MTV Hustle', 'hustle']]
   return (
     <footer className="border-t border-line">
       <div className="mx-auto grid max-w-[1600px] gap-10 px-4 py-16 sm:px-8 md:grid-cols-[2fr_1fr]">

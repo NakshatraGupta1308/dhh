@@ -155,4 +155,59 @@ export interface Dataset {
   slang: SlangTerm[]
   listening: ListeningRoom
   beefs: Beef[]
+  hustle: Hustle
+}
+
+export interface HustlePerson {
+  name: string
+  /** Set when the person is in the archive. */
+  artist_id: string | null
+}
+
+export interface HustleSquadBoss extends HustlePerson {
+  squad: string | null
+}
+
+export interface HustleGuest extends HustlePerson {
+  note: string | null
+}
+
+export interface HustleContestant extends HustlePerson {
+  real_name: string | null
+  from: string | null
+  squad: string | null
+  result: string
+}
+
+export interface HustleSeason {
+  number: number
+  title: string
+  full_title: string
+  year: number
+  premiere: string
+  finale: string | null
+  status: 'finished' | 'airing'
+  hosts: HustlePerson[]
+  judges: HustlePerson[]
+  squad_bosses: HustleSquadBoss[]
+  guests: HustleGuest[]
+  prize: string | null
+  highlights: string[]
+  /** False when only part of the season's roster is recorded. */
+  roster_complete: boolean
+  contestants: HustleContestant[]
+}
+
+export interface Hustle {
+  show: {
+    name: string
+    tagline: string
+    network: string
+    streaming: string[]
+    language: string
+    about: string
+    format: { step: string; text: string }[]
+    spinoffs: { name: string; text: string }[]
+  }
+  seasons: HustleSeason[]
 }

@@ -1166,5 +1166,121 @@
     "image_url": null,
     "bio": "Mumbai rapper on Emiway's Bantai Records, best known for 'Shot Deke Gayab'. Features on Kidshot's drill track 'Aur Ek' and was one of the targets of Karma's 'Men At Work'.",
     "confidence": "medium"
+  },
+  {
+    "id": "m-zee-bella",
+    "name": "M-Zee Bella",
+    "aliases": [
+      "M Zee Bella",
+      "Deepak Singh"
+    ],
+    "kind": "rapper",
+    "region_id": "dehradun",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2010,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Dehradun rapper who started out in 2010 and joined the crew Da Desi Toli before winning the first season of MTV Hustle in 2019, aged 21. Has since worked with Raftaar, Emiway and DIVINE.",
+    "confidence": "high"
+  },
+  {
+    "id": "mc-square",
+    "name": "MC Square",
+    "aliases": [
+      "MC SQUARE",
+      "Abhishek Bainsla"
+    ],
+    "kind": "rapper",
+    "region_id": "haryana",
+    "languages": [
+      "bgc",
+      "hi"
+    ],
+    "active_from": 2016,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Rapper from Bhawana village in Palwal, Haryana, inspired by the Haryanvi folk form ragini. Won MTV Hustle 2.0 in 2022 with Haryanvi bars and returned as a squad boss in season 5.",
+    "confidence": "high"
+  },
+  {
+    "id": "lashcurry",
+    "name": "Lashcurry",
+    "aliases": [
+      "Lash Curry",
+      "Vinayak Lashkari"
+    ],
+    "kind": "rapper",
+    "region_id": "indore",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2021,
+    "active_to": null,
+    "label_ids": [
+      "saregama"
+    ],
+    "image_url": null,
+    "bio": "Indore rapper who named himself after Denzel Curry. Won MTV Hustle 4 at 21 from Raga's squad, then signed with Saregama and debuted with 'CHANGE' in 2025.",
+    "confidence": "high"
+  },
+  {
+    "id": "epr",
+    "name": "EPR",
+    "aliases": [
+      "EPR Iyer",
+      "Santhanam Srinivasan Iyer"
+    ],
+    "kind": "rapper",
+    "region_id": "kolkata",
+    "languages": [
+      "en",
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Kolkata-based 'newspaper rapper' known for protest poetry. Runner-up of MTV Hustle's first season, then a squad boss in every season since, whose squad produced the season 2 winner.",
+    "confidence": "medium"
+  },
+  {
+    "id": "dee-mc",
+    "name": "Dee MC",
+    "aliases": [
+      "Deepa Unnikrishnan"
+    ],
+    "kind": "rapper",
+    "region_id": "mumbai",
+    "languages": [
+      "en",
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Mumbai rapper and one of the leading women in Indian hip hop. Her 2019 debut album Dee=MC2 featured MC Altaf and D'Evil, and she has been an MTV Hustle squad boss since season 2. Her squad produced the season 3 winner.",
+    "confidence": "medium"
+  },
+  {
+    "id": "dino-james",
+    "name": "Dino James",
+    "aliases": [],
+    "kind": "rapper",
+    "region_id": "mumbai",
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "active_from": 2016,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Rapper known for emotional, story-driven records, starting with 'Loser' in 2016. An MTV Hustle squad boss for seasons 2 to 4, leading the Dino Warriors.",
+    "confidence": "medium"
   }
 ]
