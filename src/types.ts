@@ -91,6 +91,25 @@ export interface SlangTerm {
   related_track_ids?: string[]
 }
 
+/** A song that can be played in the Listening Room, embedded from YouTube. */
+export interface ListeningSong {
+  id: string
+  title: string
+  artist_ids: string[]
+  feat_ids: string[]
+  youtube_id: string
+  year: number | null
+  /** The archive release this song belongs to, when there is one. */
+  track_id: string | null
+  note: string | null
+}
+
+export interface ListeningRoom {
+  /** Artists featured in the Listening Room, in display order. */
+  artists: string[]
+  songs: ListeningSong[]
+}
+
 export interface Dataset {
   artists: Artist[]
   tracks: Track[]
@@ -100,4 +119,5 @@ export interface Dataset {
   features: Credit[]
   genres: Genre[]
   slang: SlangTerm[]
+  listening: ListeningRoom
 }

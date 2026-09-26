@@ -984,5 +984,45 @@
     "image_url": null,
     "bio": "Enigmatic Delhi artist on DIVINE's Gully Gang Records, with a mellow, introspective sound that stands apart on the roster. Returned in 2023 with the Karan Kanchan-produced 'Lagaav' and his debut EP Parat.",
     "confidence": "medium"
+  },
+  {
+    "id": "karma",
+    "name": "Karma",
+    "aliases": [
+      "KARMA",
+      "Vivek Arora",
+      "Karma The Lekhak"
+    ],
+    "kind": "rapper",
+    "region_id": "dehradun",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [
+      "kalamkaar"
+    ],
+    "image_url": null,
+    "bio": "Dehradun rapper, singer and writer from the Kalamkaar collective. His debut album M.Y.P. (Made You Proud) is a tribute to his late father, with Raftaar, Ikka, King and Encore ABJ among the guests.",
+    "confidence": "high"
+  },
+  {
+    "id": "panther",
+    "name": "Panther",
+    "aliases": [
+      "Anubhav Shukla"
+    ],
+    "kind": "rapper",
+    "region_id": "uttar-pradesh",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2022,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Rapper from Lakhimpur Kheri, Uttar Pradesh, who broke through on MTV Hustle 2.0 and followed it with the acclaimed mixtape Flying Towards the City. Writes about the journey from village to city.",
+    "confidence": "high"
   }
 ]

@@ -5,6 +5,7 @@ import { ArtistChip, GenreChip, SceneChip, SectionLabel } from '../components/co
 import { ReleaseRow } from '../components/common/ReleaseRow'
 import { NotFound, PageHero, PageShell, StatRow } from '../components/layout/PageShell'
 import { useDhhData } from '../hooks/useDhhData'
+import { usePlayer } from '../hooks/usePlayer'
 import { useView } from '../hooks/useView'
 import { artistCredits, collaborators } from '../lib/artistStats'
 import { distinctAliases } from '../lib/hash'
@@ -28,6 +29,12 @@ function ArtistView({ artist }: { artist: Artist }) {
   const guest = credits.filter((c) => c.roles.includes('feature')).length
   const aliases = distinctAliases(artist.name, artist.aliases)
   const highlightRef = useRef<HTMLLIElement>(null)
+  const { play } = usePlayer()
+  // Their own songs first, then the ones they feature on.
+  const playable = [
+    ...data.listening.songs.filter((s) => s.artist_ids.includes(artist.id)),
+    ...data.listening.songs.filter((s) => !s.artist_ids.includes(artist.id) && s.feat_ids.includes(artist.id)),
+  ]
 
   useEffect(() => {
     if (!release) return
@@ -60,6 +67,16 @@ function ArtistView({ artist }: { artist: Artist }) {
           }
         >
           {aliases.length > 0 && <p className="mt-3 text-sm text-muted">Also known as {aliases.join(', ')}</p>}
+          {playable.length > 0 && (
+            <button
+              type="button"
+              onClick={() => play(playable[0].id, playable.map((s) => s.id))}
+              className="mt-6 rounded-full px-5 py-2.5 font-mono text-xs uppercase tracking-[0.16em] text-bg transition-transform hover:-translate-y-0.5"
+              style={{ background: color }}
+            >
+              ▶ Play {playable.length} song{playable.length === 1 ? '' : 's'}
+            </button>
+          )}
           <StatRow
             stats={
               isProducer

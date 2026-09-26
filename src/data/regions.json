@@ -72,6 +72,12 @@
     "color": "#B5179E"
   },
   {
+    "id": "uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "description": "Small-town rap from the heartland, where artists turn village roots and the long road to the city into their whole story.",
+    "color": "#A0C4FF"
+  },
+  {
     "id": "kashmir",
     "name": "Kashmir",
     "description": "Introspective, political rap from the valley, documenting life under conflict.",

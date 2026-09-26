@@ -85,6 +85,7 @@ export function buildSearchIndex(data: IndexedDataset): SearchEntry[] {
     ['Producers', 'Everyone behind the beats', 'producers', ['beatmakers', 'beats']],
     ['Genres', 'Every sound in the archive', 'genres', ['styles', 'sounds']],
     ['Slang and terms', 'The DHH glossary', 'slang', ['glossary', 'dictionary', 'words', 'terminology', 'lingo']],
+    ['Listen', 'Play DHH songs right here', 'listen', ['listening room', 'play', 'music', 'player', 'songs', 'radio']],
   ]
   for (const [title, subtitle, view, keywords] of pages) {
     entries.push({ kind: 'page', key: `p:${view}`, title, subtitle, color: '#f4f1ea', keywords, view })

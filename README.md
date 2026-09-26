@@ -30,6 +30,7 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which tests, builds an
 - **Artist pages** (`?view=artist&id=divine`): stats, a career arc chart, the full discography grouped by year, collaborators, their sound (genres), scene and labels. Producers get a producer layout that leads with their productions and the artists they worked with. `&release=kohinoor` highlights one release, and old `?artist=` links still work.
 - **Scene pages** (`?view=scene&id=delhi`): the artists and producers who run the scene, every release led by an artist from the scene (guest spots stay with the lead artist's scene), the scene's sound, connected scenes and labels, plus a button to replay the scene on the timeline.
 - **Genre pages** (`?view=genre&id=boom-bap`, index at `?view=genres`): what the genre is, how it sounds, where it comes from, its pros ranked by releases, and every tagged song.
+- **Listening room** (`?view=listen`): hand-picked songs from featured artists, played through the official YouTube embed in a dock that stays at the bottom while you browse, with a queue, shuffle, seeking, a bigger video toggle and auto-skip for videos that cannot be embedded. Artist pages with playable songs get a Play button. Songs live in `src/data/listening.json`.
 - **Slang page** (`?view=slang`): a glossary of DHH slang and terms, filterable by street slang, rap craft, culture and industry, linked to the artists and songs behind them.
 - **Scenes and Roster**: region cards that replay the timeline filtered to that scene, and a grid of every artist.
 - **Producers page** (`?view=producers`): every beatmaker in the archive, ranked by production credits. Each one shows their hits and every artist they have worked with. All of it is derived from `features.json`, so a new producer credit shows up automatically.
@@ -70,6 +71,7 @@ The model follows the project spec, so each later phase adds to it instead of mi
 | `regions.json` | id, name, description, color |
 | `languages.json` | id, name |
 | `genres.json` | id, name, aliases, color, tagline, description, sound, origins |
+| `listening.json` | artists (featured, in order), songs: id, title, artist_ids, feat_ids, youtube_id, year, track_id, note |
 | `slang.json` | id, term, aliases, category, meaning, example, related_artist_ids, related_track_ids |
 
 A few notes:
@@ -88,7 +90,7 @@ A few notes:
 3. Label rosters and artist `label_ids` must mirror each other.
 4. Run `npm run validate-data`. It checks ids, references, credits, rosters, date formats and house style, and the build refuses to run if anything is off.
 
-The current seed is a hand-built first pass: 53 artists, 121 releases, 16 labels and crews, and 14 scenes. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
+The current seed is a hand-built first pass: 55 artists, 133 releases, 16 labels and crews, and 15 scenes, plus 44 playable songs. Treat anything marked `medium` or `low` as needing verification before a public launch. Haryana, the Northeast and more producers are the obvious gaps to fill next.
 
 ## Swapping the data source
 

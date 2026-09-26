@@ -66,3 +66,15 @@ describe('genre profiles', () => {
     expect(artistGenres(data, 'divine').map(([g]) => g)).toContain('gully-rap')
   })
 })
+
+describe('listening room', () => {
+  it('gives every featured artist something to play', () => {
+    for (const id of data.listening.artists) {
+      expect(data.listening.songs.some((s) => s.artist_ids.includes(id) || s.feat_ids.includes(id))).toBe(true)
+    }
+  })
+
+  it('links songs to real archive releases', () => {
+    for (const s of data.listening.songs) if (s.track_id) expect(data.trackById.has(s.track_id)).toBe(true)
+  })
+})

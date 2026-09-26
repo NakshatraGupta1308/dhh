@@ -15,6 +15,7 @@ const languages = load('languages')
 const features = load('features')
 const genres = load('genres')
 const slang = load('slang')
+const listening = load('listening')
 
 const errors = []
 const fail = (msg) => errors.push(msg)
@@ -109,8 +110,21 @@ for (const s of slang) {
   for (const t of s.related_track_ids ?? []) if (!trackById.has(t)) fail(`slang: "${s.id}" unknown track "${t}"`)
 }
 
+const songIds = new Set()
+for (const a of listening.artists) if (!artistById.has(a)) fail(`listening: unknown featured artist "${a}"`)
+for (const s of listening.songs) {
+  if (songIds.has(s.id)) fail(`listening: duplicate song "${s.id}"`)
+  songIds.add(s.id)
+  if (!/^[A-Za-z0-9_-]{11}$/.test(s.youtube_id)) fail(`listening: "${s.id}" youtube_id must be an 11-character video id`)
+  for (const a of [...s.artist_ids, ...s.feat_ids]) if (!artistById.has(a)) fail(`listening: "${s.id}" unknown artist "${a}"`)
+  if (s.track_id !== null && !trackById.has(s.track_id)) fail(`listening: "${s.id}" unknown track "${s.track_id}"`)
+}
+for (const a of listening.artists) {
+  if (!listening.songs.some((s) => s.artist_ids.includes(a) || s.feat_ids.includes(a))) fail(`listening: "${a}" has no songs`)
+}
+
 // House style: no em dashes anywhere in the dataset.
-for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang']) {
+for (const name of ['artists', 'tracks', 'labels', 'regions', 'languages', 'features', 'genres', 'slang', 'listening']) {
   const raw = fs.readFileSync(path.join(dataDir, `${name}.json`), 'utf8')
   if (raw.includes(String.fromCharCode(0x2014))) fail(`${name}: contains an em dash`)
 }
@@ -127,5 +141,5 @@ if (errors.length) {
 
 console.log(
   `Dataset OK: ${artists.length} artists, ${tracks.length} releases, ${labels.length} labels, ` +
-    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms.`,
+    `${regions.length} regions, ${features.length} credits, ${genres.length} genres, ${slang.length} slang terms, ${listening.songs.length} playable songs.`,
 )

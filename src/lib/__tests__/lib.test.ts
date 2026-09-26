@@ -101,7 +101,7 @@ describe('producer profiles', () => {
 
   it('lists hits and the artists they worked with', () => {
     const umair = profiles.find((p) => p.artist.id === 'umair')!
-    expect(umair.productions.map((t) => t.id)).toEqual(['hola-amigo'])
+    expect(umair.productions.map((t) => t.id)).toEqual(['joota-japani', 'hola-amigo'])
     expect(umair.collaborators.map((c) => c.artist.id).sort()).toEqual(['krsna', 'seedhe-maut'])
   })
 })
