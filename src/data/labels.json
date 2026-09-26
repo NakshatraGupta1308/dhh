@@ -47,10 +47,11 @@
     "id": "bantai-records",
     "name": "Bantai Records",
     "kind": "independent",
-    "founded_year": null,
+    "founded_year": 2021,
     "roster": [
       "emiway-bantai",
-      "memax"
+      "memax",
+      "loka"
     ]
   },
   {

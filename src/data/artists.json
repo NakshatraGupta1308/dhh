@@ -753,7 +753,7 @@
       "Muhammad Umair Tahir"
     ],
     "kind": "producer",
-    "region_id": "diaspora",
+    "region_id": "pakistan",
     "languages": [],
     "active_from": 2016,
     "active_to": null,
@@ -1024,5 +1024,147 @@
     "image_url": null,
     "bio": "Rapper from Lakhimpur Kheri, Uttar Pradesh, who broke through on MTV Hustle 2.0 and followed it with the acclaimed mixtape Flying Towards the City. Writes about the journey from village to city.",
     "confidence": "high"
+  },
+  {
+    "id": "muhfaad",
+    "name": "Muhfaad",
+    "aliases": [
+      "Gaurav Pal"
+    ],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi",
+      "pa",
+      "bgc",
+      "en"
+    ],
+    "active_from": 2016,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Delhi rapper who started as a dancer at 14 and switched to rap at 17. Debuted with 'Sach Too Much Hai' in 2016, broke through with 'Sare Karo Dab' alongside Raftaar in 2018, and later took on the whole Kalamkaar camp in one of the scene's longest wars of words.",
+    "confidence": "medium"
+  },
+  {
+    "id": "jani",
+    "name": "Jani",
+    "aliases": [
+      "JANI",
+      "BolJani",
+      "Muhammad Ali Khan"
+    ],
+    "kind": "rapper",
+    "region_id": "pakistan",
+    "languages": [
+      "ur",
+      "en"
+    ],
+    "active_from": 2013,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Karachi rapper who started making music in 2013 after hearing Young Stunners passed around on Bluetooth at school. Mixes Urdu and English over hip hop beats, and became one of South Asia's fastest rising rap voices before his 2026 clash with Panther.",
+    "confidence": "high"
+  },
+  {
+    "id": "uday",
+    "name": "Uday",
+    "aliases": [
+      "Uday Pandhi",
+      "UDAY"
+    ],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2023,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Delhi battle rapper, born in 2005, who won MTV Hustle 03 as its youngest prodigy. His on-show win over Gaush turned into one of the most talked-about feuds of the new generation.",
+    "confidence": "high"
+  },
+  {
+    "id": "gaush",
+    "name": "Gaush",
+    "aliases": [
+      "GAUSH"
+    ],
+    "kind": "rapper",
+    "region_id": "mumbai",
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "active_from": 2021,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Navi Mumbai rapper known for speed and technique. The India Book of Records lists him among the country's fastest rappers, and 'Spit It Back' has him rapping the same verse forwards and backwards. Came to wider attention on MTV Hustle 03.",
+    "confidence": "medium"
+  },
+  {
+    "id": "agsy",
+    "name": "Agsy",
+    "aliases": [
+      "Agrita Dhawan"
+    ],
+    "kind": "rapper",
+    "region_id": "haryana",
+    "languages": [
+      "en",
+      "hi",
+      "pa",
+      "bgc"
+    ],
+    "active_from": 2017,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Faridabad rapper, singer and songwriter who switches between English, Hindi, Punjabi and Haryanvi. The only woman to get direct entry into the top 15 of MTV Hustle's first season, and a leading voice for women in DHH.",
+    "confidence": "high"
+  },
+  {
+    "id": "king",
+    "name": "King",
+    "aliases": [
+      "KING",
+      "King Rocco",
+      "Arpan Kumar Chandel"
+    ],
+    "kind": "rapper",
+    "region_id": "delhi",
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [],
+    "image_url": null,
+    "bio": "Delhi singer, rapper and producer who broke out after an MTV reality show in 2019. 'Maan Meri Jaan' from Champagne Talk was the most streamed song on Spotify India in 2023, and his 2024 album Monopoly Moves features MC STAN.",
+    "confidence": "high"
+  },
+  {
+    "id": "loka",
+    "name": "Loka",
+    "aliases": [
+      "Abhinav Lok Bista"
+    ],
+    "kind": "rapper",
+    "region_id": "mumbai",
+    "languages": [
+      "hi"
+    ],
+    "active_from": 2019,
+    "active_to": null,
+    "label_ids": [
+      "bantai-records"
+    ],
+    "image_url": null,
+    "bio": "Mumbai rapper on Emiway's Bantai Records, best known for 'Shot Deke Gayab'. Features on Kidshot's drill track 'Aur Ek' and was one of the targets of Karma's 'Men At Work'.",
+    "confidence": "medium"
   }
 ]

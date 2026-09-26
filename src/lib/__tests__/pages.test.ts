@@ -92,6 +92,8 @@ describe('beefs', () => {
 
   it('is searchable by either side and by diss track title', () => {
     expect(search(index, 'makasam').some((r) => r.kind === 'beef' && r.id === 'kalamkaar-emiway-muhfaad')).toBe(true)
-    expect(search(index, 'jani')[0]).toMatchObject({ kind: 'beef', id: 'panther-vs-jani' })
+    const jani = search(index, 'jani')
+    expect(jani[0]).toMatchObject({ kind: 'artist', id: 'jani' })
+    expect(jani.some((r) => r.kind === 'beef' && r.id === 'panther-vs-jani')).toBe(true)
   })
 })

@@ -84,9 +84,15 @@
     "color": "#E0E7FF"
   },
   {
+    "id": "pakistan",
+    "name": "Pakistan",
+    "description": "Across the border, Karachi and Lahore run a scene of their own in Urdu, Punjabi and English. It shares fans, producers and the occasional beef with India's.",
+    "color": "#52B788"
+  },
+  {
     "id": "diaspora",
     "name": "Diaspora",
-    "description": "Artists based in the UK, North America and Pakistan whose Punjabi and Hindi rap shaped the sound back home.",
+    "description": "Artists based in the UK and North America whose Punjabi and Hindi rap shaped the sound back home.",
     "color": "#FF5DA2"
   }
 ]
