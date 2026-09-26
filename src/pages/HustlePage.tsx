@@ -1,17 +1,15 @@
 import { motion } from 'motion/react'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { SectionLabel } from '../components/common/Links'
 import { NotFound, PageShell } from '../components/layout/PageShell'
 import { useDhhData } from '../hooks/useDhhData'
 import { useView } from '../hooks/useView'
-import type { HustleContestant, HustlePerson, HustleSeason } from '../types'
+import type { HustleBlock, HustleContestant, HustlePerson, HustleSeason, HustleTable } from '../types'
 
 const EASE = [0.22, 1, 0.36, 1] as const
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 /** One colour per season so cards, headers and the index line up. */
 const SEASON_COLORS = ['#FFB703', '#4CC9F0', '#FF3B30', '#C77DFF', '#2EC4B6']
-/** Results that earn a spot on the podium, in display order. */
-const PODIUM = ['Winner', 'Runner-up', 'OG Hustler', '3rd place']
 
 export const seasonColor = (n: number) => SEASON_COLORS[(n - 1) % SEASON_COLORS.length]
 
@@ -116,7 +114,7 @@ function HustleIndex() {
           <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4 border-t border-line pt-5">
             {[
               [seasons.length, 'Seasons'],
-              [contestants, 'Contestants on record'],
+              [contestants, 'Contestants'],
               [judges, 'Judges'],
               [seasons.filter((s) => winnerOf(s)).length, 'Champions crowned'],
             ].map(([n, label]) => (
@@ -195,6 +193,9 @@ function HustleIndex() {
           <p className="text-muted">
             Airs on <span className="text-ink">{show.network}</span> in {show.language}. Streams on {show.streaming.join(', ')}.
           </p>
+          <p className="mt-2 text-muted">
+            Produced by <span className="text-ink">{show.production_company}</span> in {show.country}, with {show.episodes} episodes so far.
+          </p>
         </div>
         <div>
           <SectionLabel>Spin-offs</SectionLabel>
@@ -210,15 +211,200 @@ function HustleIndex() {
   )
 }
 
+/** Colour for a result word so eliminations, danger and wins read at a glance. */
+function tone(text: string, color: string): { color?: string; background?: string; fontWeight?: number } | undefined {
+  const t = text.toLowerCase()
+  if (!t || t === '-') return undefined
+  if (/^winner\b/.test(t)) return { color, background: `${color}26`, fontWeight: 600 }
+  if (/elim/.test(t)) return { color: '#FF3B30', background: 'rgba(255,59,48,0.12)' }
+  if (/bottom|btm|danger|unsafe|^low$/.test(t)) return { color: '#FFB703', background: 'rgba(255,183,3,0.1)' }
+  if (/runner|3rd|finalist|top \d|qualified|advanced|immune|saved|survived|best|radio ready|sealed|high|og hustler|^selected$|^top 15$/.test(t))
+    return { color: 'var(--color-ink)', background: 'var(--color-surface-2)' }
+  return undefined
+}
+
+function slug(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+}
+
+/** Cells that exactly match an archive artist become links. */
+function useArtistLookup(season: HustleSeason) {
+  const data = useDhhData()
+  return useMemo(() => {
+    const map = new Map<string, string>()
+    for (const a of data.artists) {
+      map.set(a.name.toLowerCase(), a.id)
+      for (const alias of a.aliases) map.set(alias.toLowerCase(), a.id)
+    }
+    for (const c of season.contestants) if (c.artist_id) map.set(c.name.toLowerCase(), c.artist_id)
+    return map
+  }, [data.artists, season.contestants])
+}
+
+function DataTable({ table, color, lookup }: { table: HustleTable; color: string; lookup: Map<string, string> }) {
+  const { navigate } = useView()
+  return (
+    <div className="overflow-x-auto rounded-[var(--radius-card)] border border-line">
+      <table className="w-full text-left text-sm">
+        <thead className="border-b border-line">
+          <tr>
+            {table.columns.map((h, i) => (
+              <th key={i} className="kicker whitespace-nowrap px-3 py-2.5 font-normal">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((r, i) => (
+            <tr key={i} className="border-b border-line/60 align-top last:border-0">
+              {r.map((cell, j) => {
+                const id = lookup.get(cell.toLowerCase())
+                const style = tone(cell, color)
+                return (
+                  <td key={j} className="px-3 py-2">
+                    {id ? (
+                      <button type="button" onClick={() => navigate('artist', { id })} className="whitespace-nowrap underline decoration-line underline-offset-4 hover:text-accent hover:decoration-accent">
+                        {cell}
+                      </button>
+                    ) : style ? (
+                      <span className="inline-block whitespace-nowrap rounded px-1.5 py-0.5 text-xs" style={style}>
+                        {cell}
+                      </span>
+                    ) : (
+                      <span className={/^(Order|Battle No\.)$/.test(table.columns[j]) ? 'font-mono text-xs text-faint' : 'text-ink/85'}>{cell}</span>
+                    )}
+                  </td>
+                )
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+function Blocks({ blocks, color, lookup }: { blocks: HustleBlock[]; color: string; lookup: Map<string, string> }) {
+  return (
+    <div className="space-y-4">
+      {blocks.map((b, i) =>
+        b.type === 'table' ? (
+          <DataTable key={i} table={b} color={color} lookup={lookup} />
+        ) : b.type === 'heading' ? (
+          <h4 key={i} className="pt-2 font-display text-xl uppercase leading-tight" style={{ color }}>
+            {b.text}
+          </h4>
+        ) : (
+          <p key={i} className="max-w-3xl text-sm leading-relaxed text-muted">
+            {b.text}
+          </p>
+        ),
+      )}
+    </div>
+  )
+}
+
+function parseWeek(title: string) {
+  const m = title.match(/^(Week [\d-]+(?: Semi Final| Final)?) \((Episodes? [\d-]+)\)(?:: (.*))?$/)
+  return m ? { label: m[1], episodes: m[2], theme: m[3] ?? null } : { label: title, episodes: null, theme: null }
+}
+
+/** Theme line and the rappers who went home, pulled from a week's notes and tables. */
+function weekSummary(w: HustleSeason['weeks'][number]) {
+  const theme = w.blocks.find((b) => b.type !== 'table' && /^Theme/.test(b.text))
+  const out: string[] = []
+  for (const b of w.blocks) {
+    if (b.type !== 'table') continue
+    const rapper = b.columns.findIndex((c) => /^Rapper/.test(c))
+    const elimCol = b.columns.indexOf('Eliminated')
+    for (const r of b.rows) {
+      if (elimCol >= 0) out.push(...r[elimCol].split(/ & | \/ /).filter(Boolean))
+      else if (rapper >= 0 && r.some((c, j) => j !== rapper && /eliminated/i.test(c))) out.push(...r[rapper].split(/ vs\.? /).map((n) => n.replace(/ \(.*\)$/, '')))
+    }
+  }
+  return {
+    theme: theme && theme.type !== 'table' ? theme.text.replace(/^Theme( #1)?: /, '').split(' - ')[0] : null,
+    out: [...new Set(out)],
+    listed: w.blocks.some((b) => b.type === 'table'),
+  }
+}
+
+function Weeks({ season, color, lookup }: { season: HustleSeason; color: string; lookup: Map<string, string> }) {
+  const [open, setOpen] = useState<Set<number>>(() => new Set())
+  const all = open.size === season.weeks.length
+  const toggle = (i: number) =>
+    setOpen((prev) => {
+      const next = new Set(prev)
+      if (next.has(i)) next.delete(i)
+      else next.add(i)
+      return next
+    })
+  return (
+    <section id="week-by-week" className="scroll-mt-20">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <SectionLabel>Week by week</SectionLabel>
+        <button type="button" onClick={() => setOpen(all ? new Set() : new Set(season.weeks.map((_, i) => i)))} className="kicker -mt-4 hover:text-ink">
+          {all ? 'Collapse all' : 'Expand all'}
+        </button>
+      </div>
+      <ol className="space-y-2">
+        {season.weeks.map((w, i) => {
+          const parsed = parseWeek(w.title)
+          const { label, episodes } = parsed
+          const summary = weekSummary(w)
+          const theme = parsed.theme ?? summary.theme
+          const outLine = summary.out.length ? `Out: ${summary.out.join(', ')}` : summary.listed ? 'No elimination' : 'Results not listed yet'
+          const isOpen = open.has(i)
+          return (
+            <li key={w.title} className="rounded-[var(--radius-card)] border border-line" style={isOpen ? { borderColor: `${color}80` } : undefined}>
+              <button type="button" onClick={() => toggle(i)} aria-expanded={isOpen} className="flex w-full items-center gap-4 px-4 py-3 text-left sm:px-5">
+                <span className="w-24 shrink-0 font-display text-2xl uppercase leading-none sm:w-32" style={{ color }}>
+                  {label.replace('Week ', 'Wk ')}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-display text-lg uppercase leading-tight">{theme ?? outLine}</span>
+                  <span className="kicker block truncate">
+                    {[episodes, theme ? outLine : null].filter(Boolean).join(' / ')}
+                  </span>
+                </span>
+                <span aria-hidden className="shrink-0 font-mono text-lg text-muted transition-transform" style={{ transform: isOpen ? 'rotate(45deg)' : undefined }}>
+                  +
+                </span>
+              </button>
+              {isOpen && (
+                <div className="border-t border-line px-4 py-5 sm:px-5">
+                  <Blocks blocks={w.blocks} color={color} lookup={lookup} />
+                </div>
+              )}
+            </li>
+          )
+        })}
+      </ol>
+      {season.status === 'airing' && <p className="mt-3 text-sm text-faint">More weeks will appear here as the season airs.</p>}
+    </section>
+  )
+}
+
 function Podium({ season }: { season: HustleSeason }) {
   const color = seasonColor(season.number)
-  const places = PODIUM.map((r) => season.contestants.find((c) => c.result === r)).filter((c): c is HustleContestant => !!c)
-  if (places.length === 0) return null
+  const cards: { label: string; c: HustleContestant }[] = []
+  for (const r of ['Winner', 'Runner-up', '3rd place']) {
+    const c = season.contestants.find((x) => x.result === r)
+    if (c) cards.push({ label: r, c })
+  }
+  const og = season.contestants.find((c) => c.og_hustler)
+  if (og) {
+    const same = cards.find((x) => x.c === og)
+    if (same) same.label += ' and OG Hustler'
+    else cards.push({ label: 'OG Hustler', c: og })
+  }
+  if (cards.length === 0) return null
   return (
     <section>
       <SectionLabel>Results</SectionLabel>
       <div className="grid gap-3 sm:grid-cols-2">
-        {places.map((c, i) => (
+        {cards.map(({ label, c }, i) => (
           <motion.div
             key={c.name}
             className={`min-w-0 rounded-[var(--radius-card)] border p-5 ${i === 0 ? 'sm:col-span-full' : ''}`}
@@ -229,7 +415,7 @@ function Podium({ season }: { season: HustleSeason }) {
             transition={{ duration: 0.6, delay: i * 0.08, ease: EASE }}
           >
             <div className="kicker" style={i === 0 ? { color } : undefined}>
-              {c.result}
+              {label}
             </div>
             <PersonName person={c} className={`mt-2 block break-words font-display uppercase leading-none ${i === 0 ? 'text-5xl sm:text-7xl' : 'text-3xl'}`} />
             {(c.real_name || c.from) && <p className="mt-2 text-sm text-muted">{[c.real_name, c.from].filter(Boolean).join(' / ')}</p>}
@@ -241,7 +427,7 @@ function Podium({ season }: { season: HustleSeason }) {
   )
 }
 
-function CrewBlock({ label, people }: { label: string; people: (HustlePerson & { squad?: string | null; note?: string | null })[] }) {
+function CrewBlock({ label, people }: { label: string; people: (HustlePerson & { squad?: string | null })[] }) {
   if (people.length === 0) return null
   return (
     <section>
@@ -251,10 +437,98 @@ function CrewBlock({ label, people }: { label: string; people: (HustlePerson & {
           <li key={p.name}>
             <PersonName person={p} className="font-display text-2xl uppercase leading-tight" />
             {p.squad && <div className="kicker mt-0.5">Squad: {p.squad}</div>}
-            {p.note && <p className="mt-0.5 text-sm text-muted">{p.note}</p>}
           </li>
         ))}
       </ul>
+    </section>
+  )
+}
+
+function GuestBlock({ season }: { season: HustleSeason }) {
+  const data = useDhhData()
+  const { navigate } = useView()
+  if (season.guests.length === 0) return null
+  return (
+    <>
+      {(['Guest judge', 'Guest'] as const).map((role) => {
+        const list = season.guests.filter((g) => g.role === role)
+        if (list.length === 0) return null
+        return (
+          <section key={role}>
+            <SectionLabel>{role === 'Guest' ? 'Guest appearances' : 'Guest judges'}</SectionLabel>
+            <ul className="space-y-2">
+              {list.map((g, i) => (
+                <li key={`${g.name}-${i}`} className="flex gap-3 text-sm">
+                  <span className="w-16 shrink-0 font-mono text-[0.65rem] uppercase tracking-[0.1em] text-faint">Wk {g.week.replace(' (Auditions)', '').replace(' (Final)', '')}</span>
+                  <span className="min-w-0">
+                    <span className="text-ink/90">{g.name}</span>
+                    {g.artist_ids.length > 0 && (
+                      <span className="mt-1 flex flex-wrap gap-x-3">
+                        {g.artist_ids.map((id) => (
+                          <button key={id} type="button" onClick={() => navigate('artist', { id })} className="kicker hover:text-accent">
+                            {data.artistById.get(id)?.name} →
+                          </button>
+                        ))}
+                      </span>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      })}
+    </>
+  )
+}
+
+function ContestantTable({ season, color }: { season: HustleSeason; color: string }) {
+  const hasFrom = season.contestants.some((c) => c.from)
+  const hasSquad = season.contestants.some((c) => c.squad)
+  const hasEntered = season.contestants.some((c) => c.entered)
+  const heads = ['#', 'Stage name', 'Real name', ...(hasFrom ? ['From'] : []), ...(hasSquad ? ['Squad'] : []), ...(hasEntered ? ['Entered'] : []), 'Place', 'Result']
+  return (
+    <section id="contestants" className="scroll-mt-20">
+      <SectionLabel>Contestants</SectionLabel>
+      <div className="overflow-x-auto rounded-[var(--radius-card)] border border-line">
+        <table className="w-full text-left text-sm">
+          <thead className="border-b border-line">
+            <tr>
+              {heads.map((h) => (
+                <th key={h} className="kicker whitespace-nowrap px-3 py-2.5 font-normal">
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {season.contestants.map((c, i) => (
+              <tr key={c.name} className="border-b border-line/60 align-top last:border-0">
+                <td className="px-3 py-2.5 font-mono text-xs text-faint">{String(i + 1).padStart(2, '0')}</td>
+                <td className="px-3 py-2.5">
+                  <PersonName person={c} className="whitespace-nowrap font-display text-lg uppercase leading-tight" />
+                  {c.og_hustler && (
+                    <span className="ml-2 rounded px-1.5 py-0.5 font-mono text-[0.6rem] uppercase tracking-[0.1em]" style={{ color, background: `${color}22` }}>
+                      OG Hustler
+                    </span>
+                  )}
+                </td>
+                <td className="px-3 py-2.5 text-muted">{c.real_name ?? ''}</td>
+                {hasFrom && <td className="px-3 py-2.5 text-muted">{c.from ?? ''}</td>}
+                {hasSquad && <td className="whitespace-nowrap px-3 py-2.5 text-muted">{c.squad ?? ''}</td>}
+                {hasEntered && <td className="whitespace-nowrap px-3 py-2.5 text-muted">{c.entered ?? ''}</td>}
+                <td className="whitespace-nowrap px-3 py-2.5 font-mono text-xs text-muted">{c.place ?? ''}</td>
+                <td className="px-3 py-2.5">
+                  <span className="inline-block whitespace-nowrap rounded px-1.5 py-0.5 text-xs" style={tone(c.result, color)}>
+                    {c.result}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {season.status === 'airing' && <p className="mt-3 text-sm text-faint">The season is still airing, so results fill in as it goes.</p>}
     </section>
   )
 }
@@ -263,8 +537,26 @@ function SeasonDetail({ season }: { season: HustleSeason }) {
   const { hustle } = useDhhData()
   const { navigate } = useView()
   const color = seasonColor(season.number)
+  const lookup = useArtistLookup(season)
   const prev = hustle.seasons.find((s) => s.number === season.number - 1)
   const next = hustle.seasons.find((s) => s.number === season.number + 1)
+  const grid = season.sections.findIndex((s) => s.title === 'Week by week results')
+  const before = grid < 0 ? season.sections : season.sections.slice(0, grid + 1)
+  const after = grid < 0 ? [] : season.sections.slice(grid + 1)
+  const jumps = [
+    ['contestants', 'Contestants'],
+    ...before.map((s) => [slug(s.title), s.title]),
+    ...(season.weeks.length ? [['week-by-week', 'Week by week']] : []),
+    ...after.map((s) => [slug(s.title), s.title]),
+  ]
+  const jump = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+  const renderSection = (s: HustleSeason['sections'][number]) => (
+    <section key={s.title} id={slug(s.title)} className="scroll-mt-20">
+      <SectionLabel>{s.title}</SectionLabel>
+      <Blocks blocks={s.blocks} color={color} lookup={lookup} />
+    </section>
+  )
 
   return (
     <PageShell>
@@ -293,9 +585,10 @@ function SeasonDetail({ season }: { season: HustleSeason }) {
           <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4 border-t border-line pt-5">
             {[
               [season.year, 'Year'],
-              [season.contestants.length, season.roster_complete ? 'Contestants' : 'Contestants on record'],
-              [season.judges.length, season.judges.length === 1 ? 'Judge' : 'Judges'],
+              [season.contestants.length, 'Contestants'],
+              [season.weeks.length, season.status === 'airing' ? 'Weeks so far' : 'Weeks'],
               [season.squad_bosses.length || 'None', 'Squad bosses'],
+              [season.guests.length, 'Guest spots'],
             ].map(([n, label]) => (
               <div key={label}>
                 <div className="font-display text-4xl leading-none">{n}</div>
@@ -303,10 +596,17 @@ function SeasonDetail({ season }: { season: HustleSeason }) {
               </div>
             ))}
           </div>
+          <nav className="mt-6 flex flex-wrap gap-2" aria-label="On this page">
+            {jumps.map(([id, label]) => (
+              <button key={id} type="button" onClick={() => jump(id)} className="rounded-full border border-line px-3 py-1.5 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-ink hover:text-ink">
+                {label}
+              </button>
+            ))}
+          </nav>
         </div>
       </header>
 
-      <div className="mx-auto grid max-w-[1600px] gap-12 px-4 pb-16 pt-8 sm:px-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+      <div className="mx-auto grid max-w-[1600px] gap-12 px-4 pb-12 pt-8 sm:px-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
         <div className="min-w-0 space-y-12">
           {season.status === 'airing' && !winnerOf(season) ? (
             <section className="rounded-[var(--radius-card)] border border-accent/60 p-5">
@@ -316,74 +616,49 @@ function SeasonDetail({ season }: { season: HustleSeason }) {
           ) : (
             <Podium season={season} />
           )}
-
+          {season.about.length > 0 && (
+            <section>
+              <SectionLabel>About the season</SectionLabel>
+              <div className="max-w-2xl space-y-3 text-lg leading-relaxed text-ink/90">
+                {season.about.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
+            </section>
+          )}
           <section>
             <SectionLabel>Season highlights</SectionLabel>
             <ul className="space-y-3">
               {season.highlights.map((h) => (
-                <li key={h} className="flex gap-3 text-lg leading-relaxed text-ink/90">
-                  <span className="mt-3 size-1.5 shrink-0 rounded-full" style={{ background: color }} />
+                <li key={h} className="flex gap-3 leading-relaxed text-ink/90">
+                  <span className="mt-2.5 size-1.5 shrink-0 rounded-full" style={{ background: color }} />
                   {h}
                 </li>
               ))}
             </ul>
           </section>
-
-          <section>
-            <SectionLabel>Contestants</SectionLabel>
-            <div className="overflow-x-auto rounded-[var(--radius-card)] border border-line">
-              <table className="w-full min-w-[640px] text-left text-sm">
-                <thead className="kicker border-b border-line">
-                  <tr>
-                    {['#', 'Stage name', 'Real name', 'From', ...(season.squad_bosses.length ? ['Squad'] : []), 'Result'].map((h) => (
-                      <th key={h} className="px-4 py-3 font-normal">
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {season.contestants.map((c, i) => (
-                    <tr key={c.name} className="border-b border-line align-top last:border-0">
-                      <td className="px-4 py-3 font-mono text-xs text-faint">{String(i + 1).padStart(2, '0')}</td>
-                      <td className="px-4 py-3">
-                        <PersonName person={c} className="font-display text-lg uppercase leading-tight" />
-                      </td>
-                      <td className="px-4 py-3 text-muted">{c.real_name ?? '?'}</td>
-                      <td className="px-4 py-3 text-muted">{c.from ?? '?'}</td>
-                      {season.squad_bosses.length > 0 && <td className="px-4 py-3 text-muted">{c.squad ?? '?'}</td>}
-                      <td className="px-4 py-3">
-                        <span className={c.result === 'Winner' ? 'font-semibold' : ''} style={PODIUM.includes(c.result) ? { color } : undefined}>
-                          {c.result}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            {!season.roster_complete && (
-              <p className="mt-3 text-sm text-faint">
-                {season.status === 'airing'
-                  ? 'The season is still airing, so this list grows as contestants are revealed.'
-                  : 'Partial roster: only contestants we could verify are listed. A ? marks details we could not confirm.'}
-              </p>
-            )}
-          </section>
         </div>
 
-        <aside className="min-w-0 space-y-10 lg:sticky lg:top-20 lg:self-start">
+        <aside className="min-w-0 space-y-10">
           <CrewBlock label={season.judges.length === 1 ? 'Judge' : 'Judges'} people={season.judges} />
           <CrewBlock label="Squad bosses" people={season.squad_bosses} />
           <CrewBlock label={season.hosts.length === 1 ? 'Host' : 'Hosts'} people={season.hosts} />
-          <CrewBlock label="Guests" people={season.guests} />
           {season.prize && (
             <section>
               <SectionLabel>Prize</SectionLabel>
               <p className="text-muted">{season.prize}</p>
             </section>
           )}
+          <GuestBlock season={season} />
         </aside>
+      </div>
+
+      <div className="mx-auto max-w-[1600px] space-y-14 overflow-x-clip px-4 pb-16 sm:px-8">
+        <ContestantTable season={season} color={color} />
+        {before.map(renderSection)}
+        {season.weeks.length > 0 && <Weeks season={season} color={color} lookup={lookup} />}
+        {after.map(renderSection)}
+        <p className="text-sm text-faint">Source: the MTV Hustle article on Wikipedia. Colour-only details from the original tables (such as which judge gave a Radio Hit) are not shown.</p>
       </div>
 
       <nav className="mx-auto grid max-w-[1600px] gap-3 px-4 pb-24 sm:grid-cols-2 sm:px-8" aria-label="Other seasons">

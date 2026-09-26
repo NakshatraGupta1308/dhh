@@ -150,8 +150,24 @@ for (const s of hustle.seasons) {
   if (!DAY.test(s.premiere)) fail(`${tag} bad premiere date`)
   if (s.finale !== null && (!DAY.test(s.finale) || s.finale < s.premiere)) fail(`${tag} bad finale date`)
   if (s.status === 'finished' && s.finale === null) fail(`${tag} is finished but has no finale date`)
-  const people = [...s.hosts, ...s.judges, ...s.squad_bosses, ...s.guests, ...s.contestants]
+  const people = [...s.hosts, ...s.judges, ...s.squad_bosses, ...s.contestants]
   for (const p of people) if (p.artist_id !== null && !artistById.has(p.artist_id)) fail(`${tag} unknown artist "${p.artist_id}"`)
+  for (const g of s.guests) {
+    if (!['Guest judge', 'Guest'].includes(g.role)) fail(`${tag} guest "${g.name}" has a bad role`)
+    for (const id of g.artist_ids) if (!artistById.has(id)) fail(`${tag} guest "${g.name}" unknown artist "${id}"`)
+  }
+  const names = new Set()
+  for (const c of s.contestants) {
+    if (names.has(c.name)) fail(`${tag} contestant "${c.name}" is listed twice`)
+    names.add(c.name)
+  }
+  if (s.contestants.filter((c) => c.og_hustler).length > 1) fail(`${tag} has more than one OG Hustler`)
+  for (const sec of [...s.sections, ...s.weeks]) {
+    for (const b of sec.blocks) {
+      if (!['text', 'heading', 'table'].includes(b.type)) fail(`${tag} "${sec.title}" has a bad block`)
+      if (b.type === 'table') for (const r of b.rows) if (r.length !== b.columns.length) fail(`${tag} "${sec.title}" has a table row with the wrong width`)
+    }
+  }
   const squads = new Set(s.squad_bosses.map((b) => b.squad).filter(Boolean))
   for (const c of s.contestants) if (c.squad !== null && !squads.has(c.squad)) fail(`${tag} "${c.name}" is in unknown squad "${c.squad}"`)
   if (s.contestants.filter((c) => c.result === 'Winner').length > 1) fail(`${tag} has more than one winner`)

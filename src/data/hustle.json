@@ -7,16 +7,40 @@
     "language": "Hindi",
     "about": "MTV Hustle is a rap reality show where independent artists from across India compete with original music, battles and collaborations. Since 2019 it has run for five seasons, turned contestants into headliners, and brought desi hip hop to prime time television.",
     "format": [
-      { "step": "Auditions", "text": "Rappers from across the country perform original material. The strongest make it into the top 15 or 16 who compete on the show." },
-      { "step": "Squads", "text": "From season 2 onward, contestants are split into squads led by squad bosses. In season 3 Badshah made the first assignments, and squad bosses could use a 'mic drop' to pull a contestant into their own squad." },
-      { "step": "Weekly challenges", "text": "Each week brings a theme, from original songs to collaborations and head-to-head battles such as the Battleground round." },
-      { "step": "Danger zone and voting", "text": "The weakest performers land in the danger zone. Squad bosses can save a contestant, and public votes also shape who is eliminated." },
-      { "step": "Grand finale", "text": "The last contestants standing perform in a two-night finale for the title, prize money and prizes from the season's sponsors." },
-      { "step": "OG Hustler", "text": "From season 3 the show also names an OG Hustler, a separate award with its own cash prize for the contestant who best represents the spirit of the hustle." }
+      {
+        "step": "Auditions",
+        "text": "Rappers from across the country audition with original material. Season 1 picked a top 15, and later seasons start with 19 to 25 rappers before a first cut."
+      },
+      {
+        "step": "Squads",
+        "text": "From season 2 onward, contestants join squads led by squad bosses. In the opening weeks Badshah assigns rappers to squads, but a squad boss can sound the horn (season 2), give a mic drop (seasons 3 and 5) or claim a rapper to pull them in."
+      },
+      {
+        "step": "Weekly challenges",
+        "text": "Each week has a theme, from lyrical and imagery weeks to collabs, ad jingles and industry ready challenges. Squad bosses and judges score every performance, and the Squad of the Week earns a power card such as immunity, a save or a shuffle."
+      },
+      {
+        "step": "Danger zone and voting",
+        "text": "Low scorers land in the danger zone and face the public vote. The bottom rappers then fight to survive in battle rounds such as Battleground, Ground Shunya, BattleVerse or the 32-bar Challenge."
+      },
+      {
+        "step": "Grand finale",
+        "text": "A ticket to the finale or the Rap Royalty title can skip the semi-final battles. The last five or six rappers perform in a two-night finale for the title, prize money and sponsor prizes."
+      },
+      {
+        "step": "OG Hustler",
+        "text": "From season 2 the show also names an OG Hustler, a separate honour for the contestant who best represents the spirit of the hustle. In season 3 it came with a Rs 5 lakh cash prize."
+      }
     ],
     "spinoffs": [
-      { "name": "MTV Hustle Namma Pettai", "text": "A Tamil edition, announced by actor Samantha Ruth Prabhu on 10 December 2023 during episode 16 of season 3, and produced by her." }
-    ]
+      {
+        "name": "MTV Hustle Namma Pettai",
+        "text": "A Tamil edition, announced by actor Samantha Ruth Prabhu on 10 December 2023 during episode 16 of season 3, and produced by her."
+      }
+    ],
+    "country": "India",
+    "production_company": "Colosseum Media",
+    "episodes": 94
   },
   "seasons": [
     {
@@ -27,28 +51,626 @@
       "premiere": "2019-08-10",
       "finale": "2019-10-13",
       "status": "finished",
-      "hosts": [{ "name": "Gaelyn Mendonca", "artist_id": null }],
+      "about": ["MTV Hustle 1 premiered on 10 August 2019. M-Zee Bella was declared winner."],
+      "hosts": [
+        {
+          "name": "Gaelyn Mendonca",
+          "artist_id": null
+        }
+      ],
       "judges": [
-        { "name": "Raftaar", "artist_id": "raftaar" },
-        { "name": "Nucleya", "artist_id": null },
-        { "name": "Raja Kumari", "artist_id": null }
+        {
+          "name": "Raftaar",
+          "artist_id": "raftaar"
+        },
+        {
+          "name": "Nucleya",
+          "artist_id": null
+        },
+        {
+          "name": "Raja Kumari",
+          "artist_id": null
+        }
       ],
       "squad_bosses": [],
-      "guests": [{ "name": "Brodha V", "artist_id": "brodha-v", "note": "Performed with Raftaar in episode 18." }],
-      "prize": "The winner received his own studio space.",
-      "highlights": [
-        "King became the first artist to enter the top 15, with his track 'Maahaul'.",
-        "Agsy was the only woman to get direct entry into the top 15."
+      "guests": [
+        {
+          "name": "Naezy",
+          "role": "Guest judge",
+          "week": "1 (Auditions)",
+          "artist_ids": ["naezy"]
+        },
+        {
+          "name": "Salim Merchant",
+          "role": "Guest judge",
+          "week": "3",
+          "artist_ids": []
+        },
+        {
+          "name": "Raga",
+          "role": "Guest",
+          "week": "3",
+          "artist_ids": ["raga"]
+        },
+        {
+          "name": "Tanishk Bagchi",
+          "role": "Guest judge",
+          "week": "4",
+          "artist_ids": []
+        },
+        {
+          "name": "Zara Khan",
+          "role": "Guest",
+          "week": "4",
+          "artist_ids": []
+        },
+        {
+          "name": "Naezy",
+          "role": "Guest judge",
+          "week": "5",
+          "artist_ids": ["naezy"]
+        },
+        {
+          "name": "KKG (Kaala Kurta Gang)",
+          "role": "Guest",
+          "week": "5",
+          "artist_ids": []
+        },
+        {
+          "name": "Brodha V",
+          "role": "Guest judge",
+          "week": "6",
+          "artist_ids": ["brodha-v"]
+        },
+        {
+          "name": "Shekhar Ravjiani",
+          "role": "Guest judge",
+          "week": "7",
+          "artist_ids": []
+        },
+        {
+          "name": "Rasmeet Kaur",
+          "role": "Guest",
+          "week": "7",
+          "artist_ids": []
+        },
+        {
+          "name": "Shivang Dubey",
+          "role": "Guest",
+          "week": "7",
+          "artist_ids": []
+        },
+        {
+          "name": "Bobby Friction",
+          "role": "Guest judge",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "L-Fresh the Lion & MC Mirrah",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Sourabh Acharya & Mad-Z",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Brodha V",
+          "role": "Guest judge",
+          "week": "9",
+          "artist_ids": ["brodha-v"]
+        },
+        {
+          "name": "FOTTY SEVEN & Kaam Bhaari",
+          "role": "Guest",
+          "week": "9",
+          "artist_ids": []
+        },
+        {
+          "name": "Slow Cheetah & Spitfire",
+          "role": "Guest",
+          "week": "9",
+          "artist_ids": []
+        },
+        {
+          "name": "Shekhar Ravjiani",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": []
+        },
+        {
+          "name": "Naezy",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": ["naezy"]
+        },
+        {
+          "name": "L-Fresh the Lion & MC Mirrah",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": []
+        },
+        {
+          "name": "MC Altaf, Big Deal, Fejo, Big Smyle, Raiychu & Island Warrior",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": []
+        },
+        {
+          "name": "Kalamkaar - Deep Kalsi, Harjas, Krsna & Karma",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": ["krsna", "karma"]
+        },
+        {
+          "name": "KKG - Sikander Kahlon, Rob C & Sady Immortal",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": []
+        },
+        {
+          "name": "Sukrut & Brodha V",
+          "role": "Guest",
+          "week": "10 (Final)",
+          "artist_ids": ["brodha-v"]
+        }
       ],
-      "roster_complete": false,
+      "prize": "The winner received his own studio space.",
+      "highlights": ["King became the first artist to enter the top 15, with his track 'Maahaul'.", "Agsy was the only woman to get direct entry into the top 15."],
+      "roster_complete": true,
       "contestants": [
-        { "name": "M-Zee Bella", "real_name": "Deepak Singh", "from": "Dehradun", "squad": null, "result": "Winner", "artist_id": "m-zee-bella" },
-        { "name": "EPR", "real_name": "Santhanam Srinivasan Iyer", "from": "Kolkata", "squad": null, "result": "Runner-up", "artist_id": "epr" },
-        { "name": "RCR", "real_name": "Rohit Kumar Chaudhary", "from": "Amritsar", "squad": null, "result": "3rd place", "artist_id": null },
-        { "name": "King", "real_name": "Arpan Kumar Chandel", "from": "Delhi", "squad": null, "result": "4th place", "artist_id": "king" },
-        { "name": "Shloka", "real_name": null, "from": null, "squad": null, "result": "5th place", "artist_id": null },
-        { "name": "Agsy", "real_name": "Agrita Dhawan", "from": "Faridabad", "squad": null, "result": "Finalist", "artist_id": "agsy" },
-        { "name": "Dee MC", "real_name": "Deepa Unnikrishnan", "from": "Mumbai", "squad": null, "result": "Contestant", "artist_id": "dee-mc" }
+        {
+          "name": "M-Zee Bella",
+          "real_name": "Deepak Singh",
+          "from": "Dehradun",
+          "squad": null,
+          "result": "Winner",
+          "place": "Winner",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "m-zee-bella"
+        },
+        {
+          "name": "EPR",
+          "real_name": "Santhanam Srinivasan Iyer",
+          "from": "Kolkata",
+          "squad": null,
+          "result": "Runner-up",
+          "place": "Runner-up",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "epr"
+        },
+        {
+          "name": "RCR",
+          "real_name": "Rohit Kumar Chaudhary",
+          "from": "Amritsar",
+          "squad": null,
+          "result": "3rd place",
+          "place": "3",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "King",
+          "real_name": "Arpan Kumar Chandel",
+          "from": "Delhi",
+          "squad": null,
+          "result": "4th place",
+          "place": "4",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "king"
+        },
+        {
+          "name": "Shloka",
+          "real_name": "Rahul Kumar Das (Karn)",
+          "from": null,
+          "squad": null,
+          "result": "5th place",
+          "place": "5",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Agsy",
+          "real_name": "Agrita Dhawan",
+          "from": "Faridabad",
+          "squad": null,
+          "result": "Eliminated in episode 18",
+          "place": "6/7",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "agsy"
+        },
+        {
+          "name": "Void",
+          "real_name": "Gaurav Mankoti",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 18",
+          "place": "6/7",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Raeza",
+          "real_name": "Riya Panchal",
+          "from": null,
+          "squad": null,
+          "result": "8th place",
+          "place": "8",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Firaag",
+          "real_name": "Lakshya Bhardwaj",
+          "from": null,
+          "squad": null,
+          "result": "9th place",
+          "place": "9",
+          "finish": "Episode 17",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Himan",
+          "real_name": "Himanshu Joshi",
+          "from": null,
+          "squad": null,
+          "result": "10th place",
+          "place": "10",
+          "finish": "Episode 16",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Shetty Saa",
+          "real_name": "Sagar Shetty",
+          "from": null,
+          "squad": null,
+          "result": "11th place",
+          "place": "11",
+          "finish": "Episode 14",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Zack",
+          "real_name": "Akshay Kumar",
+          "from": null,
+          "squad": null,
+          "result": "12th place",
+          "place": "12",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "MC Heam",
+          "real_name": "Hemant Dhyani",
+          "from": null,
+          "squad": null,
+          "result": "13th place",
+          "place": "13",
+          "finish": "Episode 10",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Star Nick",
+          "real_name": "Nikita R Sharma",
+          "from": null,
+          "squad": null,
+          "result": "14th place",
+          "place": "14",
+          "finish": "Episode 8",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "NeeRu Pal",
+          "real_name": "Neeru Pal",
+          "from": null,
+          "squad": null,
+          "result": "15th place",
+          "place": "15",
+          "finish": "Episode 6",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "Week by week results",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Contestant", "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10"],
+              "rows": [
+                ["M-Zee Bella", "Selected", "SAFE", "BEST", "SAFE", "SAFE", "BEST", "BEST", "HIGH", "Finalist", "Winner"],
+                ["EPR", "Top 15", "BEST", "HIGH", "SAFE", "SAFE", "HIGH", "HIGH", "HIGH", "Finalist", "Runner-up"],
+                ["RCR", "Selected", "HIGH", "HIGH", "BEST", "HIGH", "HIGH", "BEST", "BEST", "Qualified", "TOP 5"],
+                ["King", "Top 15", "HIGH", "SAFE", "HIGH", "HIGH", "HIGH", "HIGH", "BEST", "Qualified", "TOP 5"],
+                ["Shloka", "Selected", "HIGH", "HIGH", "BEST", "HIGH", "SAFE", "HIGH", "HIGH", "BEST / Qualified", "TOP 5"],
+                ["Agsy", "Top 15", "SAFE", "SAFE", "SAFE", "BEST", "SAFE", "HIGH", "BTM2", "ELIM", "Guest"],
+                ["Void", "Top 15", "SAFE", "HIGH", "SAFE", "HIGH", "LOW", "HIGH", "LOW", "ELIM", "Guest"],
+                ["Raeza", "Selected", "SAFE", "SAFE", "HIGH", "HIGH", "HIGH", "BTM2", "SAFE", "ELIM", "Guest"],
+                ["Firaag", "Selected", "SAFE", "LOW", "LOW", "HIGH", "LOW", "SAFE", "LOW", "ELIM", "Guest"],
+                ["Himan", "Selected", "SAFE", "SAFE", "BTM2", "SAFE", "BTM2", "SAFE", "ELIM", "", "Guest"],
+                ["Shetty Saa", "Selected", "SAFE", "HIGH", "LOW", "SAFE", "LOW", "ELIM", "", "", ""],
+                ["Zack", "Selected", "SAFE", "SAFE", "LOW", "BTM2", "ELIM", "", "", "", "Guest"],
+                ["MC Heam", "Selected", "SAFE", "HIGH", "SAFE", "ELIM", "", "", "", "", "Guest"],
+                ["Star Nick", "Selected", "SAFE", "BTM2", "ELIM", "", "", "", "", "", "Guest"],
+                ["NeeRu Pal", "Selected", "SAFE", "ELIM", "", "", "", "", "", "", ""]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guests by week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Episode(s)", "Guest Judge", "Episode", "Guest Appearance"],
+              "rows": [
+                ["1 (Auditions)", "1-2", "Naezy", "", "none"],
+                ["3", "5-6", "Salim Merchant", "6", "Raga"],
+                ["4", "7-8", "Tanishk Bagchi", "8", "Zara Khan"],
+                ["5", "9-10", "Naezy", "10", "KKG (Kaala Kurta Gang)"],
+                ["6", "11-12", "Brodha V", "", "none"],
+                ["7", "13-14", "Shekhar Ravjiani", "13", "Rasmeet Kaur"],
+                ["", "", "", "14", "Shivang Dubey"],
+                ["8", "15-16", "Bobby Friction", "15", "L-Fresh the Lion & MC Mirrah"],
+                ["", "", "", "16", "Sourabh Acharya & Mad-Z"],
+                ["9", "17-18", "Brodha V", "17", "FOTTY SEVEN & Kaam Bhaari"],
+                ["", "", "", "18", "Slow Cheetah & Spitfire"],
+                ["10 (Final)", "none", "", "19", "Shekhar Ravjiani"],
+                ["", "", "", "", "Naezy"],
+                ["", "", "", "", "L-Fresh the Lion & MC Mirrah"],
+                ["", "", "", "", "MC Altaf, Big Deal, Fejo, Big Smyle, Raiychu & Island Warrior"],
+                ["", "", "", "20", "Kalamkaar - Deep Kalsi, Harjas, Krsna & Karma"],
+                ["", "", "", "", "KKG - Sikander Kahlon, Rob C & Sady Immortal"],
+                ["", "", "", "", "Sukrut & Brodha V"]
+              ]
+            }
+          ]
+        }
+      ],
+      "weeks": [
+        {
+          "title": "Week 3 (Episode 5-6)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision", "Public Voting", "Studio Audience's Decision"],
+              "rows": [
+                ["1", "Agsy", "Unsafe", "Safe", "-"],
+                ["2", "EPR", "Safe", "-", "-"],
+                ["3", "Shloka", "Safe", "-", "-"],
+                ["4", "Firaag", "Unsafe", "Safe", "-"],
+                ["5", "King", "Unsafe", "Safe", "-"],
+                ["6", "Himan", "Unsafe", "Safe", "-"],
+                ["7", "Void", "Safe", "-", "-"],
+                ["8", "Star Nick", "Unsafe", "Bottom 2", "(114 dB) Advanced"],
+                ["9", "M-Zee Bella", "", "-", "-"],
+                ["10", "RCR", "Safe", "-", ""],
+                ["11", "Raeza", "Unsafe", "Safe", "-"],
+                ["12", "Zack", "Unsafe", "Safe", "-"],
+                ["13", "MC Heam", "Safe", "-", "-"],
+                ["14", "NeeRu Pal", "Unsafe", "Bottom 2", "(109 dB) Eliminated"],
+                ["15", "Shetty Saa", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 4 (Episode 7-8)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Face-off No.", "Order", "Rapper", "To Face-off Against:", "Remix of Song", "Nucleya", "Judges' Decision", "Public Voting", "Studio Audience's Decision"],
+              "rows": [
+                ["1", "1", "M-Zee Bella", "Shetty Saa", "Naah", "[a]", "Safe", "-", "-"],
+                ["", "2", "Shetty Saa", "Not eligible", "Proper Patola", "", "Unsafe", "Safe", "-"],
+                ["2", "1", "King", "RCR", "She Move It Like", "", "Unsafe", "Safe", "-"],
+                ["", "2", "RCR", "Not eligible", "Ae Dil Hai Mushkil", "", "Safe", "-", "-"],
+                ["3", "1", "Himan", "Not eligible", "Kamariya", "", "Unsafe", "Bottom 2", "(107 dB) Advanced"],
+                ["", "2", "Shloka", "Himan", "Jiya Tu", "", "", "-", "-"],
+                ["4", "1", "Agsy", "MC Heam", "Lahore", "", "Safe", "-", "-"],
+                ["", "2", "MC Heam", "Not eligible", "Shehar Ki Ladki", "", "Unsafe", "Safe", "-"],
+                ["5", "1", "EPR", "Not eligible", "Suit Suit", "", "Safe", "-", "-"],
+                ["", "2", "Void", "EPR", "Bekhayali", "", "Safe", "Safe", "-"],
+                ["6", "1", "Firaag", "Not eligible", "O Saki Saki", "[b]", "Unsafe", "Safe", "-"],
+                ["", "2", "Zack", "Firaag", "Tareefan", "", "Unsafe", "Safe", "-"],
+                ["7", "1", "Star Nick", "Not eligible", "Paagal", "", "Unsafe", "Bottom 2", "(104 dB) Eliminated"],
+                ["", "2", "Raeza", "Not eligible", "Chogada", "", "Safe", "-", "-"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "a. Shetty Saa forgot the lyrics during performance. So, M-Zee Bella was automatically Safe. b. Both Firaag & Zack forgot the lyrics during performance. Therefore, neither of them were saved by the Judges."
+            }
+          ]
+        },
+        {
+          "title": "Week 5 (Episode 9-10)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision", "Public Voting", "Studio Audience's Decision"],
+              "rows": [
+                ["1", "EPR", "Unsafe", "Safe", "-"],
+                ["2", "Agsy", "", "-", "-"],
+                ["3", "Firaag", "Safe", "-", "-"],
+                ["4", "M-Zee Bella", "Unsafe", "Safe", "-"],
+                ["5", "Shetty Saa", "Unsafe", "Safe", "-"],
+                ["6", "RCR", "Safe", "-", "-"],
+                ["7", "Himan", "Unsafe", "Safe", "-"],
+                ["8", "Void", "Safe", "-", "-"],
+                ["9", "King", "Safe", "-", "-"],
+                ["10", "Shloka", "Safe", "-", "-"],
+                ["11", "Raeza", "Safe", "-", "-"],
+                ["12", "MC Heam", "Unsafe", "Bottom 2", "(101 dB) Eliminated"],
+                ["13", "Zack", "Unsafe", "Bottom 2", "(121 dB) Advanced"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 6 (Episode 11-12)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision", "Public Voting", "Studio Audience's Decision"],
+              "rows": [
+                ["1", "RCR", "Safe", "-", "-"],
+                ["2", "Shloka", "Unsafe", "Safe", "-"],
+                ["3", "M-Zee Bella", "", "-", "-"],
+                ["4", "Raeza", "Safe", "-", "-"],
+                ["5", "Agsy", "Unsafe", "Safe", "-"],
+                ["6", "Shetty Saa", "Unsafe", "Safe", "-"],
+                ["7", "Firaag", "Unsafe", "Safe", "-"],
+                ["8", "King", "Safe", "-", "-"],
+                ["9", "Himan", "Bottom 2 [a]", "N/A", "(113 dB) Advanced"],
+                ["10", "EPR", "Safe", "-", "-"],
+                ["11", "Void", "Unsafe", "Safe", "-"],
+                ["12", "Zack", "Unsafe", "Bottom 2", "(105 dB) Eliminated"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "a. Himan was chosen by the judges to be in the Bottom 2 with Zack, the least voted contestant by the public."
+            }
+          ]
+        },
+        {
+          "title": "Week 7 (Episode 13-14)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision", "Public Voting", "Studio Audience's Decision"],
+              "rows": [
+                ["1", "King", "Safe", "-", "-"],
+                ["2", "M-Zee Bella", "", "-", "-"],
+                ["3", "RCR", "Safe", "-", "-"],
+                ["4", "Shetty Saa", "Bottom 2 [a]", "N/A", "(112 dB) Eliminated"],
+                ["5", "Agsy", "Safe", "-", "-"],
+                ["6", "Firaag", "Unsafe", "Safe", "-"],
+                ["7", "Void", "Safe", "-", "-"],
+                ["8", "Shloka", "Safe", "-", "-"],
+                ["9", "Himan", "Unsafe", "Safe", "-"],
+                ["10", "EPR", "Safe", "-", "-"],
+                ["11", "Raeza", "Unsafe", "Bottom 2", "(113 dB) Advanced"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "a. Shetty Saa was chosen by the judges to be in the Bottom 2 with Raeza, the least voted contestant by the public."
+            }
+          ]
+        },
+        {
+          "title": "Week 8 (Episode 15-16)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision", "Public Voting", "Studio Audience's Decision", "Judges' Choice to go directly to the Finale"],
+              "rows": [
+                ["1", "King", "", "-", "-", "Didn't make it"],
+                ["2", "Void", "Unsafe", "Safe", "-", "-"],
+                ["3", "M-Zee Bella", "Safe", "-", "-", "1st Finalist"],
+                ["4", "Himan", "Bottom 2 [a]", "N/A", "(103 dB) Eliminated", "-"],
+                ["5", "Raeza", "Unsafe", "Safe", "-", "-"],
+                ["6", "EPR", "Safe", "-", "-", "2nd Finalist"],
+                ["7", "Shloka", "Safe", "-", "-", "Didn't make it"],
+                ["8", "Agsy", "Unsafe", "Bottom 2", "(110 dB) Advanced", "-"],
+                ["9", "RCR", "Safe", "-", "-", "Didn't make it"],
+                ["10", "Firaag", "Unsafe", "Safe", "-", "-"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "a. Right after Himan's performance, judges decided Himan to directly be in the Bottom 2."
+            }
+          ]
+        },
+        {
+          "title": "Week 9 (Episode 17-18)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision"],
+              "rows": [
+                ["1", "Void", "Eliminated"],
+                ["2", "King", "4th Finalist"],
+                ["3", "Firaag", "Eliminated"],
+                ["4", "Agsy", "Eliminated"],
+                ["5", "RCR", "5th Finalist"],
+                ["6", "Shloka", "3rd Finalist"],
+                ["7", "Raeza", "Eliminated"],
+                ["Finalist", "EPR", "Immune"],
+                ["Finalist", "M-Zee Bella", "Immune"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Special Performance by the first two finalists EPR & M-Zee Bella along with Raftaar & Brodha V in Episode 18."
+            }
+          ]
+        },
+        {
+          "title": "Week 10 (Episode 19-20)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Judges' Decision"],
+              "rows": [
+                ["1", "RCR", "Eliminated"],
+                ["2", "M-Zee Bella", "Top 2"],
+                ["3", "King", "Eliminated"],
+                ["4", "Shloka", "Eliminated"],
+                ["5", "EPR", "Top 2"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "After Top 5 finalists performed, judges had to decide two of them for the Final Battle Round for the Title."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Result"],
+              "rows": [
+                ["1", "EPR", "Runner-up"],
+                ["2", "M-Zee Bella", "Winner"]
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -59,31 +681,778 @@
       "premiere": "2022-09-03",
       "finale": "2022-11-06",
       "status": "finished",
-      "hosts": [{ "name": "Krissann Barretto", "artist_id": null }],
-      "judges": [{ "name": "Badshah", "artist_id": "badshah" }],
+      "about": ["Badshah replaced the entire judge panel of season 1, along with four squad bosses Dino James, Dee MC, EPR and King, out of which, the latter two competed as contestants in the previous season. Krissann Barretto hosted the show. MC Square was declared as the winner."],
+      "hosts": [
+        {
+          "name": "Krissann Barretto",
+          "artist_id": null
+        }
+      ],
+      "judges": [
+        {
+          "name": "Badshah",
+          "artist_id": "badshah"
+        }
+      ],
       "squad_bosses": [
-        { "name": "EPR", "artist_id": "epr", "squad": "EPR Rebels" },
-        { "name": "Dino James", "artist_id": "dino-james", "squad": "Dino Warriors" },
-        { "name": "Dee MC", "artist_id": "dee-mc", "squad": "Team Dee MC" },
-        { "name": "King", "artist_id": "king", "squad": "King Slayers" }
+        {
+          "name": "EPR",
+          "artist_id": "epr",
+          "squad": "EPR Rebels"
+        },
+        {
+          "name": "Dino James",
+          "artist_id": "dino-james",
+          "squad": "Dino Warriors"
+        },
+        {
+          "name": "Dee MC",
+          "artist_id": "dee-mc",
+          "squad": "Dee MC Dynamites"
+        },
+        {
+          "name": "King",
+          "artist_id": "king",
+          "squad": "King Slayers"
+        }
       ],
-      "guests": [],
+      "guests": [
+        {
+          "name": "Ikka",
+          "role": "Guest judge",
+          "week": "3",
+          "artist_ids": ["ikka"]
+        },
+        {
+          "name": "Brodha V",
+          "role": "Guest judge",
+          "week": "4",
+          "artist_ids": ["brodha-v"]
+        },
+        {
+          "name": "J Trix",
+          "role": "Guest",
+          "week": "5",
+          "artist_ids": []
+        },
+        {
+          "name": "Encore ABJ & Calm (Seedhe Maut)",
+          "role": "Guest judge",
+          "week": "7",
+          "artist_ids": ["seedhe-maut", "calm"]
+        },
+        {
+          "name": "Fotty Seven & Bali",
+          "role": "Guest judge",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Bombay Local",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Ikka",
+          "role": "Guest judge",
+          "week": "10",
+          "artist_ids": ["ikka"]
+        }
+      ],
       "prize": null,
-      "highlights": [
-        "Squads arrived this season, each led by a squad boss.",
-        "Two of the top 5 came from EPR's squad, including the winner.",
-        "The grand finale aired on 5 and 6 November 2022, and MC Square beat Paradox by a slim margin."
-      ],
-      "roster_complete": false,
+      "highlights": ["Squads arrived this season, each led by a squad boss.", "Two of the top 5 came from EPR's squad, including the winner.", "The grand finale aired on 5 and 6 November 2022, and MC Square beat Paradox by a slim margin.", "Gravity was named the OG Hustler of the season."],
+      "roster_complete": true,
       "contestants": [
-        { "name": "MC Square", "real_name": "Abhishek Bainsla", "from": "Palwal, Haryana", "squad": "EPR Rebels", "result": "Winner", "artist_id": "mc-square" },
-        { "name": "Paradox", "real_name": null, "from": "Delhi", "squad": "King Slayers", "result": "Runner-up", "artist_id": null },
-        { "name": "Nazz", "real_name": null, "from": null, "squad": "EPR Rebels", "result": "Finalist", "artist_id": null },
-        { "name": "Spectra", "real_name": null, "from": null, "squad": "Team Dee MC", "result": "Finalist", "artist_id": null },
-        { "name": "Gravity", "real_name": null, "from": "Mumbai", "squad": "Dino Warriors", "result": "Finalist", "artist_id": null },
-        { "name": "Panther", "real_name": "Anubhav Shukla", "from": "Lakhimpur Kheri, Uttar Pradesh", "squad": null, "result": "Contestant", "artist_id": "panther" },
-        { "name": "QK", "real_name": "Aarya Jadhao", "from": "Mumbai", "squad": null, "result": "Contestant", "artist_id": null },
-        { "name": "Khanzaadi", "real_name": "Firoza Khan", "from": null, "squad": null, "result": "Contestant", "artist_id": null }
+        {
+          "name": "MC Square",
+          "real_name": "Abhishek Bainsla",
+          "from": "Palwal, Haryana",
+          "squad": "EPR Rebels",
+          "result": "Winner",
+          "place": "Winner",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "mc-square"
+        },
+        {
+          "name": "Paradox",
+          "real_name": "Tanishq Singh",
+          "from": "Delhi",
+          "squad": "King Slayers",
+          "result": "Runner-up",
+          "place": "Runner-up",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Nazz",
+          "real_name": "Nihar Hodawadekar",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "3rd place",
+          "place": "3",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Gravity",
+          "real_name": "Akshay Poojary",
+          "from": "Mumbai",
+          "squad": "Dino Warriors",
+          "result": "4th place",
+          "place": "4",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": true,
+          "artist_id": null
+        },
+        {
+          "name": "Spectra",
+          "real_name": "Shubham Pal",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "5th place",
+          "place": "5",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Srushti Tawade",
+          "real_name": null,
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 18",
+          "place": "6-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Wicked Sunny",
+          "real_name": "Vikalp Dwivedi",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 18",
+          "place": "6-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Super Manikk",
+          "real_name": "Mukul Monga",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "Eliminated in episode 18",
+          "place": "6-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "UK Rapi Boy",
+          "real_name": "Mahendra Singh Khatri",
+          "from": null,
+          "squad": "King Slayers",
+          "result": "Eliminated in episode 18",
+          "place": "6-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "QK",
+          "real_name": "Aarya Jadhao",
+          "from": "Mumbai",
+          "squad": "Dee MC Dynamites",
+          "result": "Eliminated in episode 18",
+          "place": "6-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Panther",
+          "real_name": "Anubhav Shukla",
+          "from": "Lakhimpur Kheri, Uttar Pradesh",
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 16",
+          "place": "11-12",
+          "finish": "Episode 16",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "panther"
+        },
+        {
+          "name": "MC Headshot",
+          "real_name": "Tamojit Chatterjee",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 16",
+          "place": "11-12",
+          "finish": "Episode 16",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "GD47",
+          "real_name": "Gagandeep Singh",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "13th place",
+          "place": "13",
+          "finish": "Episode 14",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "LXSH",
+          "real_name": "Laksh Parihar",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 10",
+          "place": "14-15",
+          "finish": "Episode 10",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "RHYME",
+          "real_name": "Aditya Nirgude",
+          "from": null,
+          "squad": "King Slayers",
+          "result": "Eliminated in episode 10",
+          "place": "14-15",
+          "finish": "Episode 10",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Khullar G",
+          "real_name": "Gaurav Khullar",
+          "from": null,
+          "squad": "King Slayers",
+          "result": "16th place",
+          "place": "16",
+          "finish": "Episode 8",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "UNB",
+          "real_name": "Ugen Namgyal Bhutia",
+          "from": null,
+          "squad": "King Slayers",
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Apka Bobby",
+          "real_name": "Saquib Ansari",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Khanzaadi",
+          "real_name": "Firoza Khan",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Shlovij",
+          "real_name": "Shlok Bharadwaj",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "Squads",
+          "blocks": [
+            {
+              "type": "heading",
+              "text": "Episode 1-4"
+            },
+            {
+              "type": "table",
+              "columns": ["Dee MC Dynamites", "Dino Warriors", "EPR Rebels", "King Slayers"],
+              "rows": [
+                ["Spectra", "Super Manikk", "MC Headshot", "Paradox"],
+                ["QK", "Wicked Sunny", "Nazz", "UK Rapi Boy"],
+                ["GD 47", "Gravity", "MC Square", "UNB"],
+                ["Lxsh", "Srushti", "Khanzaadi", "Panther"],
+                ["Rhyme", "Apka Bobby", "Shlovij", "Khullar G"],
+                ["Super Manikk", "Lxsh", "Panther", "Rhyme"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Episode 5-20"
+            },
+            {
+              "type": "table",
+              "columns": ["Dee MC Dynamites", "Dino Warriors", "EPR Rebels", "King Slayers"],
+              "rows": [
+                ["Spectra", "Srushti", "MC Square", "Paradox"],
+                ["QK", "Gravity", "Nazz", "UK Rapi Boy"],
+                ["Super Manikk", "Wicked Sunny", "Panther", "RHYME"],
+                ["GD 47", "LXSH", "MC Headshot", "Khullar G"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Squad of the week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Squad of the Week"],
+              "rows": [
+                ["Week 3", "Dee MC Dynamites"],
+                ["Week 4", "EPR Rebels"],
+                ["Week 5", "EPR Rebels"],
+                ["Week 6", "Dino Warriors"],
+                ["Week 7", "Dino Warriors"],
+                ["Week 8", "King Slayers"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week by week results",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Squad", "Contestant", "Week 1-2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Total", "Final ranking"],
+              "rows": [
+                ["EPR Rebels", "MC Square", "SAFE", "29", "29", "29", "30", "30", "40", "SAFE", "Winner", "187", "1"],
+                ["King Slayers", "Paradox", "SAFE", "26", "24", "27", "23", "29", "40", "SAFE", "Runner-up", "169", "2"],
+                ["EPR Rebels", "Nazz", "SAFE", "22", "27", "30", "30", "21", "40", "SAFE", "3rd Place", "170", "3"],
+                ["Dino Warriors", "Gravity", "SAFE", "29", "29", "27", "30", "30", "34", "SAFE", "TOP 5", "179", "4"],
+                ["Dee MC Dynamites", "Spectra", "SAFE", "30", "20", "28", "23", "24", "35", "SAFE", "TOP 5", "160", "5"],
+                ["Dino Warriors", "Srushti", "SAFE", "29", "30", "29", "30", "30", "40", "ELIM", "Guest", "188", "6"],
+                ["Dino Warriors", "Wicked Sunny", "SAFE", "24", "23", "29", "28", "23", "38", "ELIM", "Guest", "165", "7"],
+                ["King Slayers", "UK Rapi Boy", "SAFE", "24", "19", "24", "29", "21", "39", "ELIM", "Guest", "158", "10"],
+                ["Dee MC Dynamites", "Super Manikk", "SAFE", "28", "26", "23", "21", "23", "38", "ELIM", "Guest", "151", "11"],
+                ["Dee MC Dynamites", "QK", "SAFE", "22", "23", "21", "20", "24", "39", "ELIM", "Guest", "149", "12"],
+                ["EPR Rebels", "MC Headshot", "SAFE", "28", "26", "27", "25", "24", "34", "", "Guest", "164", "8"],
+                ["EPR Rebels", "Panther", "BTM6", "17", "28", "28", "29", "25", "35", "", "Guest", "162", "9"],
+                ["Dee MC Dynamites", "GD 47", "SAFE", "28", "30", "22", "30", "20+2=22", "", "", "Guest", "137", "13"],
+                ["Dino Warriors", "Lxsh", "SAFE", "23", "24", "18", "", "", "", "", "Guest", "65", "14"],
+                ["King Slayers", "Rhyme", "BTM6", "17", "18", "23", "", "", "", "", "Guest", "58", "15"],
+                ["King Slayers", "Khullar G", "SAFE", "18", "18", "", "", "", "", "", "Guest", "36", "16"],
+                ["King Slayers", "UNB", "ELIM", "", "", "", "", "", "", "", "", "0", "17-20"],
+                ["EPR Rebels", "Shlovij", "ELIM", "", "", "", "", "", "", "", "", "0", ""],
+                ["EPR Rebels", "Khanzaadi", "ELIM", "", "", "", "", "", "", "", "", "0", ""],
+                ["Dino Warriors", "Apka Bobby", "ELIM", "", "", "", "", "", "", "", "", "0", ""]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guests by week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Episode(s)", "Guest Judge", "Episode", "Guest Appearance"],
+              "rows": [
+                ["3", "5-6", "Ikka", "none", ""],
+                ["4", "7-8", "Brodha V", "", ""],
+                ["5", "none", "", "10", "J Trix"],
+                ["7", "13-14", "Encore ABJ & Calm (Seedhe Maut)", "none", ""],
+                ["8", "15-16", "Fotty Seven & Bali", "16", "Bombay Local"],
+                ["10", "19-20", "Ikka", "none", ""]
+              ]
+            }
+          ]
+        }
+      ],
+      "weeks": [
+        {
+          "title": "Week 1-2 (Episode 1-4)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "For week 1 & 2, after each contestant performed Badshah decides which squad to be assigned to. But, the squad bosses could sound the horn and ask the contestant to join their squad."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Assigned by Badshah", "Chosen by Contestant", "Result"],
+              "rows": [
+                ["1", "Super Manikk", "Dino Warriors", "-", "Radio Ready"],
+                ["2", "Spectra", "-", "Dee MC Dynamites", "Sealed by Squad Boss"],
+                ["3", "Paradox", "King Slayers", "-", "Sealed by Squad Boss"],
+                ["4", "MC Headshot", "-", "EPR Rebels", "Sealed by Squad Boss"],
+                ["5", "QK", "-", "Dee MC Dynamites", "Sealed by Squad Boss"],
+                ["6", "Wicked Sunny", "-", "Dino Warriors", "Sealed by Squad Boss"],
+                ["7", "Nazz", "EPR Rebels", "-", "Radio Ready"],
+                ["8", "MC Square", "-", "EPR Rebels", "Sealed by Squad Boss"],
+                ["9", "Gravity", "-", "Dino Warriors", "Sealed by Squad Boss"],
+                ["10", "UK Rapi Boy", "King Slayers", "-", "Radio Ready"],
+                ["11", "GD 47", "Dee MC Dynamites", "-", "Radio Ready"],
+                ["12", "UNB", "King Slayers", "-", "Bottom 6"],
+                ["13", "Khanzaadi", "EPR Rebels", "-", "Bottom 6"],
+                ["14", "Panther", "King Slayers", "-", "Bottom 6"],
+                ["15", "Khullar G", "-", "King Slayers", "Sealed by Squad Boss"],
+                ["16", "Lxsh", "Dee MC Dynamites", "-", "Radio Ready"],
+                ["17", "Srushti", "Dino Warriors", "-", "Radio Ready"],
+                ["18", "Apka Bobby", "Dino Warriors", "-", "Bottom 6"],
+                ["19", "Shlovij", "EPR Rebels", "-", "Bottom 6"],
+                ["20", "Rhyme", "Dee MC Dynamites", "-", "Bottom 6"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Battleground 2.0"
+            },
+            {
+              "type": "text",
+              "text": "The bottom six contestant compete one vs one in the Battleground. Only two moved-on to the next round."
+            },
+            {
+              "type": "text",
+              "text": "After three battles, the two squads EPR Rebels and King Slayers had to choose one contestant to join their squad. UNB was not chosen and was eliminated."
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Rapper (Squad)", "Survived", "Eliminated"],
+              "rows": [
+                ["1", "Apka Bobby (Dino Warriors) vs. Panther (King Slayers)", "Panther", "Apka Bobby"],
+                ["2", "Khanzaadi (EPR Rebels) vs. UNB (King Slayers)", "UNB", "Khanzaadi"],
+                ["3", "Shlovij (EPR Rebels) vs. Rhyme (Dee MC Dynamites)", "Rhyme", "Shlovij"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Snatch Battle"
+            },
+            {
+              "type": "text",
+              "text": "In this battle the squad bosses compete against each other for a contestant."
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Squad Boss", "Rapper to snatch", "Votes", "Winner", "Result"],
+              "rows": [
+                ["1", "Dino James", "GD 47 (Dee MC Dynamites)", "1", "Dee MC", "Super Manikk moved to Dee MC Dynamites. And Lxsh moved to Dino Warriors."],
+                ["", "vs.", "", "", "", ""],
+                ["", "Dee MC", "Super Manikk (Dino Warriors)", "2", "", ""]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 3 (Episode 5-6)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "From this week, the squad bosses scored after each performance."
+            },
+            {
+              "type": "text",
+              "text": "Also the public voting were open, with the votes effecting the next week's elimination."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "King", "Total Score", "Judges' Decision"],
+              "rows": [
+                ["1", "King Slayers", "Paradox", "8", "8", "10", "-", "26", "Safe"],
+                ["2", "Dino Warriors", "Wicked Sunny", "7", "-", "7", "10", "24", "Safe"],
+                ["3", "EPR Rebels", "MC Square", "10", "9", "-", "10", "29", "Safe"],
+                ["4", "Dee MC Dynamites", "Super Manikk", "-", "9", "9", "10", "28", "Safe"],
+                ["5", "Dee MC Dynamites", "Spectra", "-", "10", "10", "10", "30", ""],
+                ["6", "Dino Warriors", "Lxsh", "8", "-", "7", "8", "23", "Safe"],
+                ["7", "King Slayers", "Khullar G", "4", "8", "6", "-", "18", "Safe"],
+                ["8", "EPR Rebels", "Panther", "7", "6", "-", "4", "17", "Safe"],
+                ["9", "EPR Rebels", "MC Headshot", "9", "9", "-", "10", "28", "Safe"],
+                ["10", "Dino Warriors", "Srushti", "9", "-", "10", "10", "29", "Safe"],
+                ["11", "Dee MC Dynamites", "GD 47", "-", "10", "9", "9", "28", "Safe"],
+                ["12", "Dino Warriors", "Gravity", "10", "-", "9", "10", "29", "Safe"],
+                ["13", "Dee MC Dynamites", "QK", "-", "8", "7", "7", "22", "Safe"],
+                ["14", "King Slayers", "UK Rapi Boy", "8", "8", "8", "-", "24", "Safe"],
+                ["15", "EPR Rebels", "Nazz", "8", "7", "-", "7", "22", "Safe"],
+                ["16", "King Slayers", "Rhyme", "5", "7", "5", "-", "17", "Safe"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 4 (Episode 7-8)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Last week's squad of the week, Dee MC had to choose one of the two random cards (Immunity Card: to save one Rapper from elimination & Danger Card: to put one Rapper up for elimination from other squad). She got the Danger Zone and chose Lxsh."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "King", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "EPR Rebels", "Nazz", "9", "9", "-", "9", "27", "Immune", "-", "-"],
+                ["2", "Dino Warriors", "Srushti", "10", "-", "10", "10", "30", "Safe", "-", "-"],
+                ["3", "EPR Rebels", "Panther", "8", "10", "-", "10", "28", "Immune", "-", "-"],
+                ["4", "King Slayers", "Paradox", "9", "9", "6", "-", "24", "Safe", "-", "-"],
+                ["5", "Dee MC Dynamites", "GD 47", "-", "10", "10", "10", "30", "", "-", "-"],
+                ["6", "EPR Rebels", "MC Square", "10", "9", "-", "10", "29", "Immune", "-", "-"],
+                ["7", "Dee MC Dynamites", "Spectra", "-", "7", "6", "8", "20", "Safe", "-", "-"],
+                ["8", "Dino Warriors", "Wicked Sunny", "8", "-", "7", "8", "23", "Safe", "-", "-"],
+                ["9", "King Slayers", "Rhyme", "5", "8", "5", "-", "18", "Danger Zone", "Bottom 2", "Safe"],
+                ["10", "EPR Rebels", "MC Headshot", "9", "8", "-", "9", "26", "Safe", "-", "-"],
+                ["11", "Dino Warriors", "Gravity", "10", "-", "9", "10", "29", "Immune", "-", "-"],
+                ["12", "Dee MC Dynamites", "QK", "-", "8", "6", "9", "23", "Safe", "-", "-"],
+                ["13", "Dino Warriors", "Lxsh", "7", "-", "8", "9", "24", "", "Safe", "-"],
+                ["14", "King Slayers", "Khullar G", "6", "6", "6", "-", "18", "Danger Zone", "Bottom 2", "Eliminated"],
+                ["15", "Dee MC Dynamites", "Super Manikk", "-", "9", "8", "9", "26", "Safe", "-", "-"],
+                ["16", "King Slayers", "UK Rapi Boy", "6", "8", "5", "-", "19", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 5 (Episode 9-10)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Last week's squad of the week, EPR had to choose one of the two random envelops (Power to eliminate & Power to save). He got Power to save and chose GD 47."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "King", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Dino Warriors", "Srushti", "10", "-", "9", "10", "29", "Immune", "-", "-"],
+                ["2", "EPR Rebels", "MC Square", "10", "9", "-", "10", "29", "Immune", "-", "-"],
+                ["3", "Dino Warriors", "Wicked Sunny", "10", "-", "9", "10", "29", "Immune", "-", "-"],
+                ["4", "EPR Rebels", "Panther", "10", "10", "-", "8", "28", "Immune", "-", "-"],
+                ["5", "King Slayers", "Paradox", "9", "9", "9", "-", "27", "Safe", "-", "-"],
+                ["6", "Dee MC Dynamites", "Spectra", "-", "9", "9", "10", "28", "Immune", "-", "-"],
+                ["7", "Dee MC Dynamites", "GD 47", "-", "7", "7", "8", "22", "Danger Zone", "Bottom 3", ""],
+                ["8", "EPR Rebels", "Nazz", "10", "10", "-", "10", "30", "", "-", "-"],
+                ["9", "Dino Warriors", "Gravity", "9", "-", "10", "8", "27", "Safe", "-", "-"],
+                ["10", "Dee MC Dynamites", "Super Manikk", "-", "7", "7", "9", "23", "Immune", "-", "-"],
+                ["11", "EPR Rebels", "MC Headshot", "10", "8", "-", "9", "27", "Safe", "-", "-"],
+                ["12", "Dino Warriors", "Lxsh", "7", "-", "6", "5", "18", "Danger Zone", "Bottom 3", "Eliminated"],
+                ["13", "King Slayers", "UK Rapi Boy", "9", "7", "8", "-", "24", "Safe", "-", "-"],
+                ["14", "Dee MC Dynamites", "QK", "-", "6", "8", "7", "21", "Danger Zone", "Safe", "-"],
+                ["15", "King Slayers", "Rhyme", "8", "8", "7", "-", "23", "Danger Zone", "Bottom 3", "Eliminated"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 6 (Episode 11-12)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Theme: Lyrical"
+            },
+            {
+              "type": "text",
+              "text": "Last week's squad of the week, EPR had a special power \"Judge 2.0\", to judge the elimination battles. But he decided not to eliminate anyone."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "King", "Total Score", "Judges' Decision", "Battle Result"],
+              "rows": [
+                ["1", "King Slayers", "UK Rapi Boy", "10", "10", "9", "-", "29", "Immune", "-"],
+                ["2", "Dino Warriors", "Srushti", "10", "-", "10", "10", "30", "Safe", "-"],
+                ["3", "Dino Warriors", "Gravity", "10", "-", "10", "10", "30", "", "-"],
+                ["4", "EPR Rebels", "Nazz", "10", "10", "-", "10", "30", "Immune", "-"],
+                ["5", "Dee MC Dynamites", "GD 47", "-", "10", "10", "10", "30", "Immune", "-"],
+                ["6", "EPR Rebels", "Panther", "10", "9", "-", "10", "29", "Safe", "-"],
+                ["7", "Dee MC Dynamites", "Super Manikk", "-", "7", "7", "7", "21", "Danger Zone", ""],
+                ["8", "Dino Warriors", "Wicked Sunny", "10", "-", "8", "10", "28", "Immune", "-"],
+                ["9", "EPR Rebels", "MC Square", "10", "10", "-", "10", "30", "Immune", "-"],
+                ["10", "EPR Rebels", "MC Headshot", "9", "7", "-", "9", "25", "Safe", "-"],
+                ["11", "Dee MC Dynamites", "Spectra", "-", "8", "7", "8", "23", "Danger Zone", ""],
+                ["12", "King Slayers", "Paradox", "8", "7", "8", "-", "23", "Danger Zone", ""],
+                ["13", "Dee MC Dynamites", "QK", "-", "6", "6", "8", "20", "Danger Zone", ""]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 7 (Episode 13-14)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Theme: Shout-out"
+            },
+            {
+              "type": "text",
+              "text": "Last week's squad of the week, Dino James had a special power \"Score + 2.0\", where he could add 2 points to any rapper. He choose GD 47 to add 2 points."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "King", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "King Slayers", "Paradox", "9", "10", "10", "-", "29", "Immune", "-", "-"],
+                ["2", "Dino Warriors", "Wicked Sunny", "8", "-", "7", "8", "23", "Safe", "-", "-"],
+                ["3", "EPR Rebels", "MC Square", "10", "10", "-", "10", "30", "Immune", "-", "-"],
+                ["4", "Dino Warriors", "Srushti", "10", "-", "10", "10", "30", "Immune", "-", "-"],
+                ["5", "Dee MC Dynamites", "GD 47", "-", "8", "6", "6", "20+2=22", "Danger Zone", "Bottom 2", "+ Eliminated"],
+                ["6", "EPR Rebels", "Panther", "9", "8", "-", "8", "25", "Safe", "-", "-"],
+                ["7", "EPR Rebels", "Nazz", "7", "8", "-", "6", "21", "Danger Zone", "Bottom 2", "+ Safe"],
+                ["8", "King Slayers", "UK Rapi Boy", "7", "7", "7", "-", "21", "Danger Zone", "Safe", "-"],
+                ["9", "Dee MC Dynamites", "Super Manikk", "-", "8", "7", "8", "23", "Safe", "-", "-"],
+                ["10", "Dee MC Dynamites", "QK", "-", "7", "8", "9", "24", "Immune", "-", "-"],
+                ["11", "Dee MC Dynamites", "Spectra", "-", "8", "8", "8", "24", "Immune", "-", "-"],
+                ["12", "Dino Warriors", "Gravity", "10", "-", "10", "10", "30", "", "-", "-"],
+                ["13", "EPR Rebels", "MC Headshot", "8", "7", "-", "9", "24", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 8 (Episode 15-16)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Theme #1: Collaboration - Squad Bosses' paired-up the rappers."
+            },
+            {
+              "type": "text",
+              "text": "Theme #2: Badshah's Industry Ready Challenges:"
+            },
+            {
+              "type": "text",
+              "text": "Dee MC Dynamites: Ad Jingle to Hip Hop (Classic range) Dino Warriors: Use Key Words in Rap (Muscle, Freak, Fitness, Weightlifting) EPR Rebels: Brand Anthem Rendition (Yamaha - the call of the blue) King Slayers: Bollywood to Hip Hop (Tujhko jo paya)"
+            },
+            {
+              "type": "text",
+              "text": "Last week's squad of the week, Dino James had a special power \"Danger Zone 2.0\", where he could another Collab pair in Danger Zone. He choose Spectra and Panther."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "King", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Dee MC Dynamites", "Super Manikk", "10", "9", "9", "10", "38", "Immune", "-", "-"],
+                ["", "Dino Warriors", "Wicked Sunny", "", "", "", "", "", "Immune", "-", "-"],
+                ["2", "EPR Rebels", "Nazz", "10", "10", "10", "10", "40", "", "-", "-"],
+                ["", "Dino Warriors", "Srushti", "", "", "", "", "", "", "-", "-"],
+                ["3", "Dino Warriors", "Gravity", "9", "8", "8", "9", "34", "Danger Zone", "Safe", "-"],
+                ["", "EPR Rebels", "MC Headshot", "", "", "", "", "", "Danger Zone", "Bottom 3", "+ Eliminated"],
+                ["4", "King Slayers", "Paradox", "10", "10", "10", "10", "40", "Immune", "-", "-"],
+                ["", "EPR Rebels", "MC Square", "", "", "", "", "", "Immune", "-", "-"],
+                ["5", "EPR Rebels", "Panther", "9", "8", "10", "8", "35", "", "Bottom 3", "+ Eliminated"],
+                ["", "Dee MC Dynamites", "Spectra", "", "", "", "", "", "", "Bottom 3", "+ Safe"],
+                ["6", "King Slayers", "UK Rapi Boy", "10", "10", "9", "10", "39", "Safe", "-", "-"],
+                ["", "Dee MC Dynamites", "QK", "", "", "", "", "", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 9 Semi Final (Episode 17-18)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Theme: Battleground 2.0"
+            },
+            {
+              "type": "text",
+              "text": "Top 10 contestants competed in one-on-one Battles to earn the Ticket to Finale. Only five contestants advanced to the Finale."
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Order", "Squad", "Rapper", "Battle Result"],
+              "rows": [
+                ["1", "1", "Dino Warriors", "Wicked Sunny", "Eliminated"],
+                ["", "2", "EPR Rebels", "Nazz", "Top 5"],
+                ["2", "1", "Dee MC Dynamites", "Super Manikk", "Eliminated"],
+                ["", "2", "", "Spectra", "Top 5"],
+                ["3", "1", "Dino Warriors", "Gravity", "Top 5"],
+                ["", "2", "King Slayers", "Paradox", "Top 5"],
+                ["4", "1", "Dee MC Dynamites", "QK", "Eliminated"],
+                ["", "2", "King Slayers", "UK Rapi Boy", "Eliminated"],
+                ["5", "1", "Dino Warriors", "Srushti", "Eliminated"],
+                ["", "2", "EPR Rebels", "MC Square", "Top 5 +"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Top 5 finalists performed for the public and the public voting were open for final time, with the votes deciding the winner next week."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper"],
+              "rows": [
+                ["1", "EPR Rebels", "MC Square"],
+                ["2", "Dino Warriors", "Gravity"],
+                ["3", "EPR Rebels", "Nazz"],
+                ["4", "Dee MC Dynamites", "Spectra"],
+                ["5", "King Slayers", "Paradox"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 10 Final (Episode 19-20)",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Result"],
+              "rows": [
+                ["1", "King Slayers", "Paradox", "Top 3"],
+                ["2", "EPR Rebels", "Nazz", "Top 3"],
+                ["3", "Dee MC Dynamites", "Spectra", "Eliminated"],
+                ["4", "Dino Warriors", "Gravity", "Eliminated"],
+                ["5", "EPR Rebels", "MC Square", "Top 3"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "After Top 5 finalists performed, based on Public Votes three moved-on to Top 3."
+            },
+            {
+              "type": "table",
+              "columns": ["Squad", "Rapper", "Final Result"],
+              "rows": [
+                ["EPR Rebels", "MC Square", "Winner"],
+                ["King Slayers", "Paradox", "Runner-up"],
+                ["EPR Rebels", "Nazz", "3rd Place"]
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -94,46 +1463,781 @@
       "premiere": "2023-10-21",
       "finale": "2023-12-24",
       "status": "finished",
+      "about": ["Badshah and squad bosses EPR, Dino James and Dee MC returned to judge. Ikka Singh joined season 3 as the new squad boss.", "Super Manikk and Wicked Sunny were the hosts for this season. On 24 December 2023, Uday was declared as the winner."],
       "hosts": [
-        { "name": "Super Manikk", "artist_id": null },
-        { "name": "Wicked Sunny", "artist_id": null }
+        {
+          "name": "Super Manikk",
+          "artist_id": null
+        },
+        {
+          "name": "Wicked Sunny",
+          "artist_id": null
+        }
       ],
-      "judges": [{ "name": "Badshah", "artist_id": "badshah" }],
+      "judges": [
+        {
+          "name": "Badshah",
+          "artist_id": "badshah"
+        }
+      ],
       "squad_bosses": [
-        { "name": "EPR", "artist_id": "epr", "squad": null },
-        { "name": "Dino James", "artist_id": "dino-james", "squad": null },
-        { "name": "Dee MC", "artist_id": "dee-mc", "squad": "Dee MC Dynamites" },
-        { "name": "Ikka", "artist_id": "ikka", "squad": null }
+        {
+          "name": "EPR",
+          "artist_id": "epr",
+          "squad": "EPR Rebels"
+        },
+        {
+          "name": "Dino James",
+          "artist_id": "dino-james",
+          "squad": "Dino Warriors"
+        },
+        {
+          "name": "Dee MC",
+          "artist_id": "dee-mc",
+          "squad": "Dee MC Dynamites"
+        },
+        {
+          "name": "Ikka",
+          "artist_id": "ikka",
+          "squad": "Ikka Gangstars"
+        }
       ],
       "guests": [
-        { "name": "Samantha Ruth Prabhu", "artist_id": null, "note": "Announced the Tamil edition, MTV Hustle Namma Pettai, in episode 16 on 10 December 2023." },
-        { "name": "Guru Randhawa", "artist_id": null, "note": "Grand finale guest." },
-        { "name": "King", "artist_id": "king", "note": "Grand finale guest." }
+        {
+          "name": "MC Square (Season 2 - Winner)",
+          "role": "Guest",
+          "week": "2",
+          "artist_ids": ["mc-square"]
+        },
+        {
+          "name": "Sikander Kahlon & RAGA",
+          "role": "Guest judge",
+          "week": "3",
+          "artist_ids": ["raga"]
+        },
+        {
+          "name": "Salim Merchant",
+          "role": "Guest judge",
+          "week": "5",
+          "artist_ids": []
+        },
+        {
+          "name": "Encore ABJ & Calm (Seedhe Maut)",
+          "role": "Guest judge",
+          "week": "6",
+          "artist_ids": ["seedhe-maut", "calm"]
+        },
+        {
+          "name": "Riar Saab & Abhijay Sharma",
+          "role": "Guest",
+          "week": "7",
+          "artist_ids": []
+        },
+        {
+          "name": "Samantha Ruth Prabhu",
+          "role": "Guest judge",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Gravity (Season 2 - Finalist)",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "GD47 (Season 2 - Contestant)",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Paradox (Season 2 - Runner Up)",
+          "role": "Guest",
+          "week": "9",
+          "artist_ids": []
+        },
+        {
+          "name": "Guru Randhawa",
+          "role": "Guest judge",
+          "week": "10",
+          "artist_ids": []
+        },
+        {
+          "name": "Uchana Amit",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": []
+        },
+        {
+          "name": "King (Season 1 - Contestant & Season 2 - Squad Boss)",
+          "role": "Guest judge",
+          "week": "10",
+          "artist_ids": ["king"]
+        },
+        {
+          "name": "Vishal Mishra",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": []
+        }
       ],
       "prize": "The winner received Rs 10 lakh, POCO gifts worth Rs 2.5 lakh and a GOVO soundbar. The OG Hustler received Rs 5 lakh.",
-      "highlights": [
-        "Ikka joined as a new squad boss.",
-        "Dee MC saved 100RBH from the danger zone. He went on to win OG Hustler.",
-        "The grand finale aired on 23 and 24 December 2023. Uday won after a 10-week run, the youngest prodigy of the season."
-      ],
+      "highlights": ["Ikka joined as a new squad boss.", "Dee MC saved 100RBH from the danger zone. He went on to win OG Hustler.", "The grand finale aired on 23 and 24 December 2023. Uday won after a 10-week run, the youngest prodigy of the season."],
       "roster_complete": true,
       "contestants": [
-        { "name": "Uday", "real_name": "Uday Pandhi", "from": "Delhi", "squad": "Dee MC Dynamites", "result": "Winner", "artist_id": "uday" },
-        { "name": "Bassick", "real_name": "Shlok Verma", "from": null, "squad": null, "result": "Runner-up", "artist_id": null },
-        { "name": "100RBH", "real_name": "Saurabh Abhyankar", "from": "Amravati", "squad": null, "result": "OG Hustler", "artist_id": null },
-        { "name": "Mrunal Shankar", "real_name": null, "from": null, "squad": null, "result": "Finalist", "artist_id": null },
-        { "name": "Kayden Sharma", "real_name": null, "from": null, "squad": null, "result": "Finalist", "artist_id": null },
-        { "name": "Vijay Dada", "real_name": null, "from": null, "squad": null, "result": "Finalist", "artist_id": null },
-        { "name": "Gaush", "real_name": null, "from": "Navi Mumbai", "squad": null, "result": "Top 16", "artist_id": "gaush" },
-        { "name": "Badal", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Bob.B Randhawa", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Burrah", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Poet Shaf", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Prince", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Rap ID", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Shady Mellow", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Shen B", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Vish", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null }
+        {
+          "name": "Uday",
+          "real_name": "Uday Pandhi",
+          "from": "Delhi",
+          "squad": "Dee MC Dynamites",
+          "result": "Winner",
+          "place": "Winner",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "uday"
+        },
+        {
+          "name": "Bassick",
+          "real_name": "Shlok Verma",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Runner-up",
+          "place": "Runner-up",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "100 RBH",
+          "real_name": "Saurabh Abhyankar",
+          "from": "Amravati",
+          "squad": "Dee MC Dynamites",
+          "result": "3rd place",
+          "place": "3rd Place",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": true,
+          "artist_id": null
+        },
+        {
+          "name": "Mrunal Shankar",
+          "real_name": "Mrunal Shankar Dhole",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Finalist",
+          "place": "4-6",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Vijay Dada",
+          "real_name": "Vijay Kumar",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Finalist",
+          "place": "4-6",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Kayden Sharma",
+          "real_name": null,
+          "from": null,
+          "squad": "Ikka Gangstars",
+          "result": "Finalist",
+          "place": "4-6",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Burrah",
+          "real_name": "Jasdeep Singh",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Gaush",
+          "real_name": "Gauresh Kale",
+          "from": "Navi Mumbai",
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "gaush"
+        },
+        {
+          "name": "Rap ID",
+          "real_name": "Mayank Rawat",
+          "from": null,
+          "squad": "Ikka Gangstars",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Shen B",
+          "real_name": "Shayaan Bhat",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Bob B. Randhawa",
+          "real_name": "Bobby Randhawa",
+          "from": null,
+          "squad": "Ikka Gangstars",
+          "result": "11th place",
+          "place": "11",
+          "finish": "Episode 16",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Poet Shaf",
+          "real_name": "Shaheer Faisal",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 14",
+          "place": "12-13",
+          "finish": "Episode 14",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Vish",
+          "real_name": null,
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 14",
+          "place": "12-13",
+          "finish": "Episode 14",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Prince The Artist Singh",
+          "real_name": null,
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "14th place",
+          "place": "14",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Shady Mellow",
+          "real_name": "Swagat Yein",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "15th place",
+          "place": "15",
+          "finish": "Episode 10",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Badal",
+          "real_name": "Sahil Badal",
+          "from": null,
+          "squad": "Ikka Gangstars",
+          "result": "16th place",
+          "place": "16",
+          "finish": "Episode 8",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Jaya",
+          "real_name": "Jaya Rohillaa",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Lekhak",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Meetoride",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "MNDP",
+          "real_name": "Mandeep Singh",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-20",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "Squads",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Dee MC Dynamites", "Dino Warriors", "EPR Rebels", "Ikka Gangstars"],
+              "rows": [
+                ["Uday", "Vijay Dada", "Mrunal Shankar", "Badal"],
+                ["100 RBH", "Poet Shaf", "Gaush", "Kayden Sharma"],
+                ["Shen B", "Bassick", "Shady Mellow", "Bob B Randhawa"],
+                ["Prince", "Burrah", "Vish", "Rap ID"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Squad and performer of the week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Squad of the Week", "Performer(s) of the Week"],
+              "rows": [
+                ["Week 3", "EPR Rebels", "Mrunal Shankar"],
+                ["Week 4", "Dee MC Dynamites", "Uday"],
+                ["Week 5", "Dee MC Dynamites", "Shen B"],
+                ["Week 6", "Dino Warriors", "Burrah"],
+                ["Week 7", "Dino Warriors", "Vijay Dada"],
+                ["Week 8", "Ikka Gangstars & Dino Warriors", "Kayden Sharma / Vijay Dada"],
+                ["Week 9", "Dee MC Dynamites", "100 RBH"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week by week results",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Squad", "Contestant", "Week 1-2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Total", "Final ranking"],
+              "rows": [
+                ["Dee MC Dynamites", "Uday", "SAFE", "9", "9", "7", "9", "7", "12", "SAFE", "Winner", "53", "1"],
+                ["Dino Warriors", "Bassick", "SAFE", "5", "8", "5", "9", "7", "12", "SAFE", "Runner-up", "43", "2"],
+                ["Dee MC Dynamites", "100 RBH", "SAFE", "9", "9", "5", "9", "9", "5", "SAFE", "3rd Place", "46", "3"],
+                ["EPR Rebels", "Mrunal Shankar", "SAFE", "9", "9", "4", "8", "5", "Finalist", "", "TOP 6", "35", "5"],
+                ["Dino Warriors", "Vijay Dada", "SAFE", "7", "9", "9", "9", "9", "12", "Finalist", "TOP 6", "55", "4"],
+                ["Ikka Gangstars", "Kayden Sharma", "SAFE", "8", "9", "7", "5", "5", "12", "SAFE", "TOP 6", "46", "6"],
+                ["EPR Rebels", "Gaush", "SAFE", "9", "8", "7", "7", "9", "12", "ELIM", "Guest", "52", "7"],
+                ["Dee MC Dynamites", "Shen B", "BTM6", "7", "9", "9", "6", "9", "12", "ELIM", "Guest", "52", "8"],
+                ["Dino Warriors", "Burrah", "SAFE", "8", "8", "9", "7", "9", "10", "ELIM", "Guest", "51", "9"],
+                ["Ikka Gangstars", "Rap ID", "SAFE", "8", "9", "6", "7", "8", "10", "ELIM", "Guest", "48", "10"],
+                ["Ikka Gangstars", "Bob B", "SAFE", "7", "9", "9", "9", "6", "5", "", "Guest", "45", "11"],
+                ["Dino Warriors", "Poet Shaf", "SAFE", "6", "8", "9", "3", "5", "", "", "Guest", "31", "12-13"],
+                ["EPR Rebels", "Vish", "SAFE", "8", "6", "4", "7", "6", "", "", "Guest", "31", ""],
+                ["Dee MC Dynamites", "Prince", "BTM6", "7", "9", "5", "5", "", "", "", "Guest", "26", "14"],
+                ["EPR Rebels", "Shady Mellow", "SAFE", "9", "6", "3", "", "", "", "", "Guest", "18", "15"],
+                ["Ikka Gangstars", "Badal", "SAFE", "9", "6", "", "", "", "", "", "Guest", "15", "16"],
+                ["-", "Jaya", "ELIM", "", "", "", "", "", "", "", "", "0", "17-20"],
+                ["", "Lekhak", "ELIM", "", "", "", "", "", "", "", "", "0", ""],
+                ["", "Meetoride", "ELIM", "", "", "", "", "", "", "", "", "0", ""],
+                ["", "MNDP", "ELIM", "", "", "", "", "", "", "", "", "0", ""]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guests by week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Episode(s)", "Guest Judge(s)", "Episode", "Guest Appearance"],
+              "rows": [
+                ["2", "none", "", "3", "MC Square (Season 2 - Winner)"],
+                ["3", "5-6", "Sikander Kahlon & RAGA", "none", ""],
+                ["5", "9-10", "Salim Merchant", "", ""],
+                ["6", "11-12", "Encore ABJ & Calm (Seedhe Maut)", "", ""],
+                ["7", "none", "", "13", "Riar Saab & Abhijay Sharma"],
+                ["8", "15-16", "Samantha Ruth Prabhu", "15", "Gravity (Season 2 - Finalist)"],
+                ["", "", "", "16", "GD47 (Season 2 - Contestant)"],
+                ["9", "none", "", "18", "Paradox (Season 2 - Runner Up)"],
+                ["10", "19-20", "Guru Randhawa", "20", "Uchana Amit"],
+                ["", "", "King (Season 1 - Contestant & Season 2 - Squad Boss)", "", "Vishal Mishra"]
+              ]
+            }
+          ]
+        }
+      ],
+      "weeks": [
+        {
+          "title": "Week 1-2 (Episode 1-4)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "For week 1 & 2, after each contestant performed Badshah decides which squad to be assigned to. But, the Squad Bosses can mic drop and ask the contestant to join their squad."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Badshah", "Contestant", "Result"],
+              "rows": [
+                ["1", "Badal", "-", "Ikka Gangstars", "Top 16"],
+                ["2", "Kayden", "-", "Ikka Gangstars", "Top 16"],
+                ["3", "Mrunal Shankar", "-", "EPR Rebels", "Top 16"],
+                ["4", "Vijay Dada", "Dino Warriors", "-", "Top 16"],
+                ["5", "Gaush", "-", "EPR Rebels", "Top 16"],
+                ["6", "Poet Shaf", "Dino Warriors", "-", "Top 16"],
+                ["7", "Bob B", "-", "Ikka Gangstars", "Top 16"],
+                ["8", "Meetoride", "", "", "Bottom 6"],
+                ["9", "Rap ID", "-", "Ikka Gangstars", "Top 16"],
+                ["10", "Jaya", "", "", "Bottom 6"],
+                ["11", "Shady Mellow", "EPR Rebels", "-", "Top 16"],
+                ["12", "Prince The Artist Singh", "", "", "Bottom 6"],
+                ["13", "Uday", "Dee MC Dynamites", "-", "Top 16"],
+                ["14", "100 RBH", "Dee MC Dynamites", "-", "Top 16"],
+                ["15", "Vish", "EPR Rebels", "-", "Top 16"],
+                ["16", "Bassick", "Dino Warriors", "-", "Top 16"],
+                ["17", "Shen B", "", "", "Bottom 6"],
+                ["18", "Burrah", "-", "Dino Warriors", "Top 16"],
+                ["19", "Lekhak", "", "", "Bottom 6"],
+                ["20", "MNDP", "", "", "Bottom 6"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Battleground: Ground Shunya"
+            },
+            {
+              "type": "text",
+              "text": "The bottom 6 contestant compete three-way battle in the Battleground. Only two moved-on to the next round."
+            },
+            {
+              "type": "text",
+              "text": "After 2 battles, Badshah had to choose two contestant to join Dee MC Dynamites squad."
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Rapper", "Survived", "Eliminated"],
+              "rows": [
+                ["1", "Jaya vs. Shen B vs. MNDP", "Shen B", "Jaya / MNDP"],
+                ["2", "Meetoride vs. Lekhak vs. Prince", "Prince", "Lekhak / Meetoride"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 3 (Episode 5-6): Showcase Week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "From this week, the squad bosses scored out of 3 after each performance."
+            },
+            {
+              "type": "text",
+              "text": "Also the public voting were open, with the votes effecting the next week's elimination."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Ikka", "Total Score", "Judges' Decision"],
+              "rows": [
+                ["1", "Dee MC Dynamites", "100 RBH", "-", "3", "3", "3", "9", "Safe"],
+                ["2", "EPR Rebels", "Mrunal Shankar", "3", "3", "-", "3", "9", ""],
+                ["3", "EPR Rebels", "Gaush", "3", "3", "-", "3", "9", "Safe"],
+                ["4", "Ikka Gangstars", "Kayden Sharma", "3", "3", "2", "-", "8", "Safe"],
+                ["5", "Ikka Gangstars", "Rap ID", "3", "2", "3", "-", "8", "Safe"],
+                ["6", "Dee MC Dynamites", "Prince", "-", "2", "2", "3", "7", "Safe"],
+                ["7", "Ikka Gangstars", "Badal", "3", "3", "3", "-", "9", "Safe"],
+                ["8", "Dino Warriors", "Vijay Dada", "2", "-", "2", "3", "7", "Safe"],
+                ["9", "Dee MC Dynamites", "Uday", "-", "3", "3", "3", "9", "Safe"],
+                ["10", "EPR Rebels", "Shady Mellow", "3", "3", "-", "3", "9", "Safe"],
+                ["11", "Ikka Gangstars", "Bob B", "2", "3", "2", "-", "7", "Safe"],
+                ["12", "Dee MC Dynamites", "Shen B", "-", "2", "2", "3", "7", "Safe"],
+                ["13", "Dino Warriors", "Burrah", "2", "-", "3", "3", "8", "Safe"],
+                ["14", "Dino Warriors", "Poet Shaf", "2", "-", "2", "2", "6", "Safe"],
+                ["15", "EPR Rebels", "Vish", "2", "3", "-", "3", "8", "Safe"],
+                ["16", "Dino Warriors", "Bassick", "2", "-", "1", "2", "5", "Safe"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 4 (Episode 7-8): BYOB Week - Bring Your Own Bars, Bring Your Own Beats, Bring Your Own Bangers",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week's squad of the week, Dee MC had to choose to save one of the four Rappers in Danger Zone. She chose Shen B."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Ikka", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Dee MC Dynamites", "Prince", "-", "3", "3", "3", "9", "Immune", "-", "-"],
+                ["2", "Ikka Gangstars", "Kayden Sharma", "3", "3", "3", "-", "9", "Immune", "-", "-"],
+                ["3", "Dino Warriors", "Bassick", "2", "-", "3", "3", "8", "Safe", "-", "-"],
+                ["4", "Dino Warriors", "Vijay Dada", "3", "-", "3", "3", "9", "Immune", "-", "-"],
+                ["5", "Ikka Gangstars", "Bob B", "3", "3", "3", "-", "9", "Immune", "-", "-"],
+                ["6", "Dee MC Dynamites", "Shen B", "-", "3", "3", "3", "9", "Saved", "-", "-"],
+                ["7", "EPR Rebels", "Vish", "2", "2", "-", "2", "6", "Safe", "-", "-"],
+                ["8", "Ikka Gangstars", "Badal", "2", "2", "2", "-", "6", "Danger Zone", "Bottom 2", "Eliminated"],
+                ["9", "EPR Rebels", "Gaush", "2", "3", "-", "3", "8", "Safe", "-", "-"],
+                ["10", "Dee MC Dynamites", "100 RBH", "-", "3", "3", "3", "9", "Immune", "-", "-"],
+                ["11", "Dee MC Dynamites", "Uday", "-", "3", "3", "3", "9", "", "-", "-"],
+                ["12", "EPR Rebels", "Mrunal Shankar", "3", "3", "-", "3", "9", "Safe", "-", "-"],
+                ["13", "Ikka Gangstars", "Rap ID", "3", "3", "3", "-", "9", "Immune", "-", "-"],
+                ["14", "Dino Warriors", "Poet Shaf", "3", "-", "3", "2", "8", "Danger Zone", "Bottom 2", "Safe"],
+                ["15", "Dino Warriors", "Burrah", "2", "-", "3", "3", "8", "Safe", "-", "-"],
+                ["16", "EPR Rebels", "Shady Mellow", "2", "2", "-", "2", "6", "Danger Zone", "Safe", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 5 (Episode 9-10): Zone Flip",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week's squad of the week, Dee MC had to choose to save one of the four Rappers in Danger Zone. She chose 100 RBH."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Ikka", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Ikka Gangstars", "Rap ID", "2", "2", "2", "-", "6", "Immune", "-", "-"],
+                ["2", "Dino Warriors", "Burrah", "3", "-", "3", "3", "9", "Immune", "-", "-"],
+                ["3", "Ikka Gangstars", "Kayden Sharma", "3", "2", "2", "-", "7", "Danger Zone", "Safe", "-"],
+                ["4", "Dee MC Dynamites", "Shen B", "-", "3", "3", "3", "9", "", "-", "-"],
+                ["5", "Dino Warriors", "Bassick", "2", "-", "2", "1", "5", "Danger Zone", "Bottom 2", "Safe"],
+                ["6", "EPR Rebels", "Gaush", "3", "2", "-", "2", "7", "Safe", "-", "-"],
+                ["7", "EPR Rebels", "Vish", "1", "2", "-", "1", "4", "Safe", "-", "-"],
+                ["8", "Dee MC Dynamites", "Prince", "-", "1", "2", "2", "5", "Safe", "-", "-"],
+                ["9", "Dino Warriors", "Vijay Dada", "3", "-", "3", "3", "9", "Safe", "-", "-"],
+                ["10", "Dee MC Dynamites", "Uday", "-", "2", "2", "3", "7", "Immune", "-", "-"],
+                ["11", "Ikka Gangstars", "Bob B", "3", "3", "3", "-", "9", "Safe", "-", "-"],
+                ["12", "Dee MC Dynamites", "100 RBH", "-", "2", "1", "2", "5", "Saved", "-", "-"],
+                ["13", "Dino Warriors", "Poet Shaf", "3", "-", "3", "3", "9", "Safe", "-", "-"],
+                ["14", "EPR Rebels", "Shady Mellow", "1", "1", "-", "1", "3", "Danger Zone", "Bottom 2", "Eliminated"],
+                ["15", "EPR Rebels", "Mrunal Shankar", "1", "1", "-", "2", "4", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 6 (Episode 11-12): Level Up",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week's squad of the week, Dino had to choose to save one of the three Rappers in Danger Zone. He chose Poet Shaf."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Ikka", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Dino Warriors", "Bassick", "3", "-", "3", "3", "9", "Immune", "-", "-"],
+                ["2", "Dee MC Dynamites", "Uday", "-", "3", "3", "3", "9", "Immune", "-", "-"],
+                ["3", "Ikka Gangstars", "Bob B", "3", "3", "3", "-", "9", "Immune", "-", "-"],
+                ["4", "EPR Rebels", "Mrunal Shankar", "3", "2", "-", "3", "8", "Safe", "-", "-"],
+                ["5", "Ikka Gangstars", "Kayden Sharma", "2", "2", "1", "-", "5", "Danger Zone", "Safe", "-"],
+                ["6", "Dee MC Dynamites", "Shen B", "-", "2", "2", "2", "6", "Danger Zone", "Bottom 2", "Safe"],
+                ["7", "Dino Warriors", "Poet Shaf", "1", "-", "1", "1", "3", "Saved", "-", "-"],
+                ["8", "Dee MC Dynamites", "100 RBH", "-", "3", "3", "3", "9", "Immune", "-", "-"],
+                ["9", "Dino Warriors", "Burrah", "2", "-", "2", "3", "7", "", "-", "-"],
+                ["10", "EPR Rebels", "Gaush", "2", "3", "-", "2", "7", "Safe", "-", "-"],
+                ["11", "Dino Warriors", "Vijay Dada", "3", "-", "3", "3", "9", "Immune", "-", "-"],
+                ["12", "EPR Rebels", "Vish", "2", "2", "-", "3", "7", "Safe", "-", "-"],
+                ["13", "Dee MC Dynamites", "Prince", "-", "2", "1", "2", "5", "Danger Zone", "Bottom 2", "Eliminated"],
+                ["14", "Ikka Gangstars", "Rap ID", "2", "2", "3", "-", "7", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 7 (Episode 13-14): Go Bass the Boss",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Mrunal Shankar won the ticket to Finale. This week's squad of the week, Ikka Gangstars had to choose to save one of the five Rappers in Danger Zone. He chose Kayden."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Ikka", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Dino Warriors", "Vijay Dada", "3", "-", "3", "3", "9", "", "-", "-"],
+                ["2", "EPR Rebels", "Gaush", "3", "3", "-", "3", "9", "Safe", "-", "-"],
+                ["3", "EPR Rebels", "Mrunal Shankar", "2", "1", "-", "2", "5", "Immune", "-", "-"],
+                ["4", "Dino Warriors", "Bassick", "2", "-", "2", "3", "7", "Danger Zone", "Safe", "-"],
+                ["5", "Dee MC Dynamites", "100 RBH", "-", "3", "3", "3", "9", "Safe", "-", "-"],
+                ["6", "Dino Warriors", "Burrah", "3", "-", "3", "3", "9", "Safe", "-", "-"],
+                ["7", "Dee MC Dynamites", "Uday", "-", "3", "1", "3", "7", "Danger Zone", "Bottom 3", "Safe"],
+                ["8", "EPR Rebels", "Vish", "2", "2", "-", "2", "6", "Danger Zone", "Bottom 3", "Eliminated"],
+                ["9", "Ikka Gangstars", "Rap ID", "3", "3", "2", "-", "8", "Immune", "-", "-"],
+                ["10", "Dee MC Dynamites", "Shen B", "-", "3", "3", "3", "9", "Safe", "-", "-"],
+                ["11", "Ikka Gangstars", "Bob B", "2", "3", "1", "-", "6", "Immune", "-", "-"],
+                ["12", "Dino Warriors", "Poet Shaf", "2", "-", "1", "2", "5", "Danger Zone", "Bottom 3", "Eliminated"],
+                ["13", "Ikka Gangstars", "Kayden Sharma", "2", "2", "1", "-", "5", "Saved", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 8 (Episode 15-16): Collab Week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week contestants collaborated and performed in pairs. As Mrunal Shankar won the Ticket to Finale, she collabed with her Squad Boss EPR."
+            },
+            {
+              "type": "text",
+              "text": "Also each squad performed a group Ad Jingle for the sponsors of the show."
+            },
+            {
+              "type": "text",
+              "text": "EPR Rebels: POCO Dee MC Dynamites: Appy Fizz Ikka Gangstars: Big muscle nutrition Dino Warriors: MTV"
+            },
+            {
+              "type": "text",
+              "text": "Vijay Dada won the ticket to Finale. This week's squad of the week was Dee MC Dynamites. This week there was only Bottom 2, no-one was saved by squad boss power or public vote."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Badshah", "Dee MC", "Dino James", "EPR", "Ikka", "Total Score", "Judges' Decision", "Battle Result"],
+              "rows": [
+                ["1", "Ikka Gangstars", "Kayden Sharma", "", "3", "3", "3", "3", "12", "", "-"],
+                ["", "Dino Warriors", "Vijay Dada", "", "", "", "", "", "", "", "-"],
+                ["2", "Dino Warriors", "Bassick", "", "3", "3", "3", "3", "12", "Immune", "-"],
+                ["", "Dee MC Dynamites", "Uday", "", "", "", "", "", "", "Immune", "-"],
+                ["3", "EPR Rebels", "Mrunal Shankar", "Finalist", "", "", "", "", "", "", ""],
+                ["4", "Dino Warriors", "Burrah", "", "2", "3", "3", "2", "10", "Immune", "-"],
+                ["", "Ikka Gangstars", "Rap ID", "", "", "", "", "", "", "Immune", "-"],
+                ["5", "Dee MC Dynamites", "100 RBH", "", "1", "2", "1", "1", "5", "Bottom 2", "Safe"],
+                ["", "Ikka Gangstars", "Bob B", "", "", "", "", "", "", "Bottom 2", "Eliminated"],
+                ["6", "EPR Rebels", "Gaush", "", "3", "3", "3", "3", "12", "Immune", "-"],
+                ["", "Dee MC Dynamites", "Shen B", "", "", "", "", "", "", "Immune", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 9 (Episode 17-18): Semi Final - Mega Ground Shunya",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Eight contestants from Top 10 competed in one-on-one Battles to move on to the Finale. Only four contestants advanced to the Finale. Mrunal Shankar and Vijay Dada did not compete as they had ticket to Finale"
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Order", "Squad", "Rapper", "Battle Result"],
+              "rows": [
+                ["1", "1", "Dee MC Dynamites", "Shen B", "Eliminated"],
+                ["", "2", "Dino Warriors", "Bassick", "Advanced to Top 6"],
+                ["2", "1", "Dee MC Dynamites", "100 RBH", "Advanced to Top 6"],
+                ["", "2", "Ikka Gangstars", "Rap ID", "Eliminated"],
+                ["3", "1", "Ikka Gangstars", "Kayden Sharma", "Advanced to Top 6"],
+                ["", "2", "Dino Warriors", "Burrah", "Eliminated"],
+                ["4", "1", "EPR Rebels", "Gaush", "Eliminated"],
+                ["", "2", "Dee MC Dynamites", "Uday", "Advanced to Top 6"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Top 6 finalists performed for the public and the public voting were open for final time, with the votes deciding the winner next week."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper"],
+              "rows": [
+                ["1", "Dino Warriors", "Bassick"],
+                ["2", "Dee MC Dynamites", "Uday"],
+                ["3", "Ikka Gangstars", "Kayden Sharma"],
+                ["4", "Dee MC Dynamites", "100 RBH"],
+                ["5", "EPR Rebels", "Mrunal Shankar"],
+                ["6", "Dino Warriors", "Vijay Dada"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 10 (Episode 19-20): Grand Finale",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "The winner wins ₹10,00,000 cash prize, POCO Made of Mad gifts worth ₹2.5 lakhs and GOVO soundbar."
+            },
+            {
+              "type": "text",
+              "text": "Rapper 100 RBH won the OG Hustler Award and received a cash prize of ₹5,00,000."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Result"],
+              "rows": [
+                ["1", "Dee MC Dynamites", "Uday", "Top 3"],
+                ["2", "Dino Warriors", "Bassick", "Top 3"],
+                ["3", "Dee MC Dynamites", "100 RBH", "Top 3"],
+                ["4", "Dino Warriors", "Vijay Dada", "Eliminated"],
+                ["5", "EPR Rebels", "Mrunal Shankar", "Eliminated"],
+                ["6", "Ikka Gangstars", "Kayden Sharma", "Eliminated"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "After Top 6 finalists performed, based on judges' choice three moved-on to Top 3. And the winner was crowned based on public votes."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Final Result"],
+              "rows": [
+                ["1", "Dee MC Dynamites", "Uday", "Winner"],
+                ["2", "Dino Warriors", "Bassick", "Runner-up"],
+                ["3", "Dee MC Dynamites", "100 RBH", "Third Place"]
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -144,41 +2248,769 @@
       "premiere": "2024-10-19",
       "finale": "2024-12-22",
       "status": "finished",
+      "about": ["This season, also known as MTV Hustle 4: 'HIP HOP, DON'T STOP', premiered on 19 October 2024.", "Raftaar returned as the judge after his absence from two seasons, accompanied by Ikka Singh on the panel. EPR, Dino James and Dee MC returned to judge and were joined by Raga as the newest addition to squad bosses. Jizzy and Talha Siddiqui hosted the season. Lashcurry was declared as the winner."],
       "hosts": [
-        { "name": "Talha Siddiqui", "artist_id": null },
-        { "name": "Jizzy", "artist_id": null }
+        {
+          "name": "MC Talha (Talha Siddiqui)",
+          "artist_id": null
+        },
+        {
+          "name": "MC Jizzy (Jasmeet Singh Bhatia)",
+          "artist_id": null
+        }
       ],
       "judges": [
-        { "name": "Raftaar", "artist_id": "raftaar" },
-        { "name": "Ikka", "artist_id": "ikka" }
+        {
+          "name": "Raftaar",
+          "artist_id": "raftaar"
+        },
+        {
+          "name": "Ikka",
+          "artist_id": "ikka"
+        }
       ],
       "squad_bosses": [
-        { "name": "EPR", "artist_id": "epr", "squad": null },
-        { "name": "Dino James", "artist_id": "dino-james", "squad": null },
-        { "name": "Dee MC", "artist_id": "dee-mc", "squad": null },
-        { "name": "Raga", "artist_id": "raga", "squad": "Raga Ragers" }
+        {
+          "name": "EPR",
+          "artist_id": "epr",
+          "squad": "EPR Rebels"
+        },
+        {
+          "name": "Dino James",
+          "artist_id": "dino-james",
+          "squad": "Dino Warriors"
+        },
+        {
+          "name": "Dee MC",
+          "artist_id": "dee-mc",
+          "squad": "Dee MC Dynamites"
+        },
+        {
+          "name": "Raga",
+          "artist_id": "raga",
+          "squad": "Raga Ragers"
+        }
       ],
       "guests": [
-        { "name": "M-Zee Bella", "artist_id": "m-zee-bella", "note": "Season 1 winner, backed Lashcurry at the finale." },
-        { "name": "MC Square", "artist_id": "mc-square", "note": "Season 2 winner, backed Naam Sujal at the finale." },
-        { "name": "Uday", "artist_id": "uday", "note": "Season 3 winner, backed Dharmik at the finale." }
+        {
+          "name": "M Zee Bella (Season 1 - Winner)",
+          "role": "Guest",
+          "week": "2",
+          "artist_ids": ["m-zee-bella"]
+        },
+        {
+          "name": "King (Season 1 - Contestant & Season 2 - Squad Boss)",
+          "role": "Guest judge",
+          "week": "3",
+          "artist_ids": ["king"]
+        },
+        {
+          "name": "Encore ABJ & Calm (Seedhe Maut)",
+          "role": "Guest judge",
+          "week": "4",
+          "artist_ids": ["seedhe-maut", "calm"]
+        },
+        {
+          "name": "Kayden Sharma (Season 3 - Finalist)",
+          "role": "Guest",
+          "week": "5",
+          "artist_ids": []
+        },
+        {
+          "name": "Panther (Season 2 - Contestant)",
+          "role": "Guest",
+          "week": "5",
+          "artist_ids": ["panther"]
+        },
+        {
+          "name": "Badshah",
+          "role": "Guest judge",
+          "week": "6",
+          "artist_ids": ["badshah"]
+        },
+        {
+          "name": "Raja Kumari",
+          "role": "Guest judge",
+          "week": "7",
+          "artist_ids": []
+        },
+        {
+          "name": "Naezy",
+          "role": "Guest judge",
+          "week": "8",
+          "artist_ids": ["naezy"]
+        },
+        {
+          "name": "Gravity (Season 2 - Finalist)",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Riar Saab & Sambata",
+          "role": "Guest",
+          "week": "8",
+          "artist_ids": []
+        },
+        {
+          "name": "Shah Rule",
+          "role": "Guest",
+          "week": "9",
+          "artist_ids": []
+        },
+        {
+          "name": "Sunidhi Chauhan",
+          "role": "Guest judge",
+          "week": "10",
+          "artist_ids": []
+        },
+        {
+          "name": "Srushti Tawade (Season 2 - Contestant)",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": []
+        },
+        {
+          "name": "M Zee Bella (Season 1 - Winner)",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": ["m-zee-bella"]
+        },
+        {
+          "name": "Paradox (Season 2 - Runner-up)",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": []
+        },
+        {
+          "name": "MC Square (Season 2 - Winner)",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": ["mc-square"]
+        },
+        {
+          "name": "Uday Pandhi (Season 3 - Winner)",
+          "role": "Guest",
+          "week": "10",
+          "artist_ids": ["uday"]
+        }
       ],
       "prize": "The winner received Rs 10 lakh.",
-      "highlights": [
-        "Raftaar returned as judge alongside Ikka. The pair opened the season with the MTV Hustle 4 anthem.",
-        "Raga joined as a new squad boss, and his squad Raga Ragers produced the winner.",
-        "Streamed on JioCinema. Contestants' performances were released episode by episode."
-      ],
-      "roster_complete": false,
+      "highlights": ["Raftaar returned as judge alongside Ikka. The pair opened the season with the MTV Hustle 4 anthem.", "Raga joined as a new squad boss, and his squad Raga Ragers produced the winner.", "Streamed on JioCinema. Contestants' performances were released episode by episode."],
+      "roster_complete": true,
       "contestants": [
-        { "name": "Lashcurry", "real_name": "Vinayak Lashkari", "from": "Indore", "squad": "Raga Ragers", "result": "Winner", "artist_id": "lashcurry" },
-        { "name": "Naam Sujal", "real_name": "Sujal Dupare", "from": "Nagpur", "squad": null, "result": "Runner-up", "artist_id": "naam-sujal" },
-        { "name": "Siyaahi", "real_name": "Aniket Bhat", "from": "Ahmedabad", "squad": null, "result": "OG Hustler", "artist_id": "siyaahi" },
-        { "name": "Dharmik", "real_name": null, "from": "Hyderabad", "squad": null, "result": "Finalist", "artist_id": null },
-        { "name": "99side", "real_name": null, "from": "Vile Parle, Mumbai", "squad": null, "result": "Finalist", "artist_id": null },
-        { "name": "vichaar", "real_name": "Abhin Pandita", "from": "Dehradun", "squad": null, "result": "Finalist", "artist_id": "vichaar" },
-        { "name": "Rajjo", "real_name": null, "from": null, "squad": null, "result": "Contestant", "artist_id": null },
-        { "name": "pho", "real_name": null, "from": null, "squad": null, "result": "Contestant", "artist_id": null }
+        {
+          "name": "Lashcurry",
+          "real_name": "Vinayak Lashkari",
+          "from": "Indore",
+          "squad": "Raga Ragers",
+          "result": "Winner",
+          "place": "Winner",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "lashcurry"
+        },
+        {
+          "name": "Naam Sujal",
+          "real_name": "Sujal Dupare",
+          "from": "Nagpur",
+          "squad": "EPR Rebels",
+          "result": "Runner-up",
+          "place": "Runner-up",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "naam-sujal"
+        },
+        {
+          "name": "Dharmik",
+          "real_name": "Madhusudhan Sharma",
+          "from": "Hyderabad",
+          "squad": "Dee MC Dynamites",
+          "result": "3rd place",
+          "place": "3rd Place",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "99side",
+          "real_name": "Yash Dandge",
+          "from": "Vile Parle, Mumbai",
+          "squad": "Dino Warriors",
+          "result": "Finalist",
+          "place": "4-6",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Vichaar",
+          "real_name": "Abhin Pandita",
+          "from": "Dehradun",
+          "squad": "EPR Rebels",
+          "result": "Finalist",
+          "place": "4-6",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": "vichaar"
+        },
+        {
+          "name": "Siyaahi",
+          "real_name": "Aniket Bhatt",
+          "from": "Ahmedabad",
+          "squad": "Raga Ragers",
+          "result": "Finalist",
+          "place": "4-6",
+          "finish": "Episode 20",
+          "entered": null,
+          "og_hustler": true,
+          "artist_id": "siyaahi"
+        },
+        {
+          "name": "Mad Trip",
+          "real_name": "Sujal Shah",
+          "from": null,
+          "squad": "Raga Ragers",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Sense",
+          "real_name": "Aakash Gopal",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "PHO",
+          "real_name": "Akriti Lal",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Ghaint Jxtt",
+          "real_name": "Ishmeet Atwal",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 18",
+          "place": "7-10",
+          "finish": "Episode 18",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Little Bhatia",
+          "real_name": "Aditya Singh",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 16",
+          "place": "11-12",
+          "finish": "Episode 16",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Ajitesh Bhati",
+          "real_name": null,
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 16",
+          "place": "11-12",
+          "finish": "Episode 16",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Danish",
+          "real_name": "Danish Ahmad",
+          "from": null,
+          "squad": "Dino Warriors",
+          "result": "Eliminated in episode 12",
+          "place": "13-14",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "K!LLSWITCH",
+          "real_name": "Armaan Yadav",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 12",
+          "place": "13-14",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Rajjo",
+          "real_name": "Ayush Rajoria",
+          "from": null,
+          "squad": "Dee MC Dynamites",
+          "result": "15th place",
+          "place": "15",
+          "finish": "Episode 10",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Devil The Rhymer",
+          "real_name": "Abhay Prasad",
+          "from": null,
+          "squad": "Raga Ragers",
+          "result": "16th place",
+          "place": "16",
+          "finish": "Episode 8",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "DOTM",
+          "real_name": "Dev Pratap Singh",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-19",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Manisten",
+          "real_name": "Manpreet Singh",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-19",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Volt",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 4",
+          "place": "17-19",
+          "finish": "Episode 4",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "Squads",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Dee MC Dynamites", "Dino Warriors", "EPR Rebels", "Raga Ragers"],
+              "rows": [
+                ["Dharmik", "99side", "Ghaint Jxtt", "Mad Trip"],
+                ["Rajjo", "Ajitesh Bhati", "Naam Sujal", "Lashcurry"],
+                ["PHO", "Danish", "K!LLSWITCH", "Devil the rhymer"],
+                ["Sense", "Little Bhatia", "Vichaar", "Siyaahi"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Squad and performer of the week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Squad of the Week", "Performer(s) of the Week"],
+              "rows": [
+                ["Week 3", "Dino Warriors", "99side"],
+                ["Week 4", "Dee MC Dynamites", "Dharmik"],
+                ["Week 5", "Raga Ragers", "Lashcurry"],
+                ["Week 6", "EPR Rebels", "Naam Sujal"],
+                ["Week 7", "Raga Ragers", "Mad Trip"],
+                ["Week 8", "Dee MC Dynamites", "Dharmik & Sense"],
+                ["Week 9", "Raga Ragers", "Lashcurry"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week by week results",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Squad", "Contestant", "Week 1-2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Total"],
+              "rows": [
+                ["Raga Ragers", "Lashcurry", "SAFE", "29", "30", "30", "29", "25", "31", "BEST & Finalist", "Winner", "174"],
+                ["EPR Rebels", "Naam Sujal", "SAFE", "30", "30", "30", "30", "30", "31", "Finalist", "Runner-up", "181"],
+                ["Dee MC Dynamites", "Dharmik", "SAFE", "26", "30", "30", "26", "29", "40", "Finalist", "3rd Place", "181"],
+                ["Dino Warriors", "99side", "SAFE", "30", "29", "30", "30", "30", "Finalist", "", "4th", "149"],
+                ["EPR Rebels", "Vichaar", "BTM6", "23", "30", "28", "24", "30", "31", "Finalist", "5th", "166"],
+                ["Raga Ragers", "Siyaahi", "SAFE", "26", "29", "28", "25", "29", "31", "Finalist", "6th", "168"],
+                ["Dee MC Dynamites", "Sense", "BTM6", "19", "23", "28", "30", "28", "40", "ELIM", "Guest", "168"],
+                ["EPR Rebels", "Ghaint Jxtt", "SAFE", "29", "30", "22", "22", "28", "27", "ELIM", "Guest", "158"],
+                ["Dee MC Dynamites", "PHO", "SAFE", "26", "30", "23", "15", "27", "31", "ELIM", "Guest", "152"],
+                ["Raga Ragers", "Mad Trip", "SAFE", "25", "15", "14", "30", "30", "28", "ELIM", "Guest", "142"],
+                ["Dino Warriors", "Little Bhatia", "SAFE", "29", "26", "21", "26", "29", "28", "", "Guest", "159"],
+                ["Dino Warriors", "Ajitesh Bhati", "SAFE", "18", "28", "23", "29", "29", "27", "", "Guest", "154"],
+                ["EPR Rebels", "K!LLSWITCH", "SAFE", "20", "24", "26", "22", "", "", "", "Guest", "92"],
+                ["Dino Warriors", "Danish", "SAFE", "15", "27", "21", "21", "", "", "", "Guest", "84"],
+                ["Dee MC Dynamites", "Rajjo", "SAFE", "22", "19", "19", "", "", "", "", "Guest", "60"],
+                ["Raga Ragers", "Devil The Rhymer", "BTM6", "18", "22", "", "", "", "", "", "Guest", "40"],
+                ["-", "DOTM", "ELIM", "", "", "", "", "", "", "", "", "0"],
+                ["", "Manisten", "ELIM", "", "", "", "", "", "", "", "", "0"],
+                ["", "Volt", "ELIM", "", "", "", "", "", "", "", "", "0"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guests by week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Episode(s)", "Guest Judge(s)", "Episode(s)", "Guest Appearance"],
+              "rows": [
+                ["2", "3-4", "none", "4", "M Zee Bella (Season 1 - Winner)"],
+                ["3", "5-6", "King (Season 1 - Contestant & Season 2 - Squad Boss)", "none", ""],
+                ["4", "7-8", "Encore ABJ & Calm (Seedhe Maut)", "", ""],
+                ["5", "9-10", "none", "9", "Kayden Sharma (Season 3 - Finalist)"],
+                ["", "", "", "10", "Panther (Season 2 - Contestant)"],
+                ["6", "11-12", "Badshah", "none", ""],
+                ["7", "13-14", "Raja Kumari", "", ""],
+                ["8", "15", "Naezy", "15", "Gravity (Season 2 - Finalist)"],
+                ["", "", "", "16", "Riar Saab & Sambata"],
+                ["9", "17-18", "none", "18", "Shah Rule"],
+                ["10", "19-20", "Sunidhi Chauhan", "19-20", "Srushti Tawade (Season 2 - Contestant)"],
+                ["", "", "", "", "M Zee Bella (Season 1 - Winner)"],
+                ["", "", "", "", "Paradox (Season 2 - Runner-up)"],
+                ["", "", "", "20", "MC Square (Season 2 - Winner)"],
+                ["", "", "", "", "Uday Pandhi (Season 3 - Winner)"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Observation",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "MTV Hustle season 1 winner M-Zee Bella supported Lashcurry. MTV Hustle season 2 winner MC Square supported Naam Sujal. MTV Hustle season 3 winner Uday Pandhi supported Dharmik. Thus, who winner of Season 1 supported, occupied first position, similarly who winner of Season 2 supported, occupied second position and lastly, who winner of Season 3 supported, occupied third position. Appreciative arrangement for maintaining the winners' legacy."
+            }
+          ]
+        },
+        {
+          "title": "Controversy",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "During the fourth season, Rohan Cariappa, an internet personality known for covering the Indian hip hop scene, posted a video on 30 November 2024 pointing out that judge Ikka wore a Harley-Davidson jacket on the Royal Enfield sponsored show. His channel was soon hit with at least fifty copyright strikes on videos covering the show, and YouTube warned on 7 December that the channel could be shut down. The show faced a wide backlash, #ShameOnMTVHUSTLE trended on Twitter in support of Cariappa, and rappers including Yashraj, Encore ABJ, Badshah and Raja Kumari, along with YouTubers such as Samay Raina, Arpit Bala, RAPBOT and Prakhar Gupta, spoke out. Raftaar, a judge on the show, asked the audience to be patient and urged the makers to \"meet in the middle and let's make it happen\", and boAt, one of the sponsors, also voiced its disagreement. Cariappa later posted a written apology on Twitter on 6 December and an apology video the next day, thanking the audience, creators and rappers who backed him."
+            }
+          ]
+        }
+      ],
+      "weeks": [
+        {
+          "title": "Week 1-2 (Episode 1-4)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "For week 1 & 2, during each contestant's performance squad bosses had 90 seconds to add them to their playlist, each contestant required at least three squad bosses vote to be assign to a squad. But the contestants who gets Radio Ready from either Raftaar or Ikka, they decide which squad to be assigned to."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Result", "Squad"],
+              "rows": [
+                ["1", "Dharmik", "Advanced", "Dee MC Dynamites"],
+                ["2", "99Side", "Advanced", "Dino Warriors"],
+                ["3", "Rajjo", "Advanced", "Dee MC Dynamites"],
+                ["4", "Ghaint Jxtt", "Advanced", "EPR Rebels"],
+                ["5", "Lashcurry", "Advanced", "Raga Ragers"],
+                ["6", "Vichaar", "Huddle Room", "-"],
+                ["7", "Naam Sujal", "Advanced", "EPR Rebels"],
+                ["8", "Ajitesh Bhati", "Advanced", "Dino Warriors"],
+                ["9", "PHO", "Advanced", "Dee MC Dynamites"],
+                ["10", "Sense", "Huddle Room", "-"],
+                ["11", "Mad Trip", "Advanced", "Raga Ragers"],
+                ["12", "DOTM", "Huddle Room", "-"],
+                ["13", "Danish", "Advanced", "Dino Warriors"],
+                ["14", "Siyaahi", "Advanced", "Raga Ragers"],
+                ["15", "Devil The Rhymer", "Huddle Room", "-"],
+                ["16", "K!LLSWITCH", "Advanced", "EPR Rebels"],
+                ["17", "Manisten", "Huddle Room", "-"],
+                ["18", "Volt", "Huddle Room", "-"],
+                ["19", "Little Bhatia", "Advanced", "Dino Warriors"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "BattleVerse: Huddle Room"
+            },
+            {
+              "type": "text",
+              "text": "Six contestants from Huddle Room battled it out in the Battleground, with only three making it to the next round."
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Battles", "Survived", "Squad", "Eliminated"],
+              "rows": [
+                ["1", "Sense vs Volt", "Sense", "Dee MC Dynamites", "Volt"],
+                ["2", "Devil the Rhymer vs Manisten", "Devil the Rhymer", "Raga Ragers", "Manisten"],
+                ["3", "DOTM vs Vichaar", "Vichaar", "EPR Rebels", "DOTM"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 3 (Episode 5-6): Hustle Pro Max",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "From this week, the squad bosses scored out of 10 after each performance. Also the public voting were open, with the votes effecting the next week's elimination. No elimination this week."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Raga", "Total Score", "Judges' Decision"],
+              "rows": [
+                ["1", "Raga Ragers", "Lashcurry", "9", "10", "10", "-", "29", "Immune"],
+                ["2", "EPR Rebels", "Ghaint Jxtt", "9", "10", "-", "10", "29", "Immune"],
+                ["3", "Dee MC Dynamites", "PHO", "-", "9", "7", "10", "26", "Safe"],
+                ["4", "Dino Warriors", "99side", "10", "-", "10", "10", "30", ""],
+                ["5", "EPR Rebels", "Vichaar", "7", "9", "-", "7", "23", "Safe"],
+                ["6", "Dee MC Dynamites", "Sense", "-", "6", "4", "9", "19", "Danger Zone"],
+                ["7", "Dino Warriors", "Little Bhatia", "9", "-", "10", "10", "29", "Immune"],
+                ["8", "Raga Ragers", "Devil The Rhymer", "6", "6", "6", "-", "18", "Danger Zone"],
+                ["9", "EPR Rebels", "Naam Sujal", "10", "10", "-", "10", "30", "Immune"],
+                ["10", "Raga Ragers", "Mad Trip", "8", "10", "7", "-", "25", "Immune"],
+                ["11", "Raga Ragers", "Siyaahi", "9", "9", "8", "-", "26", "Safe"],
+                ["12", "Dee MC Dynamites", "Dharmik", "-", "8", "10", "8", "26", "Immune"],
+                ["13", "EPR Rebels", "K!LLSWITCH", "7", "7", "-", "6", "20", "Danger Zone"],
+                ["14", "Dino Warriors", "Ajitesh Bhati", "5", "-", "6", "7", "18", "Immune"],
+                ["15", "Dee MC Dynamites", "Rajjo", "-", "8", "6", "8", "22", "Safe"],
+                ["16", "Dino Warriors", "Danish", "5", "-", "4", "6", "15", "Danger Zone"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 4 (Episode 7-8): Flex Week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "From this week, based on public votes and squad bosses scores elimination begins. This week's squad of the week, EPR had to choose to save one of the three Rappers in Danger Zone. He chose Rajjo."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Raga", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "EPR Rebels", "Naam Sujal", "10", "10", "-", "10", "30", "Immune", "-", "-"],
+                ["2", "Raga Ragers", "Lashcurry", "10", "10", "10", "-", "30", "Safe", "-", "-"],
+                ["3", "Dee MC Dynamites", "Dharmik", "-", "10", "10", "10", "30", "", "-", "-"],
+                ["4", "Dino Warriors", "Ajitesh Bhati", "8", "-", "10", "10", "28", "Immune", "-", "-"],
+                ["5", "Dee MC Dynamites", "PHO", "-", "10", "10", "10", "30", "Immune", "-", "-"],
+                ["6", "EPR Rebels", "K!LLSWITCH", "7", "7", "-", "10", "24", "Immune", "-", "-"],
+                ["7", "Dino Warriors", "Danish", "9", "-", "9", "9", "27", "Immune", "-", "-"],
+                ["8", "Dee MC Dynamites", "Sense", "-", "9", "7", "7", "23", "Danger Zone", "Bottom 2", "Safe"],
+                ["9", "Raga Ragers", "Devil The Rhymer", "7", "7", "8", "-", "22", "Danger Zone", "Bottom 2", "Eliminated"],
+                ["10", "EPR Rebels", "Ghaint Jxtt", "10", "10", "-", "10", "30", "Immune", "-", "-"],
+                ["11", "Raga Ragers", "Mad Trip", "5", "5", "5", "-", "15", "Danger Zone", "Safe", "-"],
+                ["12", "Dino Warriors", "99side", "9", "-", "10", "10", "29", "Immune", "-", "-"],
+                ["13", "Raga Ragers", "Siyaahi", "9", "10", "10", "-", "29", "Immune", "-", "-"],
+                ["14", "Dino Warriors", "Little Bhatia", "9", "-", "9", "8", "26", "Safe", "-", "-"],
+                ["15", "EPR Rebels", "Vichaar", "10", "10", "-", "10", "30", "Immune", "-", "-"],
+                ["16", "Dee MC Dynamites", "Rajjo", "-", "6", "6", "7", "19", "Danger Zone", "Saved", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 5 (Episode 9-10): Imagery",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week's squad of the week, Raga had to choose to save one of the four Rappers in Danger Zone. He chose Mad Trip."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Raga", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "Raga Ragers", "Lashcurry", "10", "10", "10", "-", "30", "", "-", "-"],
+                ["2", "Dee MC Dynamites", "Sense", "-", "8", "10", "10", "28", "Immune", "-", "-"],
+                ["3", "EPR Rebels", "Ghaint Jxtt", "7", "7", "-", "8", "22", "Safe", "-", "-"],
+                ["4", "Dee MC Dynamites", "Dharmik", "-", "10", "10", "10", "30", "Immune", "-", "-"],
+                ["5", "Dino Warriors", "Danish", "7", "-", "7", "7", "21", "Danger Zone", "Bottom 2", "Safe"],
+                ["6", "Dino Warriors", "Ajitesh Bhati", "8", "-", "6", "9", "23", "Immune", "-", "-"],
+                ["7", "EPR Rebels", "Vichaar", "10", "9", "-", "9", "28", "Safe", "-", "-"],
+                ["8", "Dee MC Dynamites", "Rajjo", "-", "6", "7", "6", "19", "Danger Zone", "Bottom 2", "Eliminated"],
+                ["9", "Dino Warriors", "Little Bhatia", "7", "-", "7", "7", "21", "Danger Zone", "Safe", "-"],
+                ["10", "Raga Ragers", "Siyaahi", "10", "10", "8", "-", "28", "Immune", "-", "-"],
+                ["11", "Dino Warriors", "99side", "10", "-", "10", "10", "30", "Immune", "-", "-"],
+                ["12", "Dee MC Dynamites", "PHO", "-", "8", "8", "7", "23", "Safe", "-", "-"],
+                ["13", "EPR Rebels", "Naam Sujal", "10", "10", "-", "10", "30", "Immune", "-", "-"],
+                ["14", "EPR Rebels", "K!LLSWITCH", "9", "9", "-", "8", "26", "Safe", "-", "-"],
+                ["15", "Raga Ragers", "Mad Trip", "4", "5", "5", "-", "14", "Danger Zone", "Saved", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 6 (Episode 11-12): hustle flip",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week's squad of the week, Dee MC had to choose to save one of the six Rappers in Danger Zone. She chose Pho. There was no Battle this week, two rappers with the fewest votes were eliminated."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Raga", "Total Score", "Judges' Decision", "Public Voting"],
+              "rows": [
+                ["1", "Dino Warriors", "99side", "10", "-", "10", "10", "30", "Immune", "-"],
+                ["2", "Raga Ragers", "Mad Trip", "10", "10", "10", "-", "30", "Immune", "-"],
+                ["3", "Raga Ragers", "Siyaahi", "7", "10", "8", "-", "25", "Danger Zone", "Safe"],
+                ["4", "EPR Rebels", "Naam Sujal", "10", "10", "-", "10", "30", "", "-"],
+                ["5", "Dino Warriors", "Little Bhatia", "9", "-", "9", "8", "26", "Danger Zone", "Safe"],
+                ["6", "Dee MC Dynamites", "Dharmik", "-", "8", "9", "9", "26", "Immune", "-"],
+                ["7", "EPR Rebels", "Ghaint Jxtt", "8", "7", "-", "7", "22", "Danger Zone", "Safe"],
+                ["8", "Raga Ragers", "Lashcurry", "10", "10", "9", "-", "29", "Immune", "-"],
+                ["9", "Dee MC Dynamites", "Sense", "-", "10", "10", "10", "30", "Immune", ""],
+                ["10", "Dee MC Dynamites", "Pho", "-", "5", "5", "5", "15", "Danger Zone", "Saved"],
+                ["11", "Dino Warriors", "Ajitesh Bhati", "9", "-", "10", "10", "29", "Immune", "-"],
+                ["12", "Dino Warriors", "Danish", "8", "-", "7", "6", "21", "Danger Zone", "Eliminated"],
+                ["13", "EPR Rebels", "Vichaar", "8", "8", "-", "8", "24", "Immune", "-"],
+                ["14", "EPR Rebels", "K!LLSWITCH", "9", "7", "-", "6", "22", "Danger Zone", "Eliminated"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 7 (Episode 13-14): Power Move",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "99side was the Rap Royalty and moved directly to the Finale. No elimination this week, this week's public votes and score were moved forward to next week."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Raga", "Total Score", "Judges' Decision"],
+              "rows": [
+                ["1", "Dino Warriors", "Little Bhatia", "10", "-", "10", "9", "29", "Immune"],
+                ["2", "Raga Ragers", "Mad Trip", "10", "10", "10", "-", "30", ""],
+                ["3", "Dee MC Dynamites", "Dharmik", "-", "10", "10", "9", "29", "Immune"],
+                ["4", "Dino Warriors", "99side", "10", "-", "10", "10", "30", "Rap Royalty"],
+                ["5", "EPR Rebels", "Vichaar", "10", "10", "-", "10", "30", "Immune"],
+                ["6", "Dee MC Dynamites", "PHO", "-", "8", "10", "9", "27", "Safe"],
+                ["7", "EPR Rebels", "Ghaint Jxtt", "9", "9", "-", "10", "28", "Immune"],
+                ["8", "EPR Rebels", "Naam Sujal", "10", "10", "-", "10", "30", "Immune"],
+                ["9", "Raga Ragers", "Lashcurry", "8", "9", "8", "-", "25", "Safe"],
+                ["10", "Dino Warriors", "Ajitesh Bhati", "9", "-", "10", "10", "29", "Immune"],
+                ["11", "Raga Ragers", "Siyaahi", "9", "10", "10", "-", "29", "Safe"],
+                ["12", "Dee MC Dynamites", "Sense", "-", "10", "10", "8", "28", "Immune"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 8 (Episode 15-16): Collab week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "This week rappers had to collab with other rappers and perform a number. As last week's Rap Royalty, 99side collabed with former contestant Gravity."
+            },
+            {
+              "type": "text",
+              "text": "Also each squad performed a group Ad collab for the sponsors of the show."
+            },
+            {
+              "type": "text",
+              "text": "Dino Warriors: Royal Enfield Hunter EPR Rebels: boAt Raga Ragers: Wok Tok by Veeba Dee MC Dynamites: Myntra - Fresh AF Drops"
+            },
+            {
+              "type": "text",
+              "text": "Dharmik was the Rap Royalty and moved directly to the Finale."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Dee MC", "Dino James", "EPR", "Raga", "Total Score", "Judges' Decision", "Public Voting", "Battle Result"],
+              "rows": [
+                ["1", "EPR Rebels", "Naam Sujal", "7", "8", "8", "8", "31", "Safe", "-", "-"],
+                ["", "EPR Rebels", "Vichaar", "", "", "", "", "", "Safe", "-", "-"],
+                ["2", "Raga Ragers", "Lashcurry", "7", "9", "7", "8", "31", "Immune", "-", "-"],
+                ["", "Dee MC Dynamites", "PHO", "", "", "", "", "", "Immune", "-", "-"],
+                ["", "Raga Ragers", "Siyaahi", "", "", "", "", "", "Immune", "-", "-"],
+                ["3", "Dino Warriors", "99side", "Finalist", "", "", "", "", "", "", ""],
+                ["4", "Dino Warriors", "Little Bhatia", "8", "7", "6", "7", "28", "Danger Zone", "Bottom 3", "Eliminated"],
+                ["", "Raga Ragers", "Mad Trip", "", "", "", "", "", "Danger Zone", "Safe", "-"],
+                ["5", "Dee MC Dynamites", "Dharmik", "10", "10", "10", "10", "40", "+ Rap Royalty", "-", "-"],
+                ["", "Dee MC Dynamites", "Sense", "", "", "", "", "", "", "-", "-"],
+                ["6", "Dino Warriors", "Ajitesh Bhati", "7", "7", "6", "7", "27", "Danger Zone", "Bottom 3", "Eliminated"],
+                ["", "EPR Rebels", "Ghaint Jxtt", "", "", "", "", "", "Danger Zone", "Bottom 3", "Safe"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 9 (Episode 17-18): The Ultimate BattleVerse",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Eight rappers battled it out in the Ultimate BattleVerse, with only four making it to the Finale."
+            },
+            {
+              "type": "table",
+              "columns": ["Battle No.", "Rappers (Squad)", "Battle Result"],
+              "rows": [
+                ["1", "Siyaahi (Raga Ragers) vs Vichaar (EPR Rebels)", "Both advanced to the finale"],
+                ["2", "PHO (Dee MC Dynamites) vs Mad Trip (Raga Ragers)", "Both eliminated"],
+                ["3", "Naam Sujal (EPR Rebels) vs Lashcurry (Raga Ragers)", "Both advanced to the finale"],
+                ["4", "Ghaint Jxtt (EPR Rebels) vs Sense (Dee MC Dynamites)", "Both eliminated"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Top 6 finalists performed for the public and the public voting were open for final time, with the votes deciding the winner next week."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper"],
+              "rows": [
+                ["1", "Dino Warriors", "99side"],
+                ["2", "Raga Ragers", "Lashcurry"],
+                ["3", "Dee MC Dynamites", "Dharmik"],
+                ["4", "Raga Ragers", "Siyaahi"],
+                ["5", "EPR Rebels", "Naam Sujal"],
+                ["6", "EPR Rebels", "Vichaar"]
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -189,36 +3021,795 @@
       "premiere": "2026-08-08",
       "finale": null,
       "status": "airing",
-      "hosts": [],
-      "judges": [{ "name": "Badshah", "artist_id": "badshah" }],
+      "about": ["The fifth season also known as MTV Hustle 5: 'Apna Homeground', premiered on August 8, 2026, on MTV India, Jio Hotstar and Netflix.", "Badshah returned as the judge to replace Raftaar and Ikka from the previous season and squad boss EPR returned to judge. Agsy, MC Square, and Paradox, who were contestants in the previous seasons, joined as the new squad bosses."],
+      "hosts": [
+        {
+          "name": "Samarthh Jurel",
+          "artist_id": null
+        }
+      ],
+      "judges": [
+        {
+          "name": "Badshah",
+          "artist_id": "badshah"
+        }
+      ],
       "squad_bosses": [
-        { "name": "EPR", "artist_id": "epr", "squad": null },
-        { "name": "MC Square", "artist_id": "mc-square", "squad": null },
-        { "name": "Paradox", "artist_id": null, "squad": null },
-        { "name": "Agsy", "artist_id": "agsy", "squad": null }
+        {
+          "name": "Agsy",
+          "artist_id": "agsy",
+          "squad": "Agsy Alphas"
+        },
+        {
+          "name": "EPR",
+          "artist_id": "epr",
+          "squad": "EPR Rebels"
+        },
+        {
+          "name": "Paradox",
+          "artist_id": null,
+          "squad": "Para Troopers"
+        },
+        {
+          "name": "MC Square",
+          "artist_id": "mc-square",
+          "squad": "Square Lambardars"
+        }
       ],
-      "guests": [],
+      "guests": [
+        {
+          "name": "King (Season 1 - Contestant & Season 2 - Squad Boss)",
+          "role": "Guest judge",
+          "week": "3",
+          "artist_ids": ["king"]
+        },
+        {
+          "name": "Vichaar (Season 4 - Contestant)",
+          "role": "Guest",
+          "week": "4",
+          "artist_ids": ["vichaar"]
+        },
+        {
+          "name": "Ikka Singh (Season 3 - Squad Boss & Season 4 - Judge)",
+          "role": "Guest judge",
+          "week": "5",
+          "artist_ids": ["ikka"]
+        },
+        {
+          "name": "Dino James (Season 2 to 4 - Squad Boss)",
+          "role": "Guest judge",
+          "week": "5",
+          "artist_ids": ["dino-james"]
+        },
+        {
+          "name": "Kunal Khemu",
+          "role": "Guest judge",
+          "week": "6",
+          "artist_ids": []
+        },
+        {
+          "name": "Khillari, Kanfuzion and Irfana",
+          "role": "Guest",
+          "week": "6",
+          "artist_ids": []
+        }
+      ],
       "prize": null,
-      "highlights": [
-        "The theme asks contestants to draw their stories from their roots, hometowns and lived experience.",
-        "Badshah returned as the show's Rap Supremo. Three former contestants, MC Square, Paradox and Agsy, became squad bosses alongside EPR.",
-        "Airs every Saturday and Sunday at 7 PM on MTV India, and streams on JioHotstar and, for the first time, Netflix."
-      ],
+      "highlights": ["The theme asks contestants to draw their stories from their roots, hometowns and lived experience.", "Badshah returned as the show's Rap Supremo. Three former contestants, MC Square, Paradox and Agsy, became squad bosses alongside EPR.", "Airs every Saturday and Sunday at 7 PM on MTV India, and streams on JioHotstar and, for the first time, Netflix."],
       "roster_complete": false,
       "contestants": [
-        { "name": "Akshat Jakhar", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Ansh 4Sure", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Anushka Baduwal", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Bhaktaaa", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "dflacko", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Dhadkan", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Farak", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Harmeet", "real_name": null, "from": null, "squad": null, "result": "Top 16", "artist_id": null },
-        { "name": "Eddy", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
-        { "name": "Gargi", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
-        { "name": "Hruday", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
-        { "name": "Split", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null },
-        { "name": "Vasu", "real_name": null, "from": null, "squad": null, "result": "Eliminated before top 16", "artist_id": null }
+        {
+          "name": "Akshat Jakhar",
+          "real_name": null,
+          "from": null,
+          "squad": "Square Lambardars",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Ansh4sure",
+          "real_name": "Ansh Sharma",
+          "from": null,
+          "squad": "Square Lambardars",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Bhaktaaa",
+          "real_name": null,
+          "from": null,
+          "squad": "Square Lambardars",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Dflacko",
+          "real_name": "Bhaskar Mishra",
+          "from": null,
+          "squad": "Para Troopers",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Dhadkan",
+          "real_name": "Daksh",
+          "from": null,
+          "squad": "Para Troopers",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Farak",
+          "real_name": null,
+          "from": null,
+          "squad": "Square Lambardars",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Harmeeet",
+          "real_name": null,
+          "from": null,
+          "squad": "Agsy Alphas",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Parv",
+          "real_name": null,
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Raaj Babu",
+          "real_name": null,
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "SickLot",
+          "real_name": null,
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 11",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Siroyi",
+          "real_name": null,
+          "from": null,
+          "squad": "Para Troopers",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "WhysoKai",
+          "real_name": null,
+          "from": null,
+          "squad": "Agsy Alphas",
+          "result": "Still competing",
+          "place": null,
+          "finish": null,
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "OG Tehran",
+          "real_name": null,
+          "from": null,
+          "squad": "Agsy Alphas",
+          "result": "Eliminated in episode 14",
+          "place": "13-14",
+          "finish": "Episode 14",
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Txama",
+          "real_name": "Rahul Tacho",
+          "from": null,
+          "squad": "Para Troopers",
+          "result": "Eliminated in episode 14",
+          "place": "13-14",
+          "finish": "Episode 14",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "R-Mridul",
+          "real_name": "Mridul",
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "Eliminated in episode 12",
+          "place": "15-18",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Akkshay Gurjar",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 12",
+          "place": "15-18",
+          "finish": "Episode 12",
+          "entered": "Episode 11",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "MTrill",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 12",
+          "place": "15-18",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Vyaas",
+          "real_name": "Sumit Kumar",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 12",
+          "place": "15-18",
+          "finish": "Episode 12",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Xeemo",
+          "real_name": null,
+          "from": null,
+          "squad": "EPR Rebels",
+          "result": "19th place",
+          "place": "19",
+          "finish": "Episode 9",
+          "entered": "Episode 1",
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Anushka",
+          "real_name": "Anushka Baduwal",
+          "from": null,
+          "squad": "Agsy Alphas",
+          "result": "20th place",
+          "place": "20",
+          "finish": "Episode 5",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Eddy",
+          "real_name": "Karan Verma",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 2",
+          "place": "21-25",
+          "finish": "Episode 2",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Gargi",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 2",
+          "place": "21-25",
+          "finish": "Episode 2",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Hruday",
+          "real_name": null,
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 2",
+          "place": "21-25",
+          "finish": "Episode 2",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Split",
+          "real_name": "Yashad Gupta",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 2",
+          "place": "21-25",
+          "finish": "Episode 2",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        },
+        {
+          "name": "Vasu",
+          "real_name": "Vasu Kainth",
+          "from": null,
+          "squad": null,
+          "result": "Eliminated in episode 2",
+          "place": "21-25",
+          "finish": "Episode 2",
+          "entered": null,
+          "og_hustler": false,
+          "artist_id": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "Squads",
+          "blocks": [
+            {
+              "type": "heading",
+              "text": "Episode 1-6"
+            },
+            {
+              "type": "table",
+              "columns": ["Agsy Alphas", "EPR Rebels", "Para Troopers", "Square Lambardars"],
+              "rows": [
+                ["OG Tehran", "Raaj Babu", "Txama", "Farak"],
+                ["Dflacko", "R-Mridul", "Dhadkan", "Akshat Jakhar"],
+                ["Harmeeet", "Xeemo", "Siroyi", "Bhaktaaa"],
+                ["Anushka", "Parv", "WhysoKai", "Ansh4sure"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Episode 7-12"
+            },
+            {
+              "type": "table",
+              "columns": ["Agsy Alphas", "EPR Rebels", "Para Troopers", "Square Lambardars"],
+              "rows": [
+                ["OG Tehran", "Raaj Babu", "Txama", "Farak"],
+                ["Harmeeet", "R-Mridul", "Dhadkan", "Akshat Jakhar"],
+                ["WhysoKai", "Xeemo", "Siroyi", "Bhaktaaa"],
+                ["-", "Parv", "Dflacko", "Ansh4sure"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Episode 13-20"
+            },
+            {
+              "type": "table",
+              "columns": ["Agsy Alphas", "EPR Rebels", "Para Troopers", "Square Lambardars"],
+              "rows": [
+                ["OG Tehran", "Raaj Babu", "Txama", "Farak"],
+                ["Harmeeet", "Parv", "Dhadkan", "Akshat Jakhar"],
+                ["WhysoKai", "SickLot", "Siroyi", "Bhaktaaa"],
+                ["-", "", "Dflacko", "Ansh4sure"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Squad and performer of the week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Squad of the Week", "Performer(s) of the Week"],
+              "rows": [
+                ["Week 2", "EPR Rebels", "none"],
+                ["Week 3", "EPR Rebels", "Dhadkan"],
+                ["Week 4", "Square Lambardars", "WhysoKai"],
+                ["Week 5", "Square Lambardars", "OG Tehran"],
+                ["Week 6", "Square Lambardars", "Bhaktaaa"],
+                ["", "Square Lambardars", "SickLot (Wild-card Challenger)"],
+                ["Week 7", "Para Troopers", "Dflacko & Siroyi"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week by week results",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Squad", "Contestant", "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Total"],
+              "rows": [
+                ["Agsy Alphas", "Harmeeet", "SAFE", "30", "21", "30", "16", "SAFE", "30", ""],
+                ["PT to AA", "WhysoKai", "BTM", "25", "28", "29", "15", "47", "32", ""],
+                ["EPR Rebels", "Parv", "SAFE", "27", "30", "30", "15", "SAFE", "37", ""],
+                ["EPR Rebels", "Raaj Babu", "SAFE", "30", "27", "29", "18", "SAFE", "36", ""],
+                ["EPR Rebels", "SickLot", "Not in Competition", "", "", "", "", "50", "37", ""],
+                ["AA to PT", "Dflacko", "SAFE", "26", "28", "23", "14", "SAFE", "40", ""],
+                ["Para Troopers", "Dhadkan", "SAFE", "27", "30", "30", "17", "SAFE", "38", ""],
+                ["Para Troopers", "Siroyi", "SAFE", "22", "25", "24", "14", "SAFE", "40", ""],
+                ["Square Lambardars", "Akshat Jakhar", "SAFE", "30", "27", "18", "17", "SAFE", "34", ""],
+                ["Square Lambardars", "Ansh4sure", "SAFE", "20", "18", "30", "19", "SAFE", "35", ""],
+                ["Square Lambardars", "Bhaktaaa", "SAFE", "27", "25", "29", "16", "50", "37", ""],
+                ["Square Lambardars", "Farak", "SAFE", "24", "23", "21", "18", "SAFE", "32", ""],
+                ["Agsy Alphas", "OG Tehran", "SAFE", "26", "29", "24", "20", "SAFE", "28", "127"],
+                ["Para Troopers", "Txama", "SAFE", "22", "26", "18", "11", "49", "31", "157"],
+                ["EPR Rebels", "R-Mridul", "SAFE", "30", "25", "16", "15", "46", "", "132"],
+                ["-", "Akkshay Gurjar", "Not in Competition", "", "", "", "", "41", "", "41"],
+                ["", "Vyaas", "Not in Competition", "", "", "", "", "40", "", "40"],
+                ["", "MTrill", "Not in Competition", "", "", "", "", "33", "", "33"],
+                ["EPR Rebels", "Xeemo", "SAFE", "22", "27", "18", "ELIM", "", "", "67"],
+                ["Agsy Alphas", "Anushka", "BTM", "23", "ELIM", "", "", "", "", "23"],
+                ["-", "Eddy", "ELIM", "", "", "", "", "", "", "0"],
+                ["", "Gargi", "ELIM", "", "", "", "", "", "", "0"],
+                ["", "Hruday", "ELIM", "", "", "", "", "", "", "0"],
+                ["", "Split", "ELIM", "", "", "", "", "", "", "0"],
+                ["", "Vasu", "ELIM", "", "", "", "", "", "", "0"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guests by week",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": ["Week", "Episode(s)", "Guest Judge(s)", "Episode(s)", "Guest Appearance"],
+              "rows": [
+                ["3", "5-6", "King (Season 1 - Contestant & Season 2 - Squad Boss)", "none", ""],
+                ["4", "7-8", "none", "7", "Vichaar (Season 4 - Contestant)"],
+                ["5", "9-10", "Ikka Singh (Season 3 - Squad Boss & Season 4 - Judge)", "none", ""],
+                ["5", "11-12", "Dino James (Season 2 to 4 - Squad Boss)", "", ""],
+                ["6", "13", "Kunal Khemu", "13", "Khillari, Kanfuzion and Irfana"]
+              ]
+            }
+          ]
+        }
+      ],
+      "weeks": [
+        {
+          "title": "Week 1 (Episode 1-2): Squad Selection Week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "During Week 1, each contestant performed individually in front of the Squad Bosses. During a performance, the Squad Bosses could select a contestant by giving them a Mic Drop. A contestant needed to receive at least three Mic Drop votes from the Squad Bosses to become eligible for squad selection assigned by main judge Badshah, but the contestants who gets Playlisted from Badshah, they decide which squad to be assigned to."
+            },
+            {
+              "type": "text",
+              "text": "Once a contestant is eligible, the Squad Bosses could use their Claim button to directly claim the contestant into their squad. Each Squad Boss could use the Claim button only once, and the first Squad Boss to press it successfully claimed the contestant for their squad."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Result", "Squad"],
+              "rows": [
+                ["1", "OG Tehran", "Advanced", "Agsy Alphas"],
+                ["2", "Raaj Babu", "Advanced", "EPR Rebels"],
+                ["3", "Farak", "Advanced", "Square Lambardars"],
+                ["4", "Gargi", "32-bar Round", "-"],
+                ["5", "R-Mridul", "Advanced", "EPR Rebels"],
+                ["6", "Anushka", "32-bar Round", "-"],
+                ["7", "Txama", "Advanced", "Para Troopers"],
+                ["8", "Vasu", "32-bar Round", "-"],
+                ["9", "Hruday", "32-bar Round", "-"],
+                ["10", "Dflacko", "Advanced", "Agsy Alphas"],
+                ["11", "Dhadkan", "Advanced", "Para Troopers"],
+                ["12", "Akshat Jakhar", "Advanced", "Square Lambardars"],
+                ["13", "Xeemo", "Advanced", "EPR Rebels"],
+                ["14", "Harmeeet", "Advanced", "Agsy Alphas"],
+                ["15", "Parv", "Advanced", "EPR Rebels"],
+                ["16", "Eddy", "32-bar Round", "-"],
+                ["17", "Bhaktaaa", "Advanced", "Square Lambardars"],
+                ["18", "Split", "32-bar Round", "-"],
+                ["19", "Siroyi", "Advanced", "Para Troopers"],
+                ["20", "Ansh4sure", "Advanced", "Square Lambardars"],
+                ["21", "WhysoKai", "32-bar Round", "-"]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "32-bar Challenge"
+            },
+            {
+              "type": "text",
+              "text": "Seven contestants from 32-bars round battled it out in the Battleground, with only two making it to the next round."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Rapper", "Result", "Squad"],
+              "rows": [
+                ["1", "Eddy", "Eliminated", "-"],
+                ["2", "Split", "Eliminated", "-"],
+                ["3", "Gargi", "Eliminated", "-"],
+                ["4", "Anushka", "Advanced", "Agsy Alphas"],
+                ["5", "Vasu", "Eliminated", "-"],
+                ["6", "Hruday", "Eliminated", "-"],
+                ["7", "WhysoKai", "Advanced", "Para Troopers"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 2 (Episode 3-4): Squad Wars",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "From this week, the squad bosses & judge Badshah scored out of 10 after each performance. The squad with the highest score will be the Squad of the Week and get a Power Card. This week's squad of the week, EPR received Power Card of Immunity, which can be used on one of the Rappers next week."
+            },
+            {
+              "type": "text",
+              "text": "The 2 winning squads' four rappers were immune and the contestants who gets Playlisted from Badshah will also be immune. The bottom two rappers from two losing squads were in the bottom and faced the public vote, with the votes effecting the next week's elimination. No elimination this week."
+            },
+            {
+              "type": "table",
+              "columns": ["Squad War", "Round", "Squad", "Rapper", "Badshah", "Agsy", "EPR", "MC Square", "Paradox", "Total Score", "Result"],
+              "rows": [
+                ["Agsy Alphas vs. EPR Rebels", "1", "EPR Rebels", "Parv", "8", "-", "-", "9", "9", "27", "Immune (Winning Squad)"],
+                ["", "", "Agsy Alphas", "OG Tehran", "8", "-", "-", "8", "9", "25", "Bottom"],
+                ["", "2", "EPR Rebels", "Raaj Babu", "10", "-", "-", "10", "10", "30", "Immune (Winning Squad)"],
+                ["", "", "Agsy Alphas", "Anushka", "7", "-", "-", "9", "7", "23", "Bottom"],
+                ["", "3", "Agsy Alphas", "Dflacko", "9", "-", "-", "8", "9", "26", "Immune (Playlisted)"],
+                ["", "", "EPR Rebels", "R-Mridul", "10", "-", "-", "10", "10", "30", "Immune (Winning Squad)"],
+                ["", "4", "EPR Rebels", "Xeemo", "8", "-", "-", "7", "7", "22", "Immune (Winning Squad)"],
+                ["", "", "Agsy Alphas", "Harmeeet", "10", "-", "-", "10", "10", "30", "Immune (Playlisted)"],
+                ["Para Troopers vs. Square Lambardars", "5", "Para Troopers", "Txama", "8", "7", "7", "-", "-", "22", "Immune (Winning Squad)"],
+                ["", "", "Square Lambardars", "Akshat Jakhar", "10", "10", "10", "-", "-", "30", "Immune (Playlisted)"],
+                ["", "6", "Square Lambardars", "Farak", "8", "8", "8", "-", "-", "24", "Bottom"],
+                ["", "", "Para Troopers", "WhysoKai", "8", "9", "8", "-", "-", "25", "Immune (Winning Squad)"],
+                ["", "7", "Square Lambardars", "Bhaktaaa", "9", "9", "9", "-", "-", "27", "Safe"],
+                ["", "", "Para Troopers", "Dhadkan", "9", "9", "9", "-", "-", "27", "Immune (Winning Squad)"],
+                ["", "8", "Para Troopers", "Siroyi", "8", "7", "7", "-", "-", "22", "Immune (Winning Squad)"],
+                ["", "", "Square Lambardars", "Ansh4sure", "7", "6", "7", "-", "-", "20", "Bottom"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 3 (Episode 5-6): Squad Wars - Bangers",
+          "blocks": [
+            {
+              "type": "heading",
+              "text": "32-bar Challenge"
+            },
+            {
+              "type": "text",
+              "text": "Ansh4sure, Anushka, Farak and OG Tehran faced the public vote. Farak received the most votes and was saved from 32-bar Challenge."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Result"],
+              "rows": [
+                ["1", "Square Lambardars", "Ansh4sure", "Safe"],
+                ["2", "Agsy Alphas", "Anushka", "Eliminated"],
+                ["3", "Agsy Alphas", "OG Tehran", "Safe"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "The Squad of the Week, EPR, received the Shuffle Power Card. This power allows EPR to swap one rapper from any squad with another rapper from a different squad, with the shuffle taking effect the following week. The claimed rappers cannot be shuffled. Additionally, Badshah used his special power to save the bottom two rappers, resulting in no elimination this week."
+            },
+            {
+              "type": "table",
+              "columns": ["Squad War", "Round", "Squad", "Rapper", "Badshah", "Agsy", "EPR", "MC Square", "Paradox", "Total Score", "Result"],
+              "rows": [
+                ["EPR Rebels vs. Square Lambardars", "1", "Square Lambardars", "Ansh4sure", "6", "6", "-", "-", "6", "18", "Bottom"],
+                ["", "", "EPR Rebels", "R-Mridul", "9", "8", "-", "-", "8", "25", "Immune (Winning Squad)"],
+                ["", "2", "Square Lambardars", "Bhaktaaa", "8", "8", "-", "-", "9", "25", "Safe"],
+                ["", "", "EPR Rebels", "Parv", "10", "10", "-", "-", "10", "30", "Immune (Playlisted)"],
+                ["", "3", "Square Lambardars", "Akshat Jakhar", "9", "10", "-", "-", "8", "27", "Immune (Winning Squad)"],
+                ["", "", "EPR Rebels", "Raaj Babu", "9", "9", "-", "-", "9", "27", "Immune (Winning Squad)"],
+                ["", "4", "Square Lambardars", "Farak", "8", "7", "-", "-", "8", "23", "Bottom"],
+                ["", "", "EPR Rebels", "Xeemo", "9", "9", "-", "-", "9", "27", "Immune (Winning Squad)"],
+                ["Agsy Alphas vs. Para Troopers", "5", "Para Troopers", "Dhadkan", "10", "-", "10", "10", "-", "30", "Immune (Playlisted)"],
+                ["", "", "Agsy Alphas", "Harmeeet", "7", "-", "7", "7", "-", "21", "Immune (Winning Squad)"],
+                ["", "6", "Para Troopers", "Txama", "9", "-", "9", "9", "-", "26", "Immune (Playlisted)"],
+                ["", "", "Agsy Alphas", "Dflacko", "9", "-", "10", "9", "-", "28", "Immune (Winning Squad)"],
+                ["", "7", "Para Troopers", "WhysoKai", "9", "-", "9", "10", "-", "28", "Immune (Playlisted)"],
+                ["", "", "Agsy Alphas", "OG Tehran", "9", "-", "10", "10", "-", "29", "Immune (Winning Squad)"],
+                ["-", "8", "Para Troopers", "Siroyi", "8", "-", "9", "8", "-", "25", "Immune (Playlisted)"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 4 (Episode 7-8): Squad Wars - Imagery week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "EPR used the Shuffle Power Card to swap WhySoKai from Para Troopers with Dflacko from Agsy Alphas, with the swap taking effect immediately."
+            },
+            {
+              "type": "text",
+              "text": "The Squad of the Week, MC Square, received the Shield Card. EPR used the Power Card of Immunity to save R-Mridul from the bottom."
+            },
+            {
+              "type": "table",
+              "columns": ["Squad War", "Round", "Squad", "Rapper", "Badshah", "Agsy", "EPR", "MC Square", "Paradox", "Total Score", "Result"],
+              "rows": [
+                ["Agsy Alphas vs. Square Lambardars", "1", "Agsy Alphas", "OG Tehran", "8", "-", "8", "-", "8", "24", "Bottom"],
+                ["", "", "Square Lambardars", "Bhaktaaa", "9", "-", "10", "-", "10", "29", "Immune (Winning Squad)"],
+                ["", "2", "Agsy Alphas", "WhysoKai", "10", "-", "10", "-", "9", "29", "Immune (Playlisted)"],
+                ["", "", "Square Lambardars", "Ansh4sure", "10", "-", "10", "-", "10", "30", "Immune (Winning Squad)"],
+                ["", "3", "Agsy Alphas", "Harmeeet", "10", "-", "10", "-", "10", "30", "Immune (Playlisted)"],
+                ["", "", "Square Lambardars", "Akshat Jakhar", "7", "-", "6", "-", "5", "18", "Immune (Winning Squad)"],
+                ["-", "4", "Square Lambardars", "Farak", "7", "-", "7", "-", "7", "21", "Immune (Winning Squad)"],
+                ["EPR Rebels vs. Para Troopers", "5", "Para Troopers", "Dhadkan", "10", "10", "-", "10", "-", "30", "Immune (Winning Squad)"],
+                ["", "", "EPR Rebels", "Raaj Babu", "9", "10", "-", "10", "-", "29", "Safe"],
+                ["", "6", "Para Troopers", "Siroyi", "8", "8", "-", "8", "-", "24", "Immune (Winning Squad)"],
+                ["", "", "EPR Rebels", "Parv", "10", "10", "-", "10", "-", "30", "Safe"],
+                ["", "7", "Para Troopers", "Txama", "6", "6", "-", "6", "-", "18", "Immune (Winning Squad)"],
+                ["", "", "EPR Rebels", "Xeemo", "6", "6", "-", "6", "-", "18", "Bottom"],
+                ["", "8", "Para Troopers", "Dflacko", "8", "8", "-", "7", "-", "23", "Immune (Winning Squad)"],
+                ["", "", "EPR Rebels", "R-Mridul", "5", "6", "-", "5", "-", "16", "Saved"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 5 (Episode 9-10): Internal Squad Wars",
+          "blocks": [
+            {
+              "type": "heading",
+              "text": "32-bar Challenge"
+            },
+            {
+              "type": "text",
+              "text": "As there were only two rappers in the bottom, no public vote was held, and both were directly in the 32-Bar Challenge."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Result"],
+              "rows": [
+                ["1", "Agsy Alphas", "OG Tehran", "Safe"],
+                ["2", "EPR Rebels", "Xeemo", "Eliminated"]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "This week featured the Internal Squad Wars. The lowest-scoring rapper from each squad was placed in the bottom and battle against a Wild Card rapper. Squad Bosses were not eligible to score, only Badshah and guest judge Ikka scored each performance out of 10."
+            },
+            {
+              "type": "text",
+              "text": "MC Square used the Shield Card to protect Farak from the bottom."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Badshah", "Ikka", "Total Score", "Result"],
+              "rows": [
+                ["1", "Square Lambardars", "Ansh4sure", "9", "10", "19", "Safe"],
+                ["2", "", "Akshat Jakhar", "9", "8", "17", "Safe"],
+                ["3", "", "Bhaktaaa", "9", "7", "16", "Bottom"],
+                ["4", "", "Farak", "9", "9", "18", "Immune"],
+                ["5", "Para Troopers", "Txama", "6", "5", "11", "Bottom"],
+                ["6", "", "Dhadkan", "8", "9", "17", "Safe"],
+                ["7", "", "Siroyi", "7", "7", "14", "Safe"],
+                ["8", "", "Dflacko", "7", "7", "14", "Safe"],
+                ["9", "EPR Rebels", "Parv", "8", "7", "15", "Safe"],
+                ["10", "", "R-Mridul", "8", "7", "15", "Bottom"],
+                ["11", "", "Raaj Babu", "9", "9", "18", "Safe"],
+                ["12", "Agsy Alphas", "WhysoKai", "8", "7", "15", "Bottom"],
+                ["13", "", "OG Tehran", "10", "10", "20", "Safe"],
+                ["14", "", "Harmeeet", "8", "8", "16", "Safe"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 6 (Episode 11-12): Wild-card Challengers",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Last week's bottom four rappers competed against four wild-card rappers. The performances were judged by the four Squad Bosses and Badshah, with each awarding a score out of 10. The four rappers with the lowest total scores were eliminated from the competition."
+            },
+            {
+              "type": "text",
+              "text": "SickLot was selected and joined EPR Rebels Squad."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Badshah", "Agsy", "EPR", "MC Square", "Paradox", "Total Score", "Result"],
+              "rows": [
+                ["1", "Square Lambardars", "Bhaktaaa", "10", "10", "10", "10", "10", "50", "Safe"],
+                ["2", "Wild-card Challenger", "Vyaas", "7", "8", "8", "8", "9", "40", "Eliminated"],
+                ["3", "Para Troopers", "Txama", "9", "10", "10", "10", "10", "49", "Safe"],
+                ["4", "Wild-card Challenger", "Akkshay Gurjar", "8", "8", "8", "8", "9", "41", "Eliminated"],
+                ["5", "EPR Rebels", "R-Mridul", "9", "9", "9", "9", "10", "46", "Eliminated"],
+                ["6", "Wild-card Challenger", "MTrill", "6", "7", "6", "7", "7", "33", "Eliminated"],
+                ["7", "Agsy Alphas", "WhysoKai", "10", "9", "10", "9", "9", "47", "Safe"],
+                ["8", "Wild-card Challenger", "SickLot", "10", "10", "10", "10", "10", "50", "Safe"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 7 (Episode 13-14): Industry Ready!",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "From this week onward, public voting was open throughout the week, affecting the rappers in the bottom."
+            },
+            {
+              "type": "table",
+              "columns": ["Order", "Squad", "Rapper", "Badshah", "Agsy", "EPR", "MC Square", "Paradox", "Total Score", "Result", "Public Voting", "32-bar Challenge"],
+              "rows": [
+                ["1", "Agsy Alphas", "WhysoKai", "8", "-", "8", "8", "8", "32", "Bottom", "Saved", "-"],
+                ["2", "Square Lambardars", "Bhaktaaa", "9", "9", "10", "-", "9", "37", "Safe", "-", "-"],
+                ["3", "Para Troopers", "Dhadkan", "10", "9", "9", "10", "-", "38", "Safe", "-", "-"],
+                ["4", "EPR Rebels", "SickLot", "9", "9", "-", "9", "10", "37", "Safe", "-", "-"],
+                ["5", "Square Lambardars", "Akshat Jakhar", "8", "9", "8", "-", "9", "34", "Safe", "-", "-"],
+                ["6", "EPR Rebels", "Raaj Babu", "8", "9", "-", "9", "10", "36", "Safe", "-", "-"],
+                ["7", "Agsy Alphas", "Harmeeet", "7", "-", "7", "8", "8", "30", "Bottom", "Bottom 4", "Safe"],
+                ["8", "Para Troopers", "Siroyi", "10", "10", "10", "10", "-", "40", "Safe", "-", "-"],
+                ["9", "EPR Rebels", "Parv", "9", "9", "-", "9", "10", "37", "Safe", "-", "-"],
+                ["10", "Square Lambardars", "Ansh4sure", "8", "9", "9", "-", "9", "35", "Safe", "-", "-"],
+                ["11", "Para Troopers", "Txama", "8", "7", "8", "8", "-", "31", "Bottom", "Bottom 4", "Eliminated"],
+                ["12", "Agsy Alphas", "OG Tehran", "7", "-", "7", "7", "7", "28", "Bottom", "Bottom 4", "Eliminated"],
+                ["13", "Square Lambardars", "Farak", "8", "8", "8", "-", "8", "32", "Bottom", "Bottom 4", "Safe"],
+                ["14", "Para Troopers", "Dflacko", "10", "10", "10", "10", "-", "40", "Safe", "-", "-"]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 8 (Episode 15-16): Collab Week",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Rappers collaborated with another rappers."
+            }
+          ]
+        }
       ]
     }
   ]

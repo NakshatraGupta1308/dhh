@@ -168,15 +168,40 @@ export interface HustleSquadBoss extends HustlePerson {
   squad: string | null
 }
 
-export interface HustleGuest extends HustlePerson {
-  note: string | null
+export interface HustleGuest {
+  /** As billed, which can be several people ("Encore ABJ & Calm"). */
+  name: string
+  role: 'Guest judge' | 'Guest'
+  week: string
+  /** Archive artists named in the billing. */
+  artist_ids: string[]
 }
 
 export interface HustleContestant extends HustlePerson {
   real_name: string | null
   from: string | null
   squad: string | null
+  /** Readable outcome, for example "Winner" or "Eliminated in episode 12". */
   result: string
+  /** Final placing as listed, such as "3" or "7-10". */
+  place: string | null
+  /** Episode the run ended in. */
+  finish: string | null
+  /** Episode the contestant joined, for late entries. */
+  entered: string | null
+  og_hustler: boolean
+}
+
+export interface HustleTable {
+  columns: string[]
+  rows: string[][]
+}
+
+export type HustleBlock = { type: 'text' | 'heading'; text: string } | ({ type: 'table' } & HustleTable)
+
+export interface HustleSection {
+  title: string
+  blocks: HustleBlock[]
 }
 
 export interface HustleSeason {
@@ -187,15 +212,20 @@ export interface HustleSeason {
   premiere: string
   finale: string | null
   status: 'finished' | 'airing'
+  about: string[]
   hosts: HustlePerson[]
   judges: HustlePerson[]
   squad_bosses: HustleSquadBoss[]
   guests: HustleGuest[]
   prize: string | null
   highlights: string[]
-  /** False when only part of the season's roster is recorded. */
+  /** False while a season is still airing. */
   roster_complete: boolean
   contestants: HustleContestant[]
+  /** Squads, results grid, guests and other season-wide tables. */
+  sections: HustleSection[]
+  /** Week by week breakdown of performances, scores and eliminations. */
+  weeks: HustleSection[]
 }
 
 export interface Hustle {
@@ -205,6 +235,9 @@ export interface Hustle {
     network: string
     streaming: string[]
     language: string
+    country: string
+    production_company: string
+    episodes: number
     about: string
     format: { step: string; text: string }[]
     spinoffs: { name: string; text: string }[]

@@ -116,6 +116,15 @@ describe('mtv hustle', () => {
     expect(hustleRoles(data.hustle, 'raftaar').map((r) => r.season)).toEqual([1, 4])
   })
 
+  it('keeps the full rosters, weekly breakdowns and guest spots', () => {
+    const [s1, s2, s3, s4, s5] = data.hustle.seasons
+    expect([s1, s2, s3, s4, s5].map((s) => s.contestants.length)).toEqual([15, 20, 20, 19, 25])
+    expect(s2.contestants.find((c) => c.og_hustler)?.name).toBe('Gravity')
+    expect(s3.contestants.find((c) => c.name === '100 RBH')).toMatchObject({ result: '3rd place', og_hustler: true })
+    expect(s1.weeks.length).toBeGreaterThan(5)
+    expect(hustleRoles(data.hustle, 'naezy').map((r) => `${r.season}:${r.role}`)).toEqual(['1:Guest judge', '4:Guest judge'])
+  })
+
   it('finds seasons through search', () => {
     expect(search(index, 'hustle 3').some((r) => r.kind === 'hustle' && r.id === '3')).toBe(true)
     expect(search(index, 'lashcurry')[0].id).toBe('lashcurry')

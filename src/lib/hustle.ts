@@ -13,12 +13,13 @@ export function hustleRoles(hustle: Hustle, artistId: string): HustleRole[] {
   for (const s of hustle.seasons) {
     const add = (role: string) => roles.push({ season: s.number, year: s.year, role })
     const c = s.contestants.find((p) => p.artist_id === artistId)
-    if (c) add(c.result === 'Contestant' || c.result === 'Top 16' ? 'Contestant' : c.result)
+    if (c) add(c.og_hustler ? `${c.result}, OG Hustler` : c.result)
     if (s.judges.some((p) => p.artist_id === artistId)) add('Judge')
     const boss = s.squad_bosses.find((p) => p.artist_id === artistId)
     if (boss) add(boss.squad ? `Squad boss (${boss.squad})` : 'Squad boss')
     if (s.hosts.some((p) => p.artist_id === artistId)) add('Host')
-    if (s.guests.some((p) => p.artist_id === artistId)) add('Guest')
+    const guest = s.guests.filter((g) => g.artist_ids.includes(artistId))
+    if (guest.length) add(guest.some((g) => g.role === 'Guest judge') ? 'Guest judge' : 'Guest')
   }
   return roles
 }
